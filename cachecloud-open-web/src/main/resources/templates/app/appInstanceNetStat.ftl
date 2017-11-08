@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <jsp:include page="/WEB-INF/include/head.jsp"/>
 <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
 <script type="text/javascript" src="/resources/js/chart.js"></script>

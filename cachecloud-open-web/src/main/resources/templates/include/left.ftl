@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <script src="/resources/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <div id="leftMenu" class="page-sidebar navbar-collapse collapse">
 	<ul class="page-sidebar-menu">

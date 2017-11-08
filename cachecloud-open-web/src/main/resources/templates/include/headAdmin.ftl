@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <div class="header navbar navbar-inverse navbar-fixed-top">
 	<div class="header-inner">
 		<div class="navbar-header">

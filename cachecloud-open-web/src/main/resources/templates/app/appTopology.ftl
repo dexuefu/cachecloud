@@ -1,6 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
-
 <div class="row">
     <div class="page-header">
         <h4>应用拓扑结构-<a href="/admin/app/index.do?appId=${appDesc.appId}">${appDesc.name}</a></h4>

@@ -1,4 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div id="manageUser" class="modal fade" tabindex="-1" data-width="400">
 	<div class="modal-dialog">
 		<div class="modal-content">

@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="appRefuseModal${item.id}" class="modal fade" tabindex="-1" data-width="400">
 	<div class="modal-dialog">
 		<div class="modal-content">

@@ -1,7 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
-
-
 <div class="page-container">
 	<div class="page-content">
 		

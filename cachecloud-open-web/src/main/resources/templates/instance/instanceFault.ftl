@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <div class="row">
     <div class="col-md-12 page-header">
     	实例故障情况

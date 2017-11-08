@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <script>
     var instance_advancedAnalysis_c_cu = {
     <c:forEach items="${appCommandStats}" var="appCommand" varStatus="status">${appCommand.commandName}:

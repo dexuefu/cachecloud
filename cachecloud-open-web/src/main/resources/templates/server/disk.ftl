@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <div class="col-md-6">
 	<div id="containerRead"
 		style="min-width: 310px; height: 400px; margin: 0 auto"></div>

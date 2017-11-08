@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <c:forEach items="${apps}" var="item">
 	<div id="appScaleApply${item.appId}" class="modal fade" tabindex="-1" data-width="400">
 		<div class="modal-dialog">

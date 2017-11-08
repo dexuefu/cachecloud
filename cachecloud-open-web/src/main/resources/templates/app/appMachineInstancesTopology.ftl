@@ -1,5 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file="/WEB-INF/jsp/manage/commons/taglibs.jsp"%>
 <link href="http://www.bootcss.com/p/buttons/css/buttons.css" rel="stylesheet">
 <div class="row">
     <div class="page-header">
