@@ -212,7 +212,7 @@ public class ConstUtils {
     /**
      * 1是session,2是cookie(参考UserLoginTypeEnum)
      */
-    public static int DEFAULT_USER_LOGIN_TYPE = 1;
+    public static int DEFAULT_USER_LOGIN_TYPE = 2;
     public static int USER_LOGIN_TYPE = DEFAULT_USER_LOGIN_TYPE;
     
     /**

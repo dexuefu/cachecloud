@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -46,36 +47,36 @@ import com.sohu.cache.redis.RedisCenter;
  */
 public class BaseController {
     protected final Logger logger = LoggerFactory.getLogger(getClass());
-
+    @Resource
     protected UserService userService;
-    
+    @Resource
     protected AppService appService;
-    
+    @Resource
     protected MachineCenter machineCenter;
-    
+    @Resource
     protected UserLoginStatusService userLoginStatusService;
-    
+    @Resource
     protected RedisCenter redisCenter;
 
-    public void setUserService(UserService userService) {
-        this.userService = userService;
-    }
+//    public void setUserService(UserService userService) {
+//        this.userService = userService;
+//    }
+//
+//    public void setAppService(AppService appService) {
+//        this.appService = appService;
+//    }
+//
+//    public void setMachineCenter(MachineCenter machineCenter) {
+//        this.machineCenter = machineCenter;
+//    }
+//
+//    public void setUserLoginStatusService(UserLoginStatusService userLoginStatusService) {
+//        this.userLoginStatusService = userLoginStatusService;
+//    }
 
-    public void setAppService(AppService appService) {
-        this.appService = appService;
-    }
-
-    public void setMachineCenter(MachineCenter machineCenter) {
-        this.machineCenter = machineCenter;
-    }
-
-    public void setUserLoginStatusService(UserLoginStatusService userLoginStatusService) {
-        this.userLoginStatusService = userLoginStatusService;
-    }
-
-    public void setRedisCenter(RedisCenter redisCenter) {
-		this.redisCenter = redisCenter;
-	}
+//    public void setRedisCenter(RedisCenter redisCenter) {
+//		this.redisCenter = redisCenter;
+//	}
     
     protected TimeBetween getJsonTimeBetween(HttpServletRequest request) throws ParseException {
         String startDateParam = request.getParameter("startDate");

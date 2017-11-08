@@ -567,7 +567,7 @@ public class AppController extends BaseController {
         model.addAttribute("totalApps", totalApps);
         model.addAttribute("totalApplyMem", totalApplyMem);
         model.addAttribute("totalUsedMem", totalUsedMem);
-
+        model.addAttribute("appSearch", appSearch);
         return new ModelAndView("app/appList");
     }
 

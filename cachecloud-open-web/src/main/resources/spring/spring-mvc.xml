@@ -12,8 +12,8 @@
 
     <mvc:annotation-driven/>
 
-    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
-    <mvc:resources mapping="/assets/flash/**" location="/WEB-INF/resources/assets/flash/"/>
+    <!--<mvc:resources mapping="/resources/**" location="/resources/"/>-->
+    <!--<mvc:resources mapping="/assets/flash/**" location="/resources/assets/flash/"/>-->
 
     <!--
     <mvc:annotation-driven/>
@@ -78,12 +78,12 @@
         </property>
     </bean>
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="order" value="2"/>
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="order" value="2"/>-->
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
+        <!--<property name="prefix" value="/jsp/"/>-->
+        <!--<property name="suffix" value=".ftl"/>-->
+    <!--</bean>-->
 
     <context:component-scan base-package="com.sohu.cache.client.heartbeat,com.sohu.cache.web.controller"/>
 
