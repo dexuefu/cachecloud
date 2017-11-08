@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>成为cachecloud贡献者</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript">
     	function applyBecomeContributor(){
     		var groupName = document.getElementById("groupName");
@@ -44,7 +44,7 @@
 </head>
 <body>
 	<div class="container">
-	    <jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+	    <#include "include/headMenu.jsp"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<jsp:include page="/WEB-INF/include/foot.jsp"/>
+	<#include "include/foot.jsp"/>
 </body>
 </html>
 

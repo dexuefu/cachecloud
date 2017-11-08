@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <title>CacheCloud应用统计信息</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
     <script type="text/javascript" src="/resources/js/chart.js"></script>
 
 </head>
 <body role="document">
 <div class="container">
-    <jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+    <#include "include/headMenu.jsp"/>
     <div id="systemAlert">
     </div>
     <div class="tabbable-custom">
@@ -60,7 +60,7 @@
         </div>
     </div>
 </div>
-<jsp:include page="/WEB-INF/include/foot.jsp"/>
+<#include "include/foot.jsp"/>
 <script type="text/javascript">
     $('#app_tabs a').click(function (e) {
         e.preventDefault();

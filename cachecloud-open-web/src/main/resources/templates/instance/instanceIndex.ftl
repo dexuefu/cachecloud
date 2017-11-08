@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <title>实例统计信息</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
 </head>
 <body role="document">
 <div class="container">
-    <jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+    <#include "include/headMenu.jsp"/>
     <div id="systemAlert">
     </div>
     <div class="tabbable-custom">
@@ -62,7 +62,7 @@
         </div>
     </div>
 </div>
-<jsp:include page="/WEB-INF/include/foot.jsp"/>
+<#include "include/foot.jsp"/>
 <script src="/resources/js/chart.js"></script>
 <script type="text/javascript" src="/resources/js/mem-cloud.js"></script>
 <script type="text/javascript">

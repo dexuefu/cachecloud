@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <title>CacheCloud应用运维</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
 
 </head>
 <body role="document">
 <div class="container">
-    <jsp:include page="/WEB-INF/include/headAdmin.jsp"/>
+    <#include "include/headAdmin.jsp"/>
     <div class="tabbable-custom">
         <ul class="nav nav-tabs" id="app_tabs">
             <li class="active"><a href="#app_ops_instance" data-url="/manage/app/instance.do?appId=${appId}" data-toggle="tab">应用实例</a></li>
@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<jsp:include page="/WEB-INF/include/foot.jsp"/>
+<#include "include/foot.jsp"/>
 <script type="text/javascript">
     $('#app_tabs a').click(function (e) {
         e.preventDefault();

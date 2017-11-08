@@ -1,4 +1,4 @@
-<jsp:include page="/WEB-INF/include/head.jsp"/>
+<#include "include/head.jsp"/>
 <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
 <script type="text/javascript" src="/resources/js/chart.js"></script>
 <script type="text/javascript" src="/resources/js/appClient.js"></script>
@@ -34,7 +34,7 @@ function search() {
 </script>
 
 <div class="container">
-	<jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+	<#include "include/headMenu.jsp"/>
 	<div class="page-header">
 		<h4>
 			应用(<a target="_blank" href="/admin/app/index.do?appId=${appDesc.appId}">${appDesc.name}</a>)实例流量统计

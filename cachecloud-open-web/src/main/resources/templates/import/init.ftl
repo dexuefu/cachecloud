@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>应用导入</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript">
     	function checkAppInstanceFormat() {
     		//应用名
@@ -114,7 +114,7 @@
 </head>
 <body role="document">
 	<div class="container">
-	    <jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+	    <#include "include/headMenu.jsp"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -277,7 +277,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<jsp:include page="/WEB-INF/include/foot.jsp"/>
+	<#include "include/foot.jsp"/>
 </body>
 </html>
 

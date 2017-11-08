@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>CacheCloud客户端信息</title>
-    <jsp:include page="/WEB-INF/include/head.jsp"/>
+    <#include "include/head.jsp"/>
     <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
     <script type="text/javascript" src="/resources/js/chart.js"></script>
     <script type="text/javascript" src="/resources/js/appClient.js"></script>
@@ -10,7 +10,7 @@
 </head>
 <body role="document">
 	<div class="container">
-	    <jsp:include page="/WEB-INF/include/headMenu.jsp"/>
+	    <#include "include/headMenu.jsp"/>
 	    <div class="tabbable-custom">
 	        <ul class="nav nav-tabs" id="app_tabs">
 	            <li class="active"><a href="#app_client_cost_distribute" data-url="/client/show/costDistribute.do?appId=${appId}&costDistriStartDate=${costDistriStartDate}&costDistriEndDate=${costDistriEndDate}&firstCommand=${firstCommand}&timeDimensionality=${timeDimensionality}" data-toggle="tab">耗时统计</a></li>
@@ -27,7 +27,7 @@
 	        </div>
 	    </div>
 	</div>
-	<jsp:include page="/WEB-INF/include/foot.jsp"/>
+	<#include "include/foot.jsp"/>
 	<script type="text/javascript">
 	    $('#app_tabs a').click(function (e) {
 	        e.preventDefault();
