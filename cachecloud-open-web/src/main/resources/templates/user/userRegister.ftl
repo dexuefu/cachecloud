@@ -130,7 +130,7 @@
 												<div class="row">
 													<div class="col-md-12">
 														<div class="col-md-offset-4 col-md-9">
-															<button type="submit" class="btn green" onclick=""  <c:if test="${success == 1}">disabled="disabled"</c:if>>
+															<button type="submit" class="btn green" onclick=""  <#if test="${success == 1}">disabled="disabled"</#if>>
 																<i class="fa fa-check"></i>
 																提交申请
 															</button>

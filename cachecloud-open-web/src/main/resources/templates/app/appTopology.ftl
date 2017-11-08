@@ -24,9 +24,9 @@
                 <tr>
                     <td>
                     	 <a href="/admin/instance/index.do?instanceId=${instance.id}" target="_blank">${instance.id}</a>
-                    	 <c:if test="${instance.masterInstanceId == 0 && instance.status != 2}">
+                    	 <#if test="${instance.masterInstanceId == 0 && instance.status != 2}">
 							<span class="glyphicon glyphicon-star"></span>	                         
-	                     </c:if>
+	                     </#if>
                     </td>
                     <td><a href="/server/index.do?ip=${instance.ip}" target="_blank">${instance.ip}</a>:${instance.port}</td>
                     <td>${instance.statusDesc}</td>

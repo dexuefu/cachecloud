@@ -63,10 +63,10 @@
                                     </label>
                                     <div class="col-md-5">
                                         <select name="virtual" id="virtual${machine.info.id}" class="form-control select2_category">
-                                            <option value="0" <c:if test="${machine.info.virtual == 0}">selected="selected"</c:if>>
+                                            <option value="0" <#if test="${machine.info.virtual == 0}">selected="selected"</#if>>
                                                 否
                                             </option>
-                                            <option value="1" <c:if test="${machine.info.virtual == 2}">selected="selected"</c:if>>
+                                            <option value="1" <#if test="${machine.info.virtual == 2}">selected="selected"</#if>>
                                                 是
                                             </option>
                                         </select>
@@ -90,10 +90,10 @@
                                     </label>
                                     <div class="col-md-5">
                                         <select name="machineType" id="machineType${machine.info.id}" class="form-control select2_category">
-                                            <option value="0" <c:if test="${machine.info.type == 0}">selected="selected"</c:if>>
+                                            <option value="0" <#if test="${machine.info.type == 0}">selected="selected"</#if>>
                                                 	Redis机器(默认)
                                             </option>
-                                            <option value="2" <c:if test="${machine.info.type == 2}">selected="selected"</c:if>>
+                                            <option value="2" <#if test="${machine.info.type == 2}">selected="selected"</#if>>
                                                 	Redis迁移工具机器
                                             </option>
                                         </select>
@@ -117,10 +117,10 @@
                                     </label>
                                     <div class="col-md-5">
                                         <select name="collect" id="collect${machine.info.id}" class="form-control select2_category">
-                                            <option value="0" <c:if test="${machine.info.collect == 0}">selected="selected"</c:if>>
+                                            <option value="0" <#if test="${machine.info.collect == 0}">selected="selected"</#if>>
                                                 关闭
                                             </option>
-                                            <option value="1" <c:if test="${machine.info.collect == 1 || empty machine.info.id}">selected="selected"</c:if>>
+                                            <option value="1" <#if test="${machine.info.collect == 1 || empty machine.info.id}">selected="selected"</#if>>
                                                 开启
                                             </option>
                                         </select>

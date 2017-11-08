@@ -24,16 +24,16 @@
 										审核状态:
 									</label>
 									<select name="status">
-										<option value="0" <c:if test="${status == 0}">selected="selected"</c:if>>
+										<option value="0" <#if test="${status == 0}">selected="selected"</#if>>
 											待处理列表
 										</option>
-                                        <option value="2" <c:if test="${status == 2}">selected="selected"</c:if>>
+                                        <option value="2" <#if test="${status == 2}">selected="selected"</#if>>
                                                                                                               审核已处理列表
                                         </option>
-										<option value="1" <c:if test="${status == 1}">selected="selected"</c:if>>
+										<option value="1" <#if test="${status == 1}">selected="selected"</#if>>
 											通过列表
 										</option>
-										<option value="-1" <c:if test="${status == -1}">selected="selected"</c:if>>
+										<option value="-1" <#if test="${status == -1}">selected="selected"</#if>>
 											驳回列表
 										</option>
 									</select>

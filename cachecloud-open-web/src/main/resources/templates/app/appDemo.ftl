@@ -26,7 +26,7 @@
         </pre>
     </div>
     
-    <c:if test="${springConfig != null}">
+    <#if test="${springConfig != null}">
     	Spring Config Demo：
 	    <div id="springConfig" class="highlight">
 	        <pre class="prettyprint">
@@ -35,7 +35,7 @@
 	        </c:forEach>
 	        </pre>
 	    </div>
-    </c:if>
+    </#if>
     
 </div>
 <script>

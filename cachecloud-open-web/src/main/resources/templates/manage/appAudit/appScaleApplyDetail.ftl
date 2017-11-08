@@ -47,11 +47,11 @@
                                                     </button>
 
                                                 </div>
-                                                <c:if test="${appDesc.type == 2}">
+                                                <#if test="${appDesc.type == 2}">
                                                 	<div class="col-md-6 ">
 	                                                    <a class="btn btn-info" href="/manage/app/initHorizontalScaleApply?appAuditId=${appAuditId}">水平扩容</a>
 	                                                </div>
-                                                </c:if>
+                                                </#if>
                                             </div>
                                         </div>
                                     </div>

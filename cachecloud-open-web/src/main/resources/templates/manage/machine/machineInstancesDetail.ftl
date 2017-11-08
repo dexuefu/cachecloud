@@ -83,11 +83,11 @@
 		                            <c:set var="instanceStatsMapKey" value="${instance.ip}:${instance.port}"></c:set>
 		                            <c:set var="curAppId" value="${(instanceStatsMap[instanceStatsMapKey]).appId}"></c:set>
 		                            <td>
-		                            	<c:if test="${curAppId > 0}">
+		                            	<#if test="${curAppId > 0}">
 			                            	<a target="_blank" href="/admin/app/index.do?appId=${curAppId}">
 			                            		${curAppId}
 			                            	</a>
-		                            	</c:if>
+		                            	</#if>
 		                            </td>
 		                            <td>${(appInfoMap[curAppId]).name}</td>
 		                            <td>${(appInfoMap[curAppId]).officer}</td>

@@ -136,16 +136,16 @@
 											</label>
 											<div class="col-md-5">
 												<select id="importantLevel" name="importantLevel" class="form-control">
-													<option <c:if test="${appDesc.importantLevel == 1}">selected</c:if> value="1">
+													<option <#if test="${appDesc.importantLevel == 1}">selected</#if> value="1">
 														S
 													</option>
-													<option <c:if test="${appDesc.importantLevel == 2}">selected</c:if> value="2">
+													<option <#if test="${appDesc.importantLevel == 2}">selected</#if> value="2">
 														A
 													</option>
-													<option <c:if test="${appDesc.importantLevel == 3}">selected</c:if> value="3">
+													<option <#if test="${appDesc.importantLevel == 3}">selected</#if> value="3">
 														B
 													</option>
-													<option <c:if test="${appDesc.importantLevel == 4}">selected</c:if> value="4">
+													<option <#if test="${appDesc.importantLevel == 4}">selected</#if> value="4">
 														C
 													</option>
 												</select>

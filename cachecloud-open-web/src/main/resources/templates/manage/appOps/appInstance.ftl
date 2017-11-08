@@ -214,9 +214,9 @@
         	应用实例管理-${appDesc.name}(${appDesc.typeDesc})
         	<c:choose>
 	            <c:when test="${appDesc.type == 2}">
-	            	<c:if test="${lossSlotsSegmentMap != null && lossSlotsSegmentMap != '' && lossSlotsSegmentMap.size() > 0}">
+	            	<#if test="${lossSlotsSegmentMap != null && lossSlotsSegmentMap != '' && lossSlotsSegmentMap.size() > 0}">
 	            		<font color="red">丢失的slots:${lossSlotsSegmentMap}</font>
-	            	</c:if>
+	            	</#if>
 	            </c:when>
 	  		    <c:when test="${appDesc.type == 5}">
 		  		    <button type="button" class="btn btn-small btn-primary" data-target="#redisAddSentinelModal" data-toggle="modal">添加sentinel节点</button>
@@ -336,12 +336,12 @@
                                      <button type="button" class="btn btn-small btn-danger" onclick="shutdownInstance('${instance.id}')">
                                         下线实例
                                      </button>
-                                       <c:if test="${instance.masterInstanceId == 0 and instance.type != 5}">
+                                       <#if test="${instance.masterInstanceId == 0 and instance.type != 5}">
                                            <button type="button" class="btn btn-small btn-primary" data-target="#redisClusterAddSlaveModal${instance.id}" data-toggle="modal">添加Slave</button>
-                                       </c:if>
-                                       <c:if test="${instance.masterInstanceId > 0 and instance.type == 2}">
+                                       </#if>
+                                       <#if test="${instance.masterInstanceId > 0 and instance.type == 2}">
                                            <button type="button" class="btn btn-small btn-primary" data-target="#redisClusterFailOverModal${instance.id}" data-toggle="modal">&nbsp;FailOver&nbsp;</button>
-                                       </c:if>
+                                       </#if>
                                    </c:when>
                                 </c:choose>
 	                    	</div>

@@ -1,6 +1,6 @@
-<c:if test="${empty cpu}">
+<#if test="${empty cpu}">
 	no data
-</c:if>
+</#if>
 <c:forEach items="${cpu}" var="item" varStatus="stat">
 	<div class="col-md-6">
 		<div id="container${item.name}"

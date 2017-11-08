@@ -179,9 +179,9 @@
 										<th>${machine.info.room}</th>
 										<th>
 										${machine.info.extraDesc}
-										<c:if test="${machine.info.type == 2}">
+										<#if test="${machine.info.type == 2}">
 											<font color='red'>(迁移工具机器)</font>
-										</c:if>
+										</#if>
 										</th>
                                        	<c:choose>
                                        		<c:when test="${machine.info.collect == 1}">

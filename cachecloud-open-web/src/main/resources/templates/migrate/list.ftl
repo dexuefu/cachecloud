@@ -70,10 +70,10 @@
 							<option value="-2">
 								全部
 							</option>
-							<option value="0" <c:if test="${appDataMigrateSearch.status == 0}">selected</c:if>>
+							<option value="0" <#if test="${appDataMigrateSearch.status == 0}">selected</#if>>
 								开始
 							</option>
-							<option value="1" <c:if test="${appDataMigrateSearch.status == 1}">selected</c:if>>
+							<option value="1" <#if test="${appDataMigrateSearch.status == 1}">selected</#if>>
 								结束
 							</option>
 						</select>
@@ -161,7 +161,7 @@
    			                        </c:choose>
    			                    </td>
    			                    <td>
-	                                <button <c:if test='${appDataMigrateStatus.status == 1}'>disabled="disabled"</c:if> onclick="stopMigrate(${appDataMigrateStatus.id})" type="button" class="btn btn-info">停止</button>               
+	                                <button <#if test='${appDataMigrateStatus.status == 1}'>disabled="disabled"</#if> onclick="stopMigrate(${appDataMigrateStatus.id})" type="button" class="btn btn-info">停止</button>               
    			                    </td>
    			                    <td>
    			                    	<c:choose>

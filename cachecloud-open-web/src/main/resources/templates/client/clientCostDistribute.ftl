@@ -48,7 +48,7 @@ function search() {
 					<c:choose>
 						<c:when test="${stat.index < 5}">
 								<input type="radio" name="optionsRadios" value="${item}" 
-								<c:if test="${firstCommand == item}">checked="checked"</c:if>
+								<#if test="${firstCommand == item}">checked="checked"</#if>
 								 onchange="changeCommandChart(this.value)" />
 								${item}
 						</c:when>
@@ -57,7 +57,7 @@ function search() {
 						</c:otherwise>
 					</c:choose>
 				</c:forEach>
-				<c:if test="${needSelect == 1}">
+				<#if test="${needSelect == 1}">
 					&nbsp;&nbsp;&nbsp;其余命令:
 					<select name="optionsRadios" onchange="changeCommandChart(this.value)">
 						<option>请选择</option>
@@ -65,7 +65,7 @@ function search() {
 							<c:choose>
 								<c:when test="${stat.index >= 5}">
 									<label>
-										<option value="${item}" <c:if test="${firstCommand == item}">selected</c:if>>
+										<option value="${item}" <#if test="${firstCommand == item}">selected</#if>>
 							         		${item}
 							        	</option>
 									</label>							
@@ -73,7 +73,7 @@ function search() {
 							</c:choose>
 						</c:forEach>
 					</select>
-				</c:if>
+				</#if>
 		</div>
 	</form>
 	<script type="text/javascript">

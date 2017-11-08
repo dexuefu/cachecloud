@@ -134,16 +134,16 @@ function saveInstanceAlert() {
 											
 											<div class="col-md-1">
 												<select id="compareType${config.configKey}" name="compareType" class="form-control">
-													<option value="-1" <c:if test="${config.compareType == -1}">selected</c:if>>
+													<option value="-1" <#if test="${config.compareType == -1}">selected</#if>>
 														小于
 													</option>
-													<option value="0" <c:if test="${config.compareType == 0}">selected</c:if>>
+													<option value="0" <#if test="${config.compareType == 0}">selected</#if>>
 														等于
 													</option>
-													<option value="1" <c:if test="${config.compareType == 1}">selected</c:if>>
+													<option value="1" <#if test="${config.compareType == 1}">selected</#if>>
 														大于
 													</option>
-													<option value="2" <c:if test="${config.compareType == 2}">selected</c:if>>
+													<option value="2" <#if test="${config.compareType == 2}">selected</#if>>
 														不等于
 													</option>
 												</select>
@@ -151,10 +151,10 @@ function saveInstanceAlert() {
 											
 											<div class="col-md-2">
 												<select id="valueType${config.configKey}" name="valueType" class="form-control">
-													<option value="1" <c:if test="${config.valueType == 1}">selected</c:if>>
+													<option value="1" <#if test="${config.valueType == 1}">selected</#if>>
 														固定值
 													</option>
-													<option value="2" <c:if test="${config.valueType == 2}">selected</c:if>>
+													<option value="2" <#if test="${config.valueType == 2}">selected</#if>>
 														差值
 													</option>
 												</select>
@@ -167,10 +167,10 @@ function saveInstanceAlert() {
 											
 											<div class="col-md-1">
 												<select id="status${config.configKey}" name="status" class="form-control">
-													<option value="1" <c:if test="${config.status == 1}">selected</c:if>>
+													<option value="1" <#if test="${config.status == 1}">selected</#if>>
 														有效
 													</option>
-													<option value="0" <c:if test="${config.status == 0}">selected</c:if>>
+													<option value="0" <#if test="${config.status == 0}">selected</#if>>
 														无效
 													</option>
 												</select>

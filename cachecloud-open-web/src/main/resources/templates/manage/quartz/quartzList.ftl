@@ -52,16 +52,16 @@
                                         <td>${t.startDate}</td>
 										<td>${t.triggerState}</td>
 										<td>
-                                        <c:if test="${t.triggerState == 'PAUSED'}">
+                                        <#if test="${t.triggerState == 'PAUSED'}">
                                             <a onclick="if(window.confirm('确认恢复吗?!')){return true;}else{return false;}"
                                                href="/manage/quartz/resume.do?name=${t.triggerName}&group=${t.triggerGroup}">[恢复]
                                             </a>
-                                        </c:if>
-                                        <c:if test="${t.triggerState != 'PAUSED'}">
+                                        </#if>
+                                        <#if test="${t.triggerState != 'PAUSED'}">
                                             <a onclick="if(window.confirm('确认暂停吗?!')){return true;}else{return false;}"
                                                href="/manage/quartz/pause.do?name=${t.triggerName}&group=${t.triggerGroup}">[暂停]
                                             </a>
-                                        </c:if>
+                                        </#if>
                                         <a onclick="if(window.confirm('确认删除吗?!')){return true;}else{return false;}"
                                                href="/manage/quartz/remove.do?name=${t.triggerName}&group=${t.triggerGroup}">[删除]
                                         </a>

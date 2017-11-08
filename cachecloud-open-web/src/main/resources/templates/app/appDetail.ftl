@@ -29,9 +29,9 @@
                     <td>报警用户</td>
                     <td>
                     	<c:forEach items="${appDetail.appUsers}" var="appUser" varStatus="stat">
-                    		<c:if test="${stat.index != 0}">
+                    		<#if test="${stat.index != 0}">
                     			;
-                    		</c:if>
+                    		</#if>
                     		${appUser.chName}(${appUser.name})
                     	</c:forEach>
                     </td>

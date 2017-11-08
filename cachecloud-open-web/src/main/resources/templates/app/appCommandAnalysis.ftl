@@ -51,7 +51,7 @@ function changeCommandChart(value){
 					<c:choose>
 						<c:when test="${stat.index < 5}">
 								<input type="radio" name="optionsRadios" value="${item.commandName}" 
-								<c:if test="${firstCommand == item.commandName}">checked="checked"</c:if>
+								<#if test="${firstCommand == item.commandName}">checked="checked"</#if>
 								 onchange="changeCommandChart(this.value)" />
 								${item.commandName}
 						</c:when>
@@ -60,7 +60,7 @@ function changeCommandChart(value){
 						</c:otherwise>
 					</c:choose>
 				</c:forEach>
-				<c:if test="${needSelect == 1}">
+				<#if test="${needSelect == 1}">
 					&nbsp;&nbsp;&nbsp;其余命令:
 					<select name="optionsRadios" onchange="changeCommandChart(this.value)">
 						<option>请选择</option>
@@ -68,7 +68,7 @@ function changeCommandChart(value){
 							<c:choose>
 								<c:when test="${stat.index >= 5}">
 									<label>
-										<option value="${item.commandName}" <c:if test="${firstCommand == item.commandName}">selected</c:if>>
+										<option value="${item.commandName}" <#if test="${firstCommand == item.commandName}">selected</#if>>
 							         		${item.commandName}
 							        	</option>
 									</label>							
@@ -76,7 +76,7 @@ function changeCommandChart(value){
 							</c:choose>
 						</c:forEach>
 					</select>
-				</c:if>
+				</#if>
 				
 		</div>
 	</form>

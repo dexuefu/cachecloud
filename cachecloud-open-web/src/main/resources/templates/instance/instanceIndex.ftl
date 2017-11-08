@@ -18,7 +18,7 @@
             <li><a href="#app_topology" data-url="/admin/app/topology.html?appId=${appId}"
                    data-toggle="tab">拓扑结构</a>
             </li>
-            <c:if test="${type == 2 or type == 6}">
+            <#if test="${type == 2 or type == 6}">
             <li><a href="#instance_slowSelect" data-url="/admin/instance/slowSelect.html?instanceId=${instanceId}"
                    data-toggle="tab">慢查询分析</a>
             </li>
@@ -28,7 +28,7 @@
             <li><a href="#instance_clientList" data-url="/admin/instance/clientList.html?instanceId=${instanceId}"
                    data-toggle="tab">连接信息</a>
             </li>
-            </c:if>
+            </#if>
             <li><a href="#instance_fault"
                    data-url="/admin/instance/fault.html?instanceId=${instanceId}&startDate=${startDate}&endDate=${endDate}"
                    data-toggle="tab">故障报警</a>

@@ -1,8 +1,8 @@
 <script>
     var instance_advancedAnalysis_c_cu = {
     <c:forEach items="${appCommandStats}" var="appCommand" varStatus="status">${appCommand.commandName}:
-    '/admin/instance/getCommandStatsV2.json?instanceId=${instanceInfo.id}&commandName=${appCommand.commandName}&startDate=${startDate}&endDate=${endDate}'<c:if test="${!status.last}">,
-    </c:if></c:forEach>
+    '/admin/instance/getCommandStatsV2.json?instanceId=${instanceInfo.id}&commandName=${appCommand.commandName}&startDate=${startDate}&endDate=${endDate}'<#if test="${!status.last}">,
+    </#if></c:forEach>
     }
     var instance_advancedAnalysis_c_o = {
     <c:forEach items="${appCommandStats}" var="appCommand" varStatus="status">${appCommand.commandName}:
@@ -39,7 +39,7 @@
 //             */
 //        }
     }
-    <c:if test="${!status.last}">,</c:if></c:forEach>
+    <#if test="${!status.last}">,</#if></c:forEach>
     }
 </script>
 <div class="container">

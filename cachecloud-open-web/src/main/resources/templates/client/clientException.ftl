@@ -29,11 +29,11 @@ function search() {
 						</label>
 						<select name="type" style="height:26px">
 							<option value="">全部</option>
-							<option <c:if test="${type == 1}">selected="selected"</c:if> value="1">redis异常</option>
-							<option <c:if test="${type == 2}">selected="selected"</c:if> value="2">客户端异常</option>
-							<c:if test="${appDesc.type == 2}">
-								<option <c:if test="${type == 3}">selected="selected"</c:if> value="3">Redis-Cluster异常</option>
-							</c:if>
+							<option <#if test="${type == 1}">selected="selected"</#if> value="1">redis异常</option>
+							<option <#if test="${type == 2}">selected="selected"</#if> value="2">客户端异常</option>
+							<#if test="${appDesc.type == 2}">
+								<option <#if test="${type == 3}">selected="selected"</#if> value="3">Redis-Cluster异常</option>
+							</#if>
 						</select>
 				
 						<label style="font-weight:bold;text-align:left;">

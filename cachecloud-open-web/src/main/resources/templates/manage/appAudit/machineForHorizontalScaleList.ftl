@@ -33,9 +33,9 @@
 					<tbody>
 						<c:forEach items="${machineList}" var="machine" varStatus="stat">
 							<tr class="odd gradeX">
-								<td <c:if test="${stat.index < appMachineSize}">style="background-color: red"</c:if>>${machine.ip}
+								<td <#if test="${stat.index < appMachineSize}">style="background-color: red"</#if>>${machine.ip}
 									<br/>
-									<c:if test="${stat.index < appMachineSize}">应用id:${appId}</c:if>
+									<#if test="${stat.index < appMachineSize}">应用id:${appId}</#if>
 								<td>
 									<span style="display:none"><fmt:formatNumber value="${machine.memoryUsageRatio / 100}" pattern="0.00"/></span>
                                     <div class="progress margin-custom-bottom0">

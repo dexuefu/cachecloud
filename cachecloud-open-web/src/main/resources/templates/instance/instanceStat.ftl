@@ -46,8 +46,8 @@
 
                     <td>实例角色</td>
                     <td>
-                        <c:if test="${instanceStats.role == 1}">master</c:if>
-                        <c:if test="${instanceStats.role == 2}">slave</c:if>
+                        <#if test="${instanceStats.role == 1}">master</#if>
+                        <#if test="${instanceStats.role == 2}">slave</#if>
                     </td>
                 </tr>
                 <tr>
@@ -101,15 +101,15 @@
                     </thead>
                     <tbody>
                     <c:forEach items="${instanceStats.infoMap['stats']}" var="info" varStatus="status">
-                        <c:if test="${status.last}">
+                        <#if test="${status.last}">
                             <c:set var="rows" value="${status.count}" scope="page"></c:set>
-                        </c:if>
+                        </#if>
                     </c:forEach>
                     <c:forEach items="${instanceStats.infoMap['stats']}" var="info" varStatus="status">
                         <tr>
-                            <c:if test="${status.first}">
+                            <#if test="${status.first}">
                                 <td rowspan="${rows}">stats</td>
-                            </c:if>
+                            </#if>
                             <td>${info.key}</td>
                             <td>${info.value}</td>
                         </tr>
@@ -216,15 +216,15 @@
                     <tbody>
                     <c:forEach items="${instanceStats.infoMap}" var="infoMap">
                         <c:forEach items="${infoMap.value}" var="info" varStatus="status">
-                            <c:if test="${status.last}">
+                            <#if test="${status.last}">
                                 <c:set var="rows" value="${status.count}" scope="page"></c:set>
-                            </c:if>
+                            </#if>
                         </c:forEach>
                         <c:forEach items="${infoMap.value}" var="info" varStatus="status">
                             <tr>
-                                <c:if test="${status.first}">
+                                <#if test="${status.first}">
                                     <td rowspan="${rows}">${infoMap.key}</td>
-                                </c:if>
+                                </#if>
                                 <td>${info.key}</td>
                                 <td>${info.value}</td>
                             </tr>

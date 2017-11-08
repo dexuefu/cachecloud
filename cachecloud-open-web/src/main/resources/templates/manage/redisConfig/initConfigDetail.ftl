@@ -97,13 +97,13 @@ function saveRedisConfig() {
 						Redis类型:
 					</label>
 					<select name="type">
-						<option value="2" <c:if test="${type == 2}">selected</c:if>>
+						<option value="2" <#if test="${type == 2}">selected</#if>>
 							Redis-cluster
 						</option>
-						<option value="5" <c:if test="${type == 5}">selected</c:if>>
+						<option value="5" <#if test="${type == 5}">selected</#if>>
 							Redis-sentinel
 						</option>
-						<option value="6" <c:if test="${type == 6}">selected</c:if>>
+						<option value="6" <#if test="${type == 6}">selected</#if>>
 	                       Redis-standalone
 						</option>
 					</select>
@@ -167,10 +167,10 @@ function saveRedisConfig() {
 											</div>
 											<div class="col-md-2">
 												<select id="status${config.id}" name="status" class="form-control">
-													<option value="1" <c:if test="${config.status == 1}">selected</c:if>>
+													<option value="1" <#if test="${config.status == 1}">selected</#if>>
 														有效
 													</option>
-													<option value="0" <c:if test="${config.status == 0}">selected</c:if>>
+													<option value="0" <#if test="${config.status == 0}">selected</#if>>
 														无效
 													</option>
 												</select>

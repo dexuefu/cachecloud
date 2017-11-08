@@ -7,9 +7,9 @@
 	<body STYLE="BACKGROUND-COLOR:#000;color:#FFF">
 		<c:forEach items="${instanceLogList}" var="line">
 			<c:set var="targetColor" value="white"></c:set>
-			<c:if test='${fn:indexOf(line,"#") > 0}'>
+			<#if test='${fn:indexOf(line,"#") > 0}'>
 				<c:set var="targetColor" value="red"></c:set>
-			</c:if>
+			</#if>
 			<font color="${targetColor}">${line}</font><br/>
 		</c:forEach>
 	</body>
