@@ -81,7 +81,7 @@
                 <h4>联系我们:</h4>
             </div>
             <div id="contact" class="page-body">
-                 <#include "include/contact.ftl"/>
+                 <#include "/include/contact.ftl"/>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>迁移工具执行状态</title>
-    <#include "include/head.ftl"/>
+    <#include "/include/head.ftl"/>
     <script type="text/javascript">
     
     </script>
@@ -10,7 +10,7 @@
 </head>
 <body role="document">
 	<div class="container">
-	    <#include "include/headMenu.ftl"/>
+	    <#include "/include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 	    
@@ -51,7 +51,7 @@
 	    
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.ftl"/>
+	<#include "/include/foot.ftl"/>
 </body>
 </html>
 

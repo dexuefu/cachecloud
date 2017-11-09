@@ -1,3 +1,4 @@
+<#assign base = request.contextPath />
 <script src="${base}/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <script src="${base}/manage/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="${base}/manage/plugins/data-tables/jquery.dataTables.js" type="text/javascript"></script>

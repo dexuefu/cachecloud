@@ -44,7 +44,7 @@
 </head>
 <body>
 	<div class="container">
-	    <#include "include/headMenu.ftl"/>
+	    <#include "/include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.ftl"/>
+	<#include "/include/foot.ftl"/>
 </body>
 </html>
 

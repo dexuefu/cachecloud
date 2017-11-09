@@ -1,7 +1,7 @@
 <div class="page-container">
 	<div class="page-content">
 
-		<#include "manage/appAudit/instanceConfig.ftl" >
+		<#include "/manage/appAudit/instanceConfig.ftl" >
 
 		<div class="row">
 			<div class="col-md-12">

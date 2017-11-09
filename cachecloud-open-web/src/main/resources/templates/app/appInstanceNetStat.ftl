@@ -1,4 +1,4 @@
-<#include "include/head.ftl"/>
+<#include "/include/head.ftl"/>
 <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
 <script type="text/javascript" src="${base}/js/chart.js"></script>
 <script type="text/javascript" src="${base}/js/appClient.js"></script>
@@ -34,7 +34,7 @@ function search() {
 </script>
 
 <div class="container">
-	<#include "include/headMenu.ftl"/>
+	<#include "/include/headMenu.ftl"/>
 	<div class="page-header">
 		<h4>
 			应用(<a target="_blank" href="/admin/app/index.do?appId=${appDesc.appId}">${appDesc.name}</a>)实例流量统计

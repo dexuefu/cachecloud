@@ -5,16 +5,16 @@
 	<title>CacheCloud管理后台</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<#include "manage/include/cache_cloud_main_css.ftl" >
+	<#include "/manage/include/cache_cloud_main_css.ftl" >
 
 </head>
 
 <body class="page-header-fixed">
 
-	<#include "manage/include/head.ftl" >
-	<#include "manage/include/left.ftl" >
-	<#include "manage/client/exception/statList.ftl" >
-	<#include "manage/include/foot.ftl" >
+	<#include "/manage/include/head.ftl" >
+	<#include "/manage/include/left.ftl" >
+	<#include "/manage/client/exception/statList.ftl" >
+	<#include "/manage/include/foot.ftl" >
 
 	<script src="${base}/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script src="${base}/manage/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

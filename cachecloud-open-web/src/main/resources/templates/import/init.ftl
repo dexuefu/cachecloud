@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>应用导入</title>
-    <#include "include/head.ftl"/>
+    <#include "/include/head.ftl"/>
     <script type="text/javascript">
     	function checkAppInstanceFormat() {
     		//应用名
@@ -114,7 +114,7 @@
 </head>
 <body role="document">
 	<div class="container">
-	    <#include "include/headMenu.ftl"/>
+	    <#include "/include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -277,7 +277,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.ftl"/>
+	<#include "/include/foot.ftl"/>
 </body>
 </html>
 

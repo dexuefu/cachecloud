@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <title>CacheCloud应用统计信息</title>
-    <#include "include/head.ftl"/>
+    <#include "/include/head.ftl"/>
     <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
     <script type="text/javascript" src="${base}/js/chart.js"></script>
 
 </head>
 <body role="document">
 <div class="container">
-    <#include "include/headMenu.ftl"/>
+    <#include "/include/headMenu.ftl"/>
     <div id="systemAlert">
     </div>
     <div class="tabbable-custom">
@@ -60,7 +60,7 @@
         </div>
     </div>
 </div>
-<#include "include/foot.ftl"/>
+<#include "/include/foot.ftl"/>
 <script type="text/javascript">
     $('#app_tabs a').click(function (e) {
         e.preventDefault();
