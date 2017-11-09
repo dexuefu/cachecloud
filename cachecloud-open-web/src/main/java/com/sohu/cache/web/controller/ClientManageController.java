@@ -10,6 +10,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.common.collect.Lists;
+import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.util.StringUtil;
 import org.apache.commons.lang.math.NumberUtils;
 import org.apache.commons.lang.time.DateUtils;
 import org.springframework.stereotype.Controller;
@@ -99,6 +102,10 @@ public class ClientManageController extends BaseController {
      */
     @RequestMapping(value = "/version")
     public ModelAndView doVersionStat(HttpServletRequest request, HttpServletResponse response, Model model) {
+        AppUser appUser = getUserInfo(request);
+        List<AppUser> list = Lists.newArrayList();
+        list.add(appUser);
+        model.addAttribute("users", list);
         long appId = NumberUtils.toLong(request.getParameter("appId"),-1);
         List<AppClientVersion> appClientVersionList =  clientVersionService.getAll(appId);
         

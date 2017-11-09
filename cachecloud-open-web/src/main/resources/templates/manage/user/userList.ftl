@@ -28,7 +28,7 @@
 									<label class="control-label">
 										用户名:
 									</label>
-									&nbsp;<input type="text" name="searchChName" id="searchChName" value="${searchChName}" placeholder="中文名"/>
+									&nbsp;<input type="text" name="searchChName" id="searchChName" value="" placeholder="中文名"/>
 									&nbsp;<button type="submit" class="btn blue btn-sm">查询</button>
 								</form>
 							</div>
@@ -74,6 +74,6 @@
 </div>
 
 
-<c:forEach items="${users}" var="user">
-	<%@include file="addUser.ftl" %>
-</c:forEach>
+<#list users as userInfo>
+	<#include "/manage/user/addUser.ftl" >
+</#list>

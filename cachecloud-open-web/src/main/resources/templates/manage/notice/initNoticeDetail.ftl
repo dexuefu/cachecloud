@@ -30,11 +30,11 @@
 				<h3 class="page-title">
 					系统通知管理
 
-						<#if success == 1>
-							<font color="red">更新成功</font>
-						<#elseif success == 0>
-							<font color="red">更新失败</font>
-						</#if>
+						<#--<#if success == 1>-->
+							<#--<font color="red">更新成功</font>-->
+						<#--<#elseif success == 0>-->
+							<#--<font color="red">更新失败</font>-->
+						<#--</#if>-->
 
 				</h3>
 			</div>

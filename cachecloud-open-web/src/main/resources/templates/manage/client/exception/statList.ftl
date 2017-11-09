@@ -23,7 +23,7 @@
                                     <label class="control-label">
                                         	机器ip:
                                     </label>
-                                    &nbsp;<input type="text" name="ip" id="ip" value="${ip}" placeholder="机器ip"/>
+                                    &nbsp;<input type="text" name="ip" id="ip" value="" placeholder="机器ip"/>
                                     &nbsp;<button type="submit" class="btn blue btn-sm">查询</button>
                                 </form>
                             </div>
@@ -51,7 +51,8 @@
 										<td>${clientInstanceException.instanceHost}</td>
 										<td>${clientInstanceException.instancePort}</td>
 										<td>${clientInstanceException.exceptionCount}</td>
-										<td>${appIdOwnerMap[clientInstanceException.appId]}</td>
+										<#--<td>${appIdOwnerMap[clientInstanceException.appId]}</td>-->
+                                        <td>${clientInstanceException.appId}</td>
 									</tr>
 								</#list>
 							</tbody>

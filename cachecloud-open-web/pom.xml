@@ -83,19 +83,19 @@
             <version>${spring-boot.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <version>${spring-boot.version}</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+            <!--<version>${spring-boot.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <version>${tomcat.version}</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.tomcat.embed</groupId>-->
+            <!--<artifactId>tomcat-embed-jasper</artifactId>-->
+            <!--<version>${tomcat.version}</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
         <!--spring boot end-->
 
         <dependency>
@@ -262,28 +262,4 @@
             </resource>
         </resources>
     </build>
-    <profiles>
-        <profile>
-            <id>local</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <build>
-                <filters>
-                    <filter>${project.basedir}/src/main/swap/local.properties</filter>
-                </filters>
-            </build>
-        </profile>
-        <profile>
-            <id>online</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <filters>
-                    <filter>${project.basedir}/src/main/swap/online.properties</filter>
-                </filters>
-            </build>
-        </profile>
-    </profiles>
 </project>

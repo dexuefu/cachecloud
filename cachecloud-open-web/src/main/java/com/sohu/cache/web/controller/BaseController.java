@@ -57,26 +57,6 @@ public class BaseController {
     protected UserLoginStatusService userLoginStatusService;
     @Resource
     protected RedisCenter redisCenter;
-
-//    public void setUserService(UserService userService) {
-//        this.userService = userService;
-//    }
-//
-//    public void setAppService(AppService appService) {
-//        this.appService = appService;
-//    }
-//
-//    public void setMachineCenter(MachineCenter machineCenter) {
-//        this.machineCenter = machineCenter;
-//    }
-//
-//    public void setUserLoginStatusService(UserLoginStatusService userLoginStatusService) {
-//        this.userLoginStatusService = userLoginStatusService;
-//    }
-
-//    public void setRedisCenter(RedisCenter redisCenter) {
-//		this.redisCenter = redisCenter;
-//	}
     
     protected TimeBetween getJsonTimeBetween(HttpServletRequest request) throws ParseException {
         String startDateParam = request.getParameter("startDate");

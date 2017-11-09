@@ -23,7 +23,7 @@
                                     <label class="control-label">
                                         	应用id:
                                     </label>
-                                    &nbsp;<input type="text" name="appId" id="appId" value="${appId}" placeholder="应用id"/>
+                                    &nbsp;<input type="text" name="appId" id="appId" value="" placeholder="应用id"/>
                                     &nbsp;<button type="submit" class="btn blue btn-sm">查询</button>
                                 </form>
                             </div>
@@ -53,7 +53,8 @@
 										<td>
 											<fmt:formatDate value="${appClientVersion.reportTime}" type="time" timeStyle="full" pattern="yyyy-MM-dd HH:mm"/></td>
 										</td>
-										<td>${appIdOwnerMap[appClientVersion.appId]}</td>
+										<#--<td>${appIdOwnerMap[appClientVersion.appId]}</td>-->
+                                        <td>${appClientVersion.appId}</td>
 									</tr>
 								</#list>
 							</tbody>

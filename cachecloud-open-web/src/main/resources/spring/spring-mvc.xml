@@ -43,6 +43,7 @@
             <mvc:mapping path="/manage/notice/*"/>
             <mvc:mapping path="/import/app/*"/>
             <mvc:mapping path="/manage/config/*"/>
+            <mvc:mapping path="/manage/client/*"/>
             <mvc:mapping path="/data/migrate/*"/>
             <mvc:mapping path="/manage/redisConfig/*"/>
             <mvc:mapping path="/manage/instanceAlert/*"/>
