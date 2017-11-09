@@ -4,21 +4,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>CacheCloud管理后台</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_css.ftl" %>
+
+	<#include "manage/include/cache_cloud_main_css.ftl" >
 		
 </head>
 
 <body class="page-header-fixed">
-	<%@include file="/WEB-INF/jsp/manage/include/head.ftl" %>
 
-	<%@include file="/WEB-INF/jsp/manage/include/left.ftl" %>
-	
-	<%@include file="appDeployDetail.ftl" %>
-	
-	<%@include file="/WEB-INF/jsp/manage/include/foot.ftl" %>
-
-	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_js.ftl" %>
+	<#include "manage/include/head.ftl" >
+	<#include "manage/include/left.ftl" >
+	<#include "manage/appAudit/appDeployDetail.ftl" >
+	<#include "manage/include/foot.ftl" >
+	<#include "manage/include/cache_cloud_main_js.ftl" >
 	
 </body>
 </html>

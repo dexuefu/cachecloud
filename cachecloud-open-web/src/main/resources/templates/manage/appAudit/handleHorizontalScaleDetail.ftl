@@ -1,9 +1,8 @@
 <div class="page-container">
     <div class="page-content">
-    
-        <%@include file="appIntanceReferList.ftl" %>
-    	<%@include file="horizontalScaleProcessList.ftl" %>
 
+    <#include "manage/appAudit/appIntanceReferList.ftl" >
+    <#include "manage/appAudit/horizontalScaleProcessList.ftl" >
 		<div class="row">
 		    <div class="col-md-12">
 		        <h3 class="page-title">

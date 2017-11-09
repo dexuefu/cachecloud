@@ -10,9 +10,9 @@
 					<i class="fa fa-angle-down"></i>
 					</a>
 					<ul class="dropdown-menu">
-						<!--
-						<li><a href="javascript;" data-target="#addUserModal${userInfo.id}" data-toggle="modal"><i class="fa fa-user"></i>修改资料</a></li>
-						-->
+						<#--<!---->
+						<#--<li><a href="javascript;" data-target="#addUserModal${userInfo.id}" data-toggle="modal"><i class="fa fa-user"></i>修改资料</a></li>-->
+						<#--&ndash;&gt;-->
 						<#if userInfo.type == 0>
 							<li><a target="_blank" href="/manage/total/list.do"><i class="fa fa-user"></i>管理后台</a></li>
 							<li><a target="_blank" href="/import/app/init"><i class="fa fa-user"></i>导入应用</a></li>

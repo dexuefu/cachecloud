@@ -1,7 +1,6 @@
 <div class="page-container">
     <div class="page-content">
-        <%@include file="appIntanceReferList.ftl" %>
-
+    <#include "manage/appAudit/appIntanceReferList.ftl" >
         <div class="row">
             <div class="col-md-12">
                 <div class="portlet box light-grey">

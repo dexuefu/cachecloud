@@ -29,7 +29,7 @@
 
 <link href="${base}/js/prettify.css" rel="stylesheet"/>
 <script type="text/javascript" src="${base}/js/prettify.js"></script>
-<%--<script type="text/javascript" src="${base}/js/run_prettify.js"></script>--%>
+<#--<%--<script type="text/javascript" src="${base}/js/run_prettify.js"></script>--%>-->
 
 
 

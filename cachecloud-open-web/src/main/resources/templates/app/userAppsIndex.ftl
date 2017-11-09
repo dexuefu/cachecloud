@@ -39,10 +39,10 @@
         <div class="tab-content">
             <div class="tab-pane active" id="app_stat">
             </div>
-            <!-- 
-             <div class="tab-pane" id="app_fault">
-            </div>
-            -->
+            <#--<!-- -->
+             <#--<div class="tab-pane" id="app_fault">-->
+            <#--</div>-->
+            <#--&ndash;&gt;-->
             <div class="tab-pane" id="app_topology">
             </div>
             <div class="tab-pane" id="app_detail">

@@ -211,7 +211,7 @@
 		</div>
 	</div>
     <c:forEach items="${list}" var="machine">
-        <%@include file="addMachine.ftl" %>
+		<#include "manage/machine/addMachine.ftl" >
     </c:forEach>
-    <%@include file="addMachine.ftl"%>
+	<#include "manage/machine/addMachine.ftl" >
 </div>

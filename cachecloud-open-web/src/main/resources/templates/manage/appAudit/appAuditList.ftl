@@ -161,7 +161,7 @@
 </div>
 
 <c:forEach items="${list}" var="item">
-	<%@include file="addAudit.ftl" %>
+	<#include "manage/appAudit/addAudit.ftl" >
 </c:forEach>
 
 
