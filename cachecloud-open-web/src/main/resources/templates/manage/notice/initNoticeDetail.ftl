@@ -29,14 +29,13 @@
 			<div class="col-md-12">
 				<h3 class="page-title">
 					系统通知管理
-					<c:choose>
-						<c:when test="${success == 1}">
+
+						<#if success == 1>
 							<font color="red">更新成功</font>
-						</c:when>
-						<c:when test="${success == 0}">
+						<#elseif success == 0>
 							<font color="red">更新失败</font>
-						</c:when>
-					</c:choose>
+						</#if>
+
 				</h3>
 			</div>
 		</div>

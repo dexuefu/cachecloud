@@ -24,16 +24,16 @@
 										审核状态:
 									</label>
 									<select name="status">
-										<option value="0" <#if test="${status == 0}">selected="selected"</#if>>
+										<option value="0">
 											待处理列表
 										</option>
-                                        <option value="2" <#if test="${status == 2}">selected="selected"</#if>>
-                                                                                                              审核已处理列表
+                                        <option value="2">
+											审核已处理列表
                                         </option>
-										<option value="1" <#if test="${status == 1}">selected="selected"</#if>>
+										<option value="1">
 											通过列表
 										</option>
-										<option value="-1" <#if test="${status == -1}">selected="selected"</#if>>
+										<option value="-1">
 											驳回列表
 										</option>
 									</select>
@@ -56,100 +56,88 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${list}" var="item">
+								<#list list as item>
 									<tr class="odd gradeX">
 										<td>
-											<c:choose>
-												<c:when test="${item.type == 3}">
+												<#if item.type == 3>
 													无
-												</c:when>
-												<c:otherwise>
-													<a target="_blank" href="/admin/app/index.do?appId=${item.appId}">${item.appId}</a>
-												</c:otherwise>
-											</c:choose>	
+												<#else>
+													<a target="_blank" href="/admin/app/index.do?appId=${item.appIdS}>${item.appId}</a>
+												</#if>
+											
 										</td>
 										<td>
-											<c:choose>
-												<c:when test="${item.type == 3}">
+											
+												<#if item.type == 3>
 													无
-												</c:when>
-												<c:otherwise>
+												<#else>
 													${item.appDesc.name}												
-												</c:otherwise>
-											</c:choose>	
+												</#if>
+											
 										</td>
 										<td>${item.userName}</td>
 										<td>
-											<c:choose>
-												<c:when test="${item.status == 0}">待审</c:when>
-												<c:when test="${item.status == 1}">通过</c:when>
-												<c:when test="${item.status == 2}">审核已处理</c:when>
-												<c:when test="${item.status == -1}">驳回</c:when>
-											</c:choose>
+											
+												<#if item.status == 0>待审</#if>
+												<#if item.status == 1>通过</#if>
+												<#if item.status == 2>审核已处理</#if>
+												<#if item.status == -1>驳回</#if>
+											
 										</td>
 										<td>
-											<c:choose>
-												<c:when test="${item.type == 0}">
+											
+												<#if item.type == 0>
 													应用申请
-												</c:when>
-												<c:when test="${item.type == 1}">
+												</#if>
+												<#if item.type == 1>
 													应用扩容
-												</c:when>
-												<c:when test="${item.type == 2}">
+												</#if>
+												<#if item.type == 2>
 													应用配置修改
-												</c:when>
-												<c:when test="${item.type == 3}">
+												</#if>
+												<#if item.type == 3>
 													注册用户申请
-												</c:when>
-												<c:when test="${item.type == 4}">
+												</#if>
+												<#if item.type == 4>
 													实例配置修改
-												</c:when>
-											</c:choose>	
+												</#if>
+												
 										</td>
 										<td>${item.info}</td>
 										<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm:ss" value="${item.createTime}"/></td>
 										<td>
-											<c:choose>
-												<c:when test="${item.type == 3}">
-													<a onclick="if(window.confirm('确认要通过该申请请求吗?')){return true;}else{return false;}" href="/manage/user/addAuditStatus.do?status=1&appAuditId=${item.id}">[通过]</a>
-												</c:when>
-												<c:otherwise>
-													<c:set var="auditUrl" value="/manage/app/addAuditStatus.do?status=1&appAuditId=${item.id}"/>
-												</c:otherwise>
-											</c:choose>	
-											<c:choose>
-												<c:when test="${item.status == 2}">
-													<a onclick="if(window.confirm('确认要通过该申请请求吗?')){return true;}else{return false;}" href="${auditUrl}">[通过]</a>
-												</c:when>
-											</c:choose>
-											<c:choose>
-												<c:when test="${item.status == 0}">
+												<#if item.type == 3>
+													<a onclick="if(window.confirm('确认要通过该申请请求吗?')){return true;}else{return false;}" href="/manage/user/addAuditStatus.do?status=1&appAuditId=${item.id}>[通过]</a>
+												<#else>
+													<#assign auditUrl="/manage/app/addAuditStatus.do?status=1&appAuditId=${item.id}" >
+												</#if>
+
+												<#if item.status == 2>
+													<a onclick="if(window.confirm('确认要通过该申请请求吗?')){return true;}else{return false;}" href="${auditUrl}>[通过]</a>
+												</#if>
+
+												<#if item.status == 0>
 													<a href="javascript:void(0);" data-target="#appRefuseModal${item.id}" data-toggle="modal">[驳回]</a>
-												</c:when>
-											</c:choose>
-											&nbsp;
-											<c:choose>
-												<c:when test="${item.type == 0}">
-													<c:set var="auditDealUrl" value="/manage/app/initAppDeploy.do?appAuditId=${item.id}"/>
-												</c:when>
-												<c:when test="${item.type == 1}">
-													<c:set var="auditDealUrl" value="/manage/app/initAppScaleApply.do?appAuditId=${item.id}"/>
-												</c:when>
-												<c:when test="${item.type == 2}">
-													<c:set var="auditDealUrl" value="/manage/app/initAppConfigChange.do?appAuditId=${item.id}"/>
-												</c:when>
-												<c:when test="${item.type == 4}">
-													<c:set var="auditDealUrl" value="/manage/instance/initInstanceConfigChange.do?appAuditId=${item.id}"/>
-												</c:when>
-											</c:choose>
-											<c:choose>
-												<c:when test="${item.status == 0 && item.type != 3}">
-													<a href="${auditDealUrl}">[审批处理]</a>
-												</c:when>
-											</c:choose>
+												</#if>
+
+												<#if item.type == 0>
+													<#assign auditDealUrl="/manage/app/initAppDeploy.do?appAuditId=${item.id}">
+												</#if>
+												<#if item.type == 1>
+													<#assign auditDealUrl="/manage/app/initAppScaleApply.do?appAuditId=${item.id}"/>
+												</#if>
+												<#if item.type == 2>
+													<#assign auditDealUrl="/manage/app/initAppConfigChange.do?appAuditId=${item.id}"/>
+												</#if>
+												<#if item.type == 4>
+													<#assign auditDealUrl="/manage/instance/initInstanceConfigChange.do?appAuditId=${item.id}"/>
+												</#if>
+												<#if item.status == 0 && item.type != 3>
+													<a href="${auditDealUrl}>[审批处理]</a>
+												</#if>
 										</td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>
@@ -160,9 +148,9 @@
 	</div>
 </div>
 
-<c:forEach items="${list}" var="item">
+<#list list as item>
 	<#include "manage/appAudit/addAudit.ftl" >
-</c:forEach>
+</#list>
 
 
 

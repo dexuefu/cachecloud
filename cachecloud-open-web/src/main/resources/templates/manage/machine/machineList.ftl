@@ -28,7 +28,7 @@
                                     <label class="control-label">
                                         	机器ip:
                                     </label>
-                                    &nbsp;<input type="text" name="ipLike" id="ipLike" value="${ipLike}" placeholder="机器ip"/>
+                                    &nbsp;<input type="text" name="ipLike" id="ipLike" value="" placeholder="机器ip"/>
                                     &nbsp;<button type="submit" class="btn blue btn-sm">查询</button>
                                 </form>
                             </div>
@@ -52,157 +52,76 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${list}" var="machine">
+								<#list list as machine>
 									<tr class="odd gradeX">
 										<td>
 											<a target="_blank" href="/manage/machine/machineInstances.do?ip=${machine.info.ip}">${machine.info.ip}</a>
 										</td>
 										<td>
-											<c:choose>
-												<c:when test="${machine.memoryUsageRatio == null || machine.memoryUsageRatio == ''}">
+
+												<#if machine.memoryUsageRatio?? || machine.memoryUsageRatio??>
 													收集中..${collectAlert}
-												</c:when>
-												<c:otherwise>
-													<span style="display:none"><fmt:formatNumber value="${machine.memoryUsageRatio / 100}" pattern="0.00"/></span>
-		                                            <div class="progress margin-custom-bottom0">
-			                                            <c:choose>
-							                        		<c:when test="${fmtMemoryUsageRatio >= 80.00}">
-																<c:set var="memUsedProgressBarStatus" value="progress-bar-danger"/>
-							                        		</c:when>
-							                        		<c:otherwise>
-																<c:set var="memUsedProgressBarStatus" value="progress-bar-success"/>
-							                        		</c:otherwise>
-							                        	</c:choose>
-		                                                <fmt:formatNumber var="fmtMemoryUsageRatio" value="${machine.memoryUsageRatio}" pattern="0.00"/>
-		                                                <div class="progress-bar ${memUsedProgressBarStatus}"
-		                                                             role="progressbar" aria-valuenow="${machine.memoryUsageRatio}" aria-valuemax="100"
-		                                                             aria-valuemin="0" style="width: ${machine.memoryUsageRatio}%">
-		                                                    <label style="color: #000000">
-		                                                        <fmt:formatNumber value="${((machine.memoryTotal-machine.memoryFree)/1024/1024/1024)}" pattern="0.00"/>G&nbsp;&nbsp;Used/
-		                                                        <fmt:formatNumber value="${ machine.memoryTotal/1024/1024/1024}" pattern="0.00"/>G&nbsp;&nbsp;Total
-		                                                    </label>
-		                                              	</div>
-		                                             </div>
-												</c:otherwise>
-											</c:choose>
-											
-                                              
+												<#else>
+													哈哈哈
+												</#if>
 										</td>
                                         <td>
-                                        <c:choose>
-											<c:when test="${machine.memoryUsageRatio == null || machine.memoryUsageRatio == ''}">
-												收集中..${collectAlert}
-											</c:when>
-											<c:otherwise>
-												<fmt:formatNumber var="fmtMemoryAllocatedRatio" value="${((machine.memoryAllocated)/1024)*100.0/(machine.memoryTotal/1024/1024/1024)}" pattern="0.00"/>
-	                                        	<span  style="display:none"><fmt:formatNumber value="${fmtMemoryAllocatedRatio / 100}" pattern="0.00"/></span>
-	                                            <div class="progress margin-custom-bottom0">
-	                                            	<c:choose>
-						                        		<c:when test="${fmtMemoryAllocatedRatio >= 80.00}">
-															<c:set var="memAllocateProgressBarStatus" value="progress-bar-danger"/>
-						                        		</c:when>
-						                        		<c:otherwise>
-															<c:set var="memAllocateProgressBarStatus" value="progress-bar-success"/>
-						                        		</c:otherwise>
-						                        	</c:choose>
-	                                                    <div class="progress-bar ${memAllocateProgressBarStatus}"
-	                                                         role="progressbar" aria-valuenow="${fmtMemoryAllocatedRatio}" aria-valuemax="100"
-	                                                         aria-valuemin="0" style="width: ${fmtMemoryAllocatedRatio}%">
-	                                                        <label style="color: #000000">
-	                                                            <fmt:formatNumber value="${((machine.memoryAllocated)/1024)}" pattern="0.00"/>G&nbsp;&nbsp;Used/
-	                                                            <fmt:formatNumber value="${ machine.memoryTotal/1024/1024/1024}" pattern="0.00"/>G&nbsp;&nbsp;Total
-	                                                        </label>
-	                                                    </div>
-	                                                </div>
-											</c:otherwise>
-										</c:choose>
+
+											<#if machine.memoryUsageRatio?? || machine.memoryUsageRatio??>
+                                                收集中..${collectAlert}
+											<#else>
+                                                哈哈哈
+											</#if>
                                             
                                         </td>
 										<td>
-											<c:choose>
-												<c:when test="${machine.cpuUsage == null || machine.cpuUsage == ''}">
-													收集中..${collectAlert}
-												</c:when>
-												<c:otherwise>
-													${machine.cpuUsage}
-												</c:otherwise>
-											</c:choose>
+											<#if machine.memoryUsageRatio?? || machine.memoryUsageRatio??>
+                                                收集中..${collectAlert}
+											<#else>
+												${machine.cpuUsage}
+											</#if>
 										</td>
 										<td>
-											<fmt:formatNumber value="${machine.traffic / 1024 / 1024}" pattern="0.00"/>M
+											${machine.traffic / 1024 / 1024}
 										</td>
 										<td>
-											<c:choose>
-												<c:when test="${machine.load == null || machine.load == ''}">
-													收集中..${collectAlert}
-												</c:when>
-												<c:otherwise>
-													${machine.load}
-												</c:otherwise>
-											</c:choose>
-										</td>
+											<#if machine.load??>
+                                                收集中..${collectAlert}
+											<#else>
+												${machine.load}
+											</#if>
+                                        </td>
+                                        <td></td>
+
+										<td>${machine.modifyTime}</td>
+                                        <td>
+                                        		${machine.info.virtual}
+                                        </td>
+										<td>${machine.info.room}</td>
 										<td>
-											<fmt:formatNumber var="fmtInstanceCpuRatio" value="${machineInstanceCountMap[machine.info.ip] * 100.0 /machine.info.cpu}" pattern="0.00"/>
-	                                        	<span style="display:none"><fmt:formatNumber value="${fmtInstanceCpuRatio / 100}" pattern="0.00"/></span>
-	                                            <div class="progress margin-custom-bottom0">
-	                                            	<c:choose>
-						                        		<c:when test="${fmtInstanceCpuRatio >= 80.00}">
-															<c:set var="instanceCpuProgressBarStatus" value="progress-bar-danger"/>
-						                        		</c:when>
-						                        		<c:otherwise>
-															<c:set var="instanceCpuProgressBarStatus" value="progress-bar-success"/>
-						                        		</c:otherwise>
-						                        	</c:choose>
-	                                                    <div class="progress-bar ${instanceCpuProgressBarStatus}"
-	                                                         role="progressbar" aria-valuenow="${fmtInstanceCpuRatio}" aria-valuemax="100"
-	                                                         aria-valuemin="0" style="width: ${fmtInstanceCpuRatio}%">
-	                                                        <label style="color: #000000">
-	                                                            <fmt:formatNumber value="${machineInstanceCountMap[machine.info.ip]}"/>&nbsp;&nbsp;实例/
-	                                                            <fmt:formatNumber value="${machine.info.cpu}"/>&nbsp;&nbsp;核
-	                                                        </label>
-	                                                    </div>
-	                                                </div>
-										</td>
-										<td><fmt:formatDate value="${machine.modifyTime}" type="time" timeStyle="full" pattern="yyyy-MM-dd HH:mm"/></td>
-                                        <th>
-                                        	<c:choose>
-                                        		<c:when test="${machine.info.virtual == 1}">
-                                        			是
-                                        			<br/>
-                                        			物理机:${machine.info.realIp}
-                                        		</c:when>
-                                        		<c:otherwise>
-                                        			否
-                                        		</c:otherwise>
-                                        	</c:choose>
-                                        </th>
-										<th>${machine.info.room}</th>
-										<th>
 										${machine.info.extraDesc}
-										<#if test="${machine.info.type == 2}">
+										<#if machine.info.type == 2>
 											<font color='red'>(迁移工具机器)</font>
 										</#if>
-										</th>
-                                       	<c:choose>
-                                       		<c:when test="${machine.info.collect == 1}">
+										</td>
+										<td>
+											<#if machine.info.collect == 1>
                                        			<td>开启</td>
-                                       		</c:when>
-                                       		<c:otherwise>
+											<#else>
                                        			<th>关闭</th>
-                                       		</c:otherwise>
-                                       	</c:choose>
+											</#if>
+                                        </td>
                                         <td>
                                         	<a href="/server/index.do?ip=${machine.info.ip}" class="btn btn-info" target="_blank">监控</a>
                                         	&nbsp;
                                             <a href="javascript;" data-target="#addMachineModal${machine.info.id}" class="btn btn-info" data-toggle="modal">修改</a>
                                             &nbsp;
                                             
-                                            <button id="removeMachineBtn${machine.info.id}" onclick="removeMachine(this.id,'${machine.info.ip}')" type="button" class="btn btn-info">删除</button>               
-                                            
+                                            <button id="removeMachineBtn${machine.info.id}" onclick="removeMachine(this.id,'${machine.info.ip}')" type="button" class="btn btn-info">删除</button>
                                             
                                         </td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>
@@ -210,8 +129,8 @@
 			</div>
 		</div>
 	</div>
-    <c:forEach items="${list}" var="machine">
-		<#include "manage/machine/addMachine.ftl" >
-    </c:forEach>
-	<#include "manage/machine/addMachine.ftl" >
+	<#list list as machine>
+		<#include "/manage/machine/addMachine.ftl" >
+	</#list>
+	<#include "/manage/machine/addMachine.ftl" >
 </div>

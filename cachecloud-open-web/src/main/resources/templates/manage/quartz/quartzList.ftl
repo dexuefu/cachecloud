@@ -42,7 +42,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${triggerList}" var="t">
+								<#list triggerList as t>
 									<tr class="odd gradeX">
 										<td>${t.triggerName}</td>
 										<td>${t.triggerGroup}</td>
@@ -52,12 +52,12 @@
                                         <td>${t.startDate}</td>
 										<td>${t.triggerState}</td>
 										<td>
-                                        <#if test="${t.triggerState == 'PAUSED'}">
+                                        <#if t.triggerState == 'PAUSED'>
                                             <a onclick="if(window.confirm('确认恢复吗?!')){return true;}else{return false;}"
                                                href="/manage/quartz/resume.do?name=${t.triggerName}&group=${t.triggerGroup}">[恢复]
                                             </a>
                                         </#if>
-                                        <#if test="${t.triggerState != 'PAUSED'}">
+                                        <#if t.triggerState != 'PAUSED'>
                                             <a onclick="if(window.confirm('确认暂停吗?!')){return true;}else{return false;}"
                                                href="/manage/quartz/pause.do?name=${t.triggerName}&group=${t.triggerGroup}">[暂停]
                                             </a>
@@ -67,7 +67,7 @@
                                         </a>
 										</td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>

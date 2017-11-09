@@ -114,11 +114,11 @@ function saveRedisConfig() {
 		<div class="row">
 			<div class="col-md-12">
 				<h3 class="page-title">
-					<c:choose>
+
 						<c:when test="${type==6}">Redis普通配置</c:when>
 						<c:when test="${type==2}">Redis Cluster</c:when>
 						<c:when test="${type==5}">Redis Sentinel</c:when>
-					</c:choose>
+
 					<a target="_blank" href="/manage/redisConfig/preview?type=${type}" class="btn btn-info" role="button">配置模板 预览</a>
 					
 				</h3>

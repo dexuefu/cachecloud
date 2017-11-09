@@ -40,7 +40,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${appClientVersionList}" var="appClientVersion">
+								<#list appClientVersionList as appClientVersion>
 									<tr class="odd gradeX">
 										<td>
 											<a target="_blank" href="/admin/app/index.do?appId=${appClientVersion.appId}">${appClientVersion.appId}</a>
@@ -55,7 +55,7 @@
 										</td>
 										<td>${appIdOwnerMap[appClientVersion.appId]}</td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>

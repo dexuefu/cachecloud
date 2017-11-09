@@ -40,7 +40,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${clientInstanceExceptionList}" var="clientInstanceException">
+								<#list clientInstanceExceptionList as clientInstanceException>
 									<tr class="odd gradeX">
 										<td>
 											<a target="_blank" href="/admin/app/index.do?appId=${clientInstanceException.appId}">${clientInstanceException.appId}</a>
@@ -53,7 +53,7 @@
 										<td>${clientInstanceException.exceptionCount}</td>
 										<td>${appIdOwnerMap[clientInstanceException.appId]}</td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>

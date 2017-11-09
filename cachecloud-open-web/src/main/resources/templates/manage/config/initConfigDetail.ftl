@@ -4,14 +4,13 @@
 			<div class="col-md-12">
 				<h3 class="page-title">
 					配置修改 
-					<c:choose>
-						<c:when test="${success == 1}">
+
+						<#if success == 1>
 							<font color="red">更新成功</font>
-						</c:when>
-						<c:when test="${success == 0}">
+						<#elseif success == 0>
 							<font color="red">更新失败</font>
-						</c:when>
-					</c:choose>
+						</#if>
+
 				</h3>
 			</div>
 		</div>
@@ -35,40 +34,37 @@
 									<form action="/manage/config/update.do" method="post" class="form-horizontal form-bordered form-row-stripped">
 										<div class="form-body">
 											
-											<c:forEach items="${configList}" var="config" varStatus="stats">
+											<#list configList as config>
 												<div class="form-group">
 													<label class="control-label col-md-3">
 														${config.info}<font color='red'>(*)</font>:
 													</label>
 													<div class="col-md-5">
-														<c:choose>
-															<c:when test="${config.configKey == 'cachecloud.whether.schedule.clean.data'}">
+															<#if config.configKey == 'cachecloud.whether.schedule.clean.data'>
 																<select name="${config.configKey}" class="form-control">
-																	<option value="false" <#if test="${config.configValue == 'false'}">selected</#if>>
+																	<option value="false" <#if config.configValue == 'false'>selected</#if>>
 																		否
 																	</option>
-																	<option value="true" <#if test="${config.configValue == 'true'}">selected</#if>>
+																	<option value="true" <#if config.configValue == 'true'>selected</#if>>
 																		是
 																	</option>
 																</select>
-															</c:when>
-															<c:when test="${config.configKey == 'cachecloud.user.login.type'}">
+															<#elseif config.configKey == 'cachecloud.user.login.type'>
 																<select name="${config.configKey}" class="form-control">
-																	<option value="1" <#if test="${config.configValue == '1'}">selected</#if>>
+																	<option value="1" <#if config.configValue == '1'>selected</#if>>
 																		session
 																	</option>
-																	<option value="2" <#if test="${config.configValue == '2'}">selected</#if>>
+																	<option value="2" <#if config.configValue == '2'>selected</#if>>
 																		cookie
 																	</option>
 																</select>
-															</c:when>
-															<c:otherwise>
+
+															<#else>
 																<input type="text" name="${config.configKey}" class="form-control" value="${config.configValue}" />
-															</c:otherwise>
-														</c:choose>
+															</#if>
 													</div>
 												</div>
-											</c:forEach>
+											</#list>
 											
 											<div class="form-actions fluid">
 												<div class="row">

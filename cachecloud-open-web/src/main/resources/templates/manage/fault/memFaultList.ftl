@@ -26,7 +26,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${faults}" var="item">
+								<#list faults as item>
 									<tr class="odd gradeX">
 										<td>${item.appId}</td>
 										<td>2</td>
@@ -39,7 +39,7 @@
 										<td>7</td>
 										<td>${item.reason}</td>
 									</tr>
-								</c:forEach>
+								</#list>
 								
 							</tbody>
 						</table>

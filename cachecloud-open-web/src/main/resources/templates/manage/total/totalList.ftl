@@ -63,29 +63,13 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach items="${appDetailList}" var="appDetail">
+                            <#list appDetailList as appDetail>
                                 <tr class="odd gradeX">
                                     <td>
-                                        <c:choose>
-                                            <c:when test="${appDetail.appDesc.status == 0 or appDetail.appDesc.status == 1}">
-                                                ${appDetail.appDesc.appId}
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 2 or appDetail.appDesc.status == 3 or appDetail.appDesc.status == 4}">
-                                                <a target="_blank"
-                                                   href="/manage/app/index.do?appId=${appDetail.appDesc.appId}">${appDetail.appDesc.appId}</a>
-                                            </c:when>
-                                        </c:choose>
+                                        ${appDetail.appDesc.appId}
                                     </td>
                                     <td>
-                                        <c:choose>
-                                            <c:when test="${appDetail.appDesc.status == 0 or appDetail.appDesc.status == 1}">
-                                                ${appDetail.appDesc.name}
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 2 or appDetail.appDesc.status == 3 or appDetail.appDesc.status == 4}">
-                                                <a target="_blank"
-                                                   href="/admin/app/index.do?appId=${appDetail.appDesc.appId}">${appDetail.appDesc.name}</a>
-                                            </c:when>
-                                        </c:choose>
+                                        ${appDetail.appDesc.name}
                                     </td>
                                     <td>
                                         ${appDetail.appDesc.typeDesc}
@@ -93,15 +77,7 @@
                                     <td>
                                     	<span style="display:none"><fmt:formatNumber value="${appDetail.memUsePercent / 100}" pattern="0.00"/></span>
                                         <div class="progress margin-custom-bottom0">
-                                        	<c:choose>
-				                        		<c:when test="${appDetail.memUsePercent >= 80}">
-													<c:set var="progressBarStatus" value="progress-bar-danger"/>
-				                        		</c:when>
-				                        		<c:otherwise>
-													<c:set var="progressBarStatus" value="progress-bar-success"/>
-				                        		</c:otherwise>
-				                        	</c:choose>
-                                            <div class="progress-bar ${progressBarStatus}"
+                                            <div class="progress-bar progress-bar-danger progress-bar-success"
                                                  role="progressbar" aria-valuenow="${appDetail.memUsePercent}"
                                                  aria-valuemax="100"
                                                  aria-valuemin="0" style="width: ${appDetail.memUsePercent}%">
@@ -115,58 +91,26 @@
                                     </td>
                                     <td>
                                     	<span style="display:none"><fmt:formatNumber value="${appDetail.hitPercent / 100}" pattern="0.00"/></span>
-                                        <c:choose>
-                                            <c:when test="${appDetail.hitPercent <= 0}">
-                                                	无
-                                            </c:when>
-                                            <c:when test="${appDetail.hitPercent <= 30}">
-                                                <label class="label label-danger">${appDetail.hitPercent}%</label>
-                                            </c:when>
-                                            <c:when test="${appDetail.hitPercent >= 30 && appDetail.hitPercent < 50}">
-                                                <label class="label label-warning">${appDetail.hitPercent}%</label>
-                                            </c:when>
-                                            <c:when test="${appDetail.hitPercent >= 50 && appDetail.hitPercent < 90}">
-                                                <label class="label label-info">${appDetail.hitPercent}%</label>
-                                            </c:when>
-                                            <c:otherwise>
-                                                <label class="label label-success">${appDetail.hitPercent}%</label>
-                                            </c:otherwise>
-                                        </c:choose>
+                                        <<label class="label label-success">${appDetail.hitPercent}%</label>
                                     </td>
                                     <td>${appDetail.appDesc.appRunDays}</td>
                                     <td>
-                                        <c:choose>
-                                            <c:when test="${appDetail.appDesc.status == 0}">
-                                                <font color="red">未申请</font>
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 1}">
-                                                <font color="red">申请中</font>
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 2}">
-                                                                                                                        运行中
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 3}">
-                                                <font color="red">已下线</font>
-                                            </c:when>
-                                            <c:when test="${appDetail.appDesc.status == 4}">
-                                                <font color="red">驳回</font>
-                                            </c:when>
-                                        </c:choose>
+                                        ${appDetail.appDesc.status}
                                     </td>
                                     <td>
-                                        <c:choose>
-                                            <c:when test="${appDetail.appDesc.status == 2}">
+
+                                            <#if appDetail.appDesc.status == 2>
                                                 <button type="button" class="btn btn-small btn-primary" id="offline${appDetail.appDesc.appId}"
                                                         onclick="offLine(${appDetail.appDesc.appId})">应用下线
                                                 </button>
                                                 
                                                 <a target="_blank" type="button" class="btn btn-small btn-primary" href="/manage/app/index.do?appId=${appDetail.appDesc.appId}">应用运维</a>
-                                                
-                                            </c:when>
-                                        </c:choose>
+
+                                            </#if>
+
                                     </td>
                                 </tr>
-                            </c:forEach>
+                            </#list>
                             </tbody>
                         </table>
                     </div>

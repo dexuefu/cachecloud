@@ -64,10 +64,10 @@
 									</label>
 									<div class="col-md-5">
 										<select name="type" id="type${userInfo.id}" class="form-control select2_category">
-											<option value="0" <#if test="${userInfo.type == 0}">selected="selected"</#if>>
+											<option value="0" <#if userInfo.type == 0>selected="selected"</#if>>
 												管理员
 											</option>
-											<option value="2" <#if test="${userInfo.type == 2}">selected="selected"</#if>>
+											<option value="2" <#if userInfo.type == 2>selected="selected"</#if>>
 												普通用户
 											</option>
 										</select>

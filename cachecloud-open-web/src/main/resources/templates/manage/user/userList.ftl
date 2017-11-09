@@ -46,7 +46,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${users}" var="user">
+								<#list users as user>
 									<tr class="odd gradeX">
 										<td>${user.id}</td>
 										<td>${user.name}</td>
@@ -54,10 +54,8 @@
 										<td>${user.email}</td>
 										<td>${user.mobile}</td>
 										<td>
-											<c:choose>
-												<c:when test="${user.type == 0 }">管理员</c:when>
-												<c:when test="${user.type == 2 }">普通用户</c:when>
-											</c:choose>
+												<#if user.type == 0 >管理员</#if>
+												<#if user.type == 2 >普通用户</#if>
 										</td>
 										<td>
 										<a href="javascript;" data-target="#addUserModal${user.id}" data-toggle="modal">[修改]</a>
@@ -65,7 +63,7 @@
 										<a onclick="if(window.confirm('确认要删除该用户吗?!')){return true;}else{return false;}" href="/manage/user/delete.do?userId=${user.id}">[删除]</a>
 										</td>
 									</tr>
-								</c:forEach>
+								</#list>
 							</tbody>
 						</table>
 					</div>
