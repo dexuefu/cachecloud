@@ -3,9 +3,9 @@
 <head>
     <title>CacheCloud客户端信息</title>
     <#include "include/head.jsp"/>
-    <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
-    <script type="text/javascript" src="/resources/js/chart.js"></script>
-    <script type="text/javascript" src="/resources/js/appClient.js"></script>
+    <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
+    <script type="text/javascript" src="${base}/js/chart.js"></script>
+    <script type="text/javascript" src="${base}/js/appClient.js"></script>
 
 </head>
 <body role="document">
@@ -50,6 +50,6 @@
 	        $("a[href=#app_client_cost_distribute]").click();
 	    }
 	</script>
-	<script type="text/javascript" src="/resources/js/docs.min.js"></script>
+	<script type="text/javascript" src="${base}/js/docs.min.js"></script>
 </body>
 </html>

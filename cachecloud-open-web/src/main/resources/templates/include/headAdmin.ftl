@@ -2,7 +2,7 @@
 	<div class="header-inner">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="/manage/total/list.do">
-				<img src="/resources/manage/img/logo_new.png" alt="logo" class="img-responsive" />
+				<img src="${base}/manage/img/logo_new.png" alt="logo" class="img-responsive" />
 			</a>
         </div>
 		

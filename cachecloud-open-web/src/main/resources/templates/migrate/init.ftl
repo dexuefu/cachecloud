@@ -3,7 +3,7 @@
 <head>
     <title>迁移数据</title>
     <#include "include/head.jsp"/>
-    <script type="text/javascript" src="/resources/js/myPopover.js"></script>
+    <script type="text/javascript" src="${base}/js/myPopover.js"></script>
     <script type="text/javascript">
     
     	function changeDataType(appIdId,serversId, choose) {

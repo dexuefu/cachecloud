@@ -1,7 +1,7 @@
 <#include "include/head.jsp"/>
-<script type="text/javascript" src="/resources/js/jquery-console.js"></script>
-<script type="text/javascript" src="/resources/js/chart.js"></script>
-<script type="text/javascript" src="/resources/js/appClient.js"></script>
+<script type="text/javascript" src="${base}/js/jquery-console.js"></script>
+<script type="text/javascript" src="${base}/js/chart.js"></script>
+<script type="text/javascript" src="${base}/js/appClient.js"></script>
 
 <script type="text/javascript">
 var startDate = '${startDate}';

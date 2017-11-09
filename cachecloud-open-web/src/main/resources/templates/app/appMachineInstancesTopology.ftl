@@ -48,6 +48,6 @@
     </div>
     
 </div>
-<script type="text/javascript" src="/resources/js/myPopover.js"></script>
+<script type="text/javascript" src="${base}/js/myPopover.js"></script>
 
 

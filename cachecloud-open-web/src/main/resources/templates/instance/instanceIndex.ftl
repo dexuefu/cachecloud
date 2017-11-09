@@ -3,7 +3,7 @@
 <head>
     <title>实例统计信息</title>
     <#include "include/head.jsp"/>
-    <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
+    <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
 </head>
 <body role="document">
 <div class="container">
@@ -18,7 +18,7 @@
             <li><a href="#app_topology" data-url="/admin/app/topology.html?appId=${appId}"
                    data-toggle="tab">拓扑结构</a>
             </li>
-            <#if test="${type == 2 or type == 6}">
+            <#if type == 2 || type == 6>
             <li><a href="#instance_slowSelect" data-url="/admin/instance/slowSelect.html?instanceId=${instanceId}"
                    data-toggle="tab">慢查询分析</a>
             </li>
@@ -63,8 +63,8 @@
     </div>
 </div>
 <#include "include/foot.jsp"/>
-<script src="/resources/js/chart.js"></script>
-<script type="text/javascript" src="/resources/js/mem-cloud.js"></script>
+<script src="${base}/js/chart.js"></script>
+<script type="text/javascript" src="${base}/js/mem-cloud.js"></script>
 <script type="text/javascript">
     $('#instance_tabs a').click(function (e) {
         e.preventDefault();

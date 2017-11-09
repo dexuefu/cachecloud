@@ -1,4 +1,4 @@
-<script src="/resources/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="${base}/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 <div id="leftMenu" class="page-sidebar navbar-collapse collapse">
 	<ul class="page-sidebar-menu">
 		<li>

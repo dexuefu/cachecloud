@@ -3,7 +3,7 @@
 <head>
     <title>CacheCloud应用运维</title>
     <#include "include/head.jsp"/>
-    <script type="text/javascript" src="/resources/js/jquery-console.js"></script>
+    <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
 
 </head>
 <body role="document">
@@ -49,6 +49,6 @@
     }
 
 </script>
-<script type="text/javascript" src="/resources/js/docs.min.js"></script>
+<script type="text/javascript" src="${base}/js/docs.min.js"></script>
 </body>
 </html>

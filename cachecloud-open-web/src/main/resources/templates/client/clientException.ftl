@@ -104,8 +104,8 @@ function search() {
         </div>
     </div>      		
 </div>
-<script src="/resources/bootstrap/paginator/bootstrap-paginator.js"></script>
-<script src="/resources/bootstrap/paginator/custom-pagenitor.js"></script>
+<script src="${base}/bootstrap/paginator/bootstrap-paginator.js"></script>
+<script src="${base}/bootstrap/paginator/custom-pagenitor.js"></script>
 <script type="text/javascript">
     $(function(){
     	//分页点击函数
