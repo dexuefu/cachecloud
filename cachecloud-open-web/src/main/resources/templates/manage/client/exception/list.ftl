@@ -5,18 +5,18 @@
 	<title>CacheCloud管理后台</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_css.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_css.ftl" %>
 
 </head>
 
 <body class="page-header-fixed">
-	<%@include file="/WEB-INF/jsp/manage/include/head.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/head.ftl" %>
 
-	<%@include file="/WEB-INF/jsp/manage/include/left.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/left.ftl" %>
 
-	<%@include file="statList.jsp" %>
+	<%@include file="statList.ftl" %>
 	
-	<%@include file="/WEB-INF/jsp/manage/include/foot.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/foot.ftl" %>
 
 	<script src="${base}/manage/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
 	<script src="${base}/manage/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>

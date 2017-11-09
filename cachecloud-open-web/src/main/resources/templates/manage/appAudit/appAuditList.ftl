@@ -161,7 +161,7 @@
 </div>
 
 <c:forEach items="${list}" var="item">
-	<%@include file="addAudit.jsp" %>
+	<%@include file="addAudit.ftl" %>
 </c:forEach>
 
 

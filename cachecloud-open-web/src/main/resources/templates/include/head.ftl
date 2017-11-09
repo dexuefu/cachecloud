@@ -1,4 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<#assign base = request.contextPath />
 <!-- ie8 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="${base}/bootstrap/bootstrap3/css/bootstrap.min.css" rel="stylesheet">

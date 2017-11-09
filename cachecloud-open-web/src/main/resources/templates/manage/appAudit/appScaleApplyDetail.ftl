@@ -1,6 +1,6 @@
 <div class="page-container">
     <div class="page-content">
-        <%@include file="appIntanceReferList.jsp" %>
+        <%@include file="appIntanceReferList.ftl" %>
 
         <div class="row">
             <div class="col-md-12">

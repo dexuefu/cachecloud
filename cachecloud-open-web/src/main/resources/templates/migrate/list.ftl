@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>迁移数据记录列表</title>
-    <#include "include/head.jsp"/>
+    <#include "include/head.ftl"/>
     <script type="text/javascript">
     	function stopMigrate(id) {
     		if(window.confirm("确认要停掉id="+id+"的迁移任务吗?")) {
@@ -23,7 +23,7 @@
 </head>
 <body role="document">
 	<div class="container">
-	    <#include "include/headMenu.jsp"/>
+	    <#include "include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 	    
@@ -183,7 +183,7 @@
 	    
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.jsp"/>
+	<#include "include/foot.ftl"/>
 </body>
 </html>
 

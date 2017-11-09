@@ -22,7 +22,7 @@
 <div class="page-container">
 	<div class="page-content">
 	
-		<%@include file="machineReferList.jsp" %>
+		<%@include file="machineReferList.ftl" %>
 		
 		<div class="row">
 			<div class="col-md-12">

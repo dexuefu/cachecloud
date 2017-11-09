@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <title>实例统计信息</title>
-    <#include "include/head.jsp"/>
+    <#include "include/head.ftl"/>
     <script type="text/javascript" src="${base}/js/jquery-console.js"></script>
 </head>
 <body role="document">
 <div class="container">
-    <#include "include/headMenu.jsp"/>
+    <#include "include/headMenu.ftl"/>
     <div id="systemAlert">
     </div>
     <div class="tabbable-custom">
@@ -62,7 +62,7 @@
         </div>
     </div>
 </div>
-<#include "include/foot.jsp"/>
+<#include "include/foot.ftl"/>
 <script src="${base}/js/chart.js"></script>
 <script type="text/javascript" src="${base}/js/mem-cloud.js"></script>
 <script type="text/javascript">

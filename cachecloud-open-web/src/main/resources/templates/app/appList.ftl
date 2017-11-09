@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<#assign base = request.contextPath />
     <title>CacheCloud应用列表</title>
     <#include "/include/head.ftl">
     <script type="text/javascript">

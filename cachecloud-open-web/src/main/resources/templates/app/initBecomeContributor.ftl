@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>成为cachecloud贡献者</title>
-    <#include "include/head.jsp"/>
+    <#include "include/head.ftl"/>
     <script type="text/javascript">
     	function applyBecomeContributor(){
     		var groupName = document.getElementById("groupName");
@@ -44,7 +44,7 @@
 </head>
 <body>
 	<div class="container">
-	    <#include "include/headMenu.jsp"/>
+	    <#include "include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.jsp"/>
+	<#include "include/foot.ftl"/>
 </body>
 </html>
 

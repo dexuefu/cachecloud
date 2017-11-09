@@ -5,20 +5,20 @@
 	<title>CacheCloud管理后台</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_css.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_css.ftl" %>
 		
 </head>
 
 <body class="page-header-fixed">
-	<%@include file="/WEB-INF/jsp/manage/include/head.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/head.ftl" %>
 
-	<%@include file="/WEB-INF/jsp/manage/include/left.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/left.ftl" %>
 	
-	<%@include file="memFaultList.jsp" %>
+	<%@include file="memFaultList.ftl" %>
 	
-	<%@include file="/WEB-INF/jsp/manage/include/foot.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/foot.ftl" %>
 
-	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_js.jsp" %>
+	<%@include file="/WEB-INF/jsp/manage/include/cache_cloud_main_js.ftl" %>
 	
 </body>
 </html>

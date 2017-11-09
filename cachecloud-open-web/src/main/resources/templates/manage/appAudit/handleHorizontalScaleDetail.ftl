@@ -1,8 +1,8 @@
 <div class="page-container">
     <div class="page-content">
     
-        <%@include file="appIntanceReferList.jsp" %>
-    	<%@include file="horizontalScaleProcessList.jsp" %>
+        <%@include file="appIntanceReferList.ftl" %>
+    	<%@include file="horizontalScaleProcessList.ftl" %>
 
 		<div class="row">
 		    <div class="col-md-12">

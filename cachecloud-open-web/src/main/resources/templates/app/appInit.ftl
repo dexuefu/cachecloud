@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>申请应用</title>
-    <#include "include/head.jsp"/>
+    <#include "include/head.ftl"/>
 </head>
 <body role="document">
 	<div class="container">
-	    <#include "include/headMenu.jsp"/>
+	    <#include "include/headMenu.ftl"/>
 	    <div id="systemAlert">
 	    </div>
 		<div class="page-content">
@@ -242,7 +242,7 @@
 		</div>
 	</div>
 	<br/><br/><br/><br/><br/><br/><br/>
-	<#include "include/foot.jsp"/>
+	<#include "include/foot.ftl"/>
 </body>
 </html>
 

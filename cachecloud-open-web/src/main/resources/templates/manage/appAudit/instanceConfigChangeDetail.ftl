@@ -1,7 +1,7 @@
 <div class="page-container">
 	<div class="page-content">
 		
-		<%@include file="instanceConfig.jsp" %>
+		<%@include file="instanceConfig.ftl" %>
 		
 		<div class="row">
 			<div class="col-md-12">
