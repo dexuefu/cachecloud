@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.sohu.cache.entity.*;
+import com.sohu.cache.redis.enums.InstanceAlertTypeEnum;
+import com.sohu.cache.web.util.VelocityUtils;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.time.DateUtils;
@@ -38,17 +41,10 @@ import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceAlertConfigDao;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceStatsDao;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.InstanceAlertConfig;
-import com.sohu.cache.entity.InstanceAlertValueResult;
-import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.entity.StandardStats;
-import com.sohu.cache.redis.enums.InstanceAlertTypeEnum;
 import com.sohu.cache.redis.enums.RedisAlertConfigEnum;
 import com.sohu.cache.stats.instance.InstanceAlertConfigService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.component.EmailComponent;
-import com.sohu.cache.web.util.VelocityUtils;
 
 /**
  * @author leifu

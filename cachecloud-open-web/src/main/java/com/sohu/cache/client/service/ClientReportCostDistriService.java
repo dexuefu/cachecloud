@@ -35,7 +35,7 @@ public interface ClientReportCostDistriService {
      * @return
      */
     List<AppClientCostTimeStat> getAppCommandClientToInstanceStat(Long appId, String command, Long instanceId,
-            String clientIp, long startTime, long endTime);
+                                                                  String clientIp, long startTime, long endTime);
     
     /**
      * 获取一个应用一段时间内某个命令的统计信息

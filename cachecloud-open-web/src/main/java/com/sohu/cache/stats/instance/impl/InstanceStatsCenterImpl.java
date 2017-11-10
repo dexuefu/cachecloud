@@ -75,7 +75,7 @@ public class InstanceStatsCenterImpl implements InstanceStatsCenter {
 
     @Override
     public List<InstanceCommandStats> getCommandStatsList(Long instanceId, long beginTime, long endTime,
-            String commandName) {
+                                                          String commandName) {
         if (instanceId == null) {
             return Collections.emptyList();
         }

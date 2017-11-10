@@ -7,7 +7,6 @@ import javax.annotation.Resource;
 import org.junit.Test;
 
 import com.sohu.cache.dao.AppClientVersionDao;
-import com.sohu.cache.entity.AppClientVersion;
 import com.sohu.test.BaseTest;
 
 public class AppClientVersionDaoTest extends BaseTest{

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>成为cachecloud贡献者</title>
-    <#include "include/head.ftl"/>
+    <#include "/include/head.ftl"/>
     <script type="text/javascript">
     	function applyBecomeContributor(){
     		var groupName = document.getElementById("groupName");

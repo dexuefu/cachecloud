@@ -9,6 +9,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.entity.SystemConfig;
+import com.sohu.cache.web.util.AppEmailUtil;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
@@ -16,11 +19,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sohu.cache.entity.AppUser;
-import com.sohu.cache.entity.SystemConfig;
 import com.sohu.cache.web.enums.SuccessEnum;
 import com.sohu.cache.web.service.ConfigService;
-import com.sohu.cache.web.util.AppEmailUtil;
 
 /**
  * cachecloud配置管理

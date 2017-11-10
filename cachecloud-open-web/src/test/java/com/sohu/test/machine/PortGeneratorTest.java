@@ -7,7 +7,6 @@ import javax.annotation.Resource;
 import org.junit.Test;
 
 import com.sohu.cache.dao.MachineDao;
-import com.sohu.cache.entity.MachineInfo;
 import com.sohu.cache.exception.SSHException;
 import com.sohu.cache.machine.PortGenerator;
 import com.sohu.cache.ssh.SSHUtil;

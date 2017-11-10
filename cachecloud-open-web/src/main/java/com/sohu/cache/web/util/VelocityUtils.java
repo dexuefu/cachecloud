@@ -49,8 +49,8 @@ public class VelocityUtils {
      * @param templatePath  模板路径
      * @param customCharset 编码
      */
-    public synchronized static String createText(VelocityEngine engine, AppDesc appDesc, AppAudit appAudit, AppDailyData appDailyData, 
-            List<InstanceAlertValueResult> instanceAlertValueResultList, String templatePath, String customCharset) {
+    public synchronized static String createText(VelocityEngine engine, AppDesc appDesc, AppAudit appAudit, AppDailyData appDailyData,
+                                                 List<InstanceAlertValueResult> instanceAlertValueResultList, String templatePath, String customCharset) {
         if (!StringUtils.isEmpty(customCharset)) {
             charset = customCharset;
         }

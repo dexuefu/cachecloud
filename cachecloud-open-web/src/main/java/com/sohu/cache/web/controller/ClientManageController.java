@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.google.common.collect.Lists;
+import com.sohu.cache.entity.AppClientVersion;
+import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.AppUser;
-import com.sohu.cache.util.StringUtil;
+import com.sohu.cache.entity.ClientInstanceException;
 import org.apache.commons.lang.math.NumberUtils;
 import org.apache.commons.lang.time.DateUtils;
 import org.springframework.stereotype.Controller;
@@ -22,9 +24,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.client.service.ClientReportExceptionService;
 import com.sohu.cache.client.service.ClientVersionService;
-import com.sohu.cache.entity.AppClientVersion;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.ClientInstanceException;
 import com.sohu.cache.web.enums.SuccessEnum;
 
 /**

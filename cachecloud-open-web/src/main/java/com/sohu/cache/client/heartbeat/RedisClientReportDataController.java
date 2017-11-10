@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.web.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,6 @@ import com.sohu.cache.constant.ClientStatusEnum;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.JsonUtil;
 import com.sohu.cache.web.service.AppService;
-import com.sohu.cache.web.util.IpUtil;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.model.ClientReportBean;
 

@@ -15,9 +15,9 @@
 					<h3 class="page-header">
 						申请应用
 						<font color='red' size="4">
-							<c:choose>
-								<c:when test="${success == 1}">(更新成功)</c:when>
-							</c:choose>
+
+								<#if success == 1>(更新成功)</#if>
+
 						</font>
 					</h3>
 				</div>

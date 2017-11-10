@@ -10,12 +10,12 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.sohu.cache.entity.MachineStats;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sohu.cache.entity.MachineStats;
 import com.sohu.cache.exception.IllegalParamException;
 import com.sohu.cache.exception.SSHException;
 import com.sohu.cache.ssh.SSHTemplate.DefaultLineProcessor;
@@ -56,8 +56,8 @@ public class SSHUtil {
      * @throws Exception
      * @since 1.0.0
      */
-    public static MachineStats getMachineInfo(String ip, int port, String userName, 
-    		String password) throws SSHException {
+    public static MachineStats getMachineInfo(String ip, int port, String userName,
+                                              String password) throws SSHException {
         if (StringUtil.isBlank(ip)) {
             try {
                 throw new IllegalParamException("Param ip is empty!");

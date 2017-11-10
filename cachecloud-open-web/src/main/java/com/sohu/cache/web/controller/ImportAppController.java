@@ -6,6 +6,8 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.entity.AppDesc;
+import com.sohu.cache.entity.AppUser;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.ImportAppResult;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.stats.app.ImportAppCenter;
 
 /**

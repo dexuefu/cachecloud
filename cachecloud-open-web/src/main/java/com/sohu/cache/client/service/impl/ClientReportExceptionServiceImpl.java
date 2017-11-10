@@ -6,6 +6,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import com.sohu.cache.entity.AppClientExceptionStat;
+import com.sohu.cache.entity.AppClientVersion;
+import com.sohu.cache.entity.ClientInstanceException;
+import com.sohu.cache.entity.InstanceInfo;
+import com.sohu.cache.web.util.Page;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
@@ -17,11 +22,6 @@ import com.sohu.cache.client.service.ClientReportExceptionService;
 import com.sohu.cache.client.service.ClientReportInstanceService;
 import com.sohu.cache.dao.AppClientExceptionStatDao;
 import com.sohu.cache.dao.AppClientVersionDao;
-import com.sohu.cache.entity.AppClientExceptionStat;
-import com.sohu.cache.entity.AppClientVersion;
-import com.sohu.cache.entity.ClientInstanceException;
-import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.web.util.Page;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.enums.ClientCollectDataTypeEnum;
 import com.sohu.tv.jedis.stat.enums.ClientExceptionType;
@@ -57,7 +57,7 @@ public class ClientReportExceptionServiceImpl implements ClientReportExceptionSe
 
     @Override
     public List<AppClientExceptionStat> getAppExceptionList(Long appId, long startTime, long endTime, int type,
-            String clientIp, Page page) {
+                                                            String clientIp, Page page) {
         try {
             return appClientExceptionStatDao.getAppExceptionList(appId, startTime, endTime, type, clientIp, page);
         } catch (Exception e) {

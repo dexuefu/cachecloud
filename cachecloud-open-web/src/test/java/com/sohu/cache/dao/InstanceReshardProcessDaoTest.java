@@ -6,7 +6,6 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 
-import com.sohu.cache.entity.InstanceReshardProcess;
 import com.sohu.test.BaseTest;
 
 /**

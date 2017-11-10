@@ -2,11 +2,10 @@ package com.sohu.cache.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.sohu.cache.entity.AppClientExceptionStat;
 import com.sohu.cache.entity.ClientInstanceException;
 import com.sohu.cache.web.util.Page;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 客户端异常dao

@@ -2,10 +2,10 @@ package com.sohu.cache.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.sohu.cache.entity.ServerInfo;
 import com.sohu.cache.entity.ServerStatus;
+import org.apache.ibatis.annotations.Param;
+
 import com.sohu.cache.server.data.Server;
 
 /**
@@ -56,8 +56,8 @@ public interface ServerStatusDao {
 	 * @param date
 	 * @return List<ServerStatus>
 	 */
-	public List<ServerStatus> queryServerOverview(@Param("ip") String ip, 
-			@Param("cdate") String date);
+	public List<ServerStatus> queryServerOverview(@Param("ip") String ip,
+												  @Param("cdate") String date);
 	
 	/**
 	 * 查询服务器状态

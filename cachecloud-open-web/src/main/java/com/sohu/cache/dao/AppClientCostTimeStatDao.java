@@ -2,9 +2,8 @@ package com.sohu.cache.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.sohu.cache.entity.AppClientCostTimeStat;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 客户端耗时dao
@@ -32,8 +31,8 @@ public interface AppClientCostTimeStatDao {
      * @return
      */
     List<AppClientCostTimeStat> getAppCommandClientToInstanceStat(@Param("appId") Long appId,
-            @Param("command") String command, @Param("instanceId") long instanceId,
-            @Param("clientIp") String clientIp, @Param("startTime") long startTime, @Param("endTime") long endTime);
+                                                                  @Param("command") String command, @Param("instanceId") long instanceId,
+                                                                  @Param("clientIp") String clientIp, @Param("startTime") long startTime, @Param("endTime") long endTime);
 
     /**
      * 批量更新

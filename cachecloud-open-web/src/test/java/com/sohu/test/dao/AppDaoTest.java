@@ -3,8 +3,6 @@ package com.sohu.test.dao;
 import java.util.List;
 
 import com.sohu.cache.dao.AppDao;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.AppSearch;
 import com.sohu.test.BaseTest;
 
 import org.junit.Test;

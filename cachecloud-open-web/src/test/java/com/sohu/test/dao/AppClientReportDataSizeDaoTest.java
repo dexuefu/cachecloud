@@ -7,7 +7,6 @@ import javax.annotation.Resource;
 import org.junit.Test;
 
 import com.sohu.cache.dao.AppClientReportDataSizeDao;
-import com.sohu.cache.entity.AppClientDataSizeStat;
 import com.sohu.test.BaseTest;
 
 /**

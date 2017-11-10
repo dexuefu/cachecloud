@@ -2,9 +2,8 @@ package com.sohu.cache.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.sohu.cache.entity.SystemConfig;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * 配置修改dao

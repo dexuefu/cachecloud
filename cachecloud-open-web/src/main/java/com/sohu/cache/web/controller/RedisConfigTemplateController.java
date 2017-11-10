@@ -7,6 +7,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.entity.InstanceConfig;
+import com.sohu.cache.web.util.AppEmailUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;
@@ -16,12 +19,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.RedisConfigTemplateChangeEnum;
-import com.sohu.cache.entity.AppUser;
-import com.sohu.cache.entity.InstanceConfig;
 import com.sohu.cache.redis.RedisConfigTemplateService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.enums.SuccessEnum;
-import com.sohu.cache.web.util.AppEmailUtil;
 
 /**
  * Redis配置模板管理

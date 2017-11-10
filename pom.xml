@@ -11,6 +11,8 @@
         <module>cachecloud-open-web</module>
         <module>cachecloud-open-client</module>
         <module>cachecloud-open-common</module>
+        <module>cachecloud-open-service</module>
+        <module>cachecloud-open-entity</module>
     </modules>
 
     <properties>

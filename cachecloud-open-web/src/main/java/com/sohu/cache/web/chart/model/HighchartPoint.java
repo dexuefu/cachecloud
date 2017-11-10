@@ -3,11 +3,10 @@ package com.sohu.cache.web.chart.model;
 import java.text.ParseException;
 import java.util.Date;
 
-import org.apache.commons.lang.time.DateUtils;
-
 import com.sohu.cache.entity.AppCommandStats;
 import com.sohu.cache.entity.AppStats;
 import com.sohu.cache.web.util.DateUtil;
+import org.apache.commons.lang.time.DateUtils;
 
 /**
  * highchart最简单的点

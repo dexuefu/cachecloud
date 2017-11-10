@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import com.sohu.cache.constant.AppAuditLogTypeEnum;
 import com.sohu.cache.dao.AppAuditLogDao;
-import com.sohu.cache.entity.AppAuditLog;
 import com.sohu.test.BaseTest;
 
 /**

@@ -8,7 +8,6 @@ import javax.annotation.Resource;
 
 import org.junit.Test;
 
-import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.inspect.InspectParamEnum;
 import com.sohu.cache.inspect.impl.AppClientConnInspector;
 import com.sohu.cache.web.service.AppService;

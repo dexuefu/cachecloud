@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.sohu.cache.entity.AppClientCostTimeStat;
+import com.sohu.cache.entity.AppClientCostTimeTotalStat;
+import com.sohu.cache.entity.InstanceInfo;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
@@ -21,9 +24,6 @@ import com.sohu.cache.client.service.ClientReportCostDistriService;
 import com.sohu.cache.client.service.ClientReportInstanceService;
 import com.sohu.cache.dao.AppClientCostTimeStatDao;
 import com.sohu.cache.dao.AppClientCostTimeTotalStatDao;
-import com.sohu.cache.entity.AppClientCostTimeStat;
-import com.sohu.cache.entity.AppClientCostTimeTotalStat;
-import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.enums.ClientCollectDataTypeEnum;
 import com.sohu.tv.jedis.stat.model.ClientReportBean;
@@ -71,7 +71,7 @@ public class ClientReportCostDistriServiceImpl implements ClientReportCostDistri
     
     @Override
     public List<AppClientCostTimeStat> getAppCommandClientToInstanceStat(Long appId, String command, Long instanceId,
-            String clientIp, long startTime, long endTime) {
+                                                                         String clientIp, long startTime, long endTime) {
         try {
             return appClientCostTimeStatDao.getAppCommandClientToInstanceStat(appId, command, instanceId, clientIp,
                     startTime, endTime);
@@ -83,7 +83,7 @@ public class ClientReportCostDistriServiceImpl implements ClientReportCostDistri
     
     @Override
     public List<AppClientCostTimeTotalStat> getAppClientCommandTotalStat(Long appId, String command, long startTime,
-            long endTime) {
+                                                                         long endTime) {
         try {
             return appClientCostTimeTotalStatDao.getAppClientCommandStat(appId, command, startTime, endTime);
         } catch (Exception e) {

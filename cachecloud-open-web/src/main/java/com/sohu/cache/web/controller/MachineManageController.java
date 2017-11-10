@@ -1,11 +1,7 @@
 package com.sohu.cache.web.controller;
 
 import com.sohu.cache.constant.MachineInfoEnum;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.entity.InstanceStats;
-import com.sohu.cache.entity.MachineInfo;
-import com.sohu.cache.entity.MachineStats;
+import com.sohu.cache.entity.*;
 import com.sohu.cache.machine.MachineDeployCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
@@ -66,7 +62,7 @@ public class MachineManageController extends BaseController{
         //机器以及机器下面的实例信息
         MachineInfo machineInfo = machineCenter.getMachineInfoByIp(ip);
         List<InstanceInfo> instanceList = machineCenter.getMachineInstanceInfo(ip);
-        List<InstanceStats> instanceStatList = machineCenter.getMachineInstanceStatsByIp(ip);       
+        List<InstanceStats> instanceStatList = machineCenter.getMachineInstanceStatsByIp(ip);
         //统计信息
         fillInstanceModel(instanceList, instanceStatList, model);
         

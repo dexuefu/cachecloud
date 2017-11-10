@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import com.sohu.cache.entity.InstanceConfig;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sohu.cache.dao.InstanceConfigDao;
-import com.sohu.cache.entity.InstanceConfig;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisConfigTemplateService;
 import com.sohu.cache.redis.enums.RedisClusterConfigEnum;

@@ -1,7 +1,5 @@
 package com.sohu.test.instance;
 
-import com.sohu.cache.entity.InstanceCommandStats;
-import com.sohu.cache.entity.InstanceStats;
 import com.sohu.cache.stats.instance.InstanceStatsCenter;
 import com.sohu.test.BaseTest;
 import org.junit.Test;

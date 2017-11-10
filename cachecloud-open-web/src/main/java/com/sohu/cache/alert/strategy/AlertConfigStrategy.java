@@ -4,15 +4,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.collections.MapUtils;
-import org.apache.commons.lang.math.NumberUtils;
-
-import com.sohu.cache.alert.bean.AlertConfigBaseData;
 import com.sohu.cache.entity.InstanceAlertConfig;
 import com.sohu.cache.entity.InstanceAlertValueResult;
 import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.entity.StandardStats;
 import com.sohu.cache.redis.enums.InstanceAlertCompareTypeEnum;
+import org.apache.commons.collections.MapUtils;
+import org.apache.commons.lang.math.NumberUtils;
+
+import com.sohu.cache.alert.bean.AlertConfigBaseData;
 import com.sohu.cache.util.JsonUtil;
 
 /**
@@ -32,7 +32,7 @@ public abstract class AlertConfigStrategy {
      * @param alertConfigBaseData
      */
     public abstract List<InstanceAlertValueResult> checkConfig(InstanceAlertConfig instanceAlertConfig,
-            AlertConfigBaseData alertConfigBaseData);
+                                                               AlertConfigBaseData alertConfigBaseData);
 
     /**
      * 比较long类型

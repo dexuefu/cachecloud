@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.AppSearch;
-
 import org.apache.ibatis.annotations.Param;
 
 /**

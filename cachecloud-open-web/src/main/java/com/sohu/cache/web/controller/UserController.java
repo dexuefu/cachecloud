@@ -4,16 +4,16 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.entity.AppAudit;
+import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.web.util.AppEmailUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.AppAuditType;
-import com.sohu.cache.entity.AppAudit;
-import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.web.enums.SuccessEnum;
-import com.sohu.cache.web.util.AppEmailUtil;
 
 /**
  * 注册用户管理(页面没有权限限制)

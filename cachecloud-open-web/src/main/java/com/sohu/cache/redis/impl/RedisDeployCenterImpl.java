@@ -368,7 +368,7 @@ public class RedisDeployCenterImpl implements RedisDeployCenter {
     }
 
     private InstanceInfo saveInstance(long appId, String host, int port, int maxMemory, int type,
-            String cmd) {
+                                      String cmd) {
         InstanceInfo instanceInfo = new InstanceInfo();
         instanceInfo.setAppId(appId);
         MachineInfo machineInfo = machineDao.getMachineInfoByIp(host);

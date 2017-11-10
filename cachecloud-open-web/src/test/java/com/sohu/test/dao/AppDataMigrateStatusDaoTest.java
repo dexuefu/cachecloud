@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import com.sohu.cache.constant.AppDataMigrateStatusEnum;
 import com.sohu.cache.dao.AppDataMigrateStatusDao;
-import com.sohu.cache.entity.AppDataMigrateStatus;
 import com.sohu.test.BaseTest;
 
 /**

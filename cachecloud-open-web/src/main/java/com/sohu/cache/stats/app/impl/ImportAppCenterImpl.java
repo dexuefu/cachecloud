@@ -3,6 +3,10 @@ package com.sohu.cache.stats.app.impl;
 import java.util.List;
 import java.util.Map;
 
+import com.sohu.cache.entity.AppDesc;
+import com.sohu.cache.entity.InstanceInfo;
+import com.sohu.cache.entity.InstanceStats;
+import com.sohu.cache.entity.MachineInfo;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
@@ -16,10 +20,6 @@ import com.sohu.cache.constant.ImportAppResult;
 import com.sohu.cache.constant.InstanceStatusEnum;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceStatsDao;
-import com.sohu.cache.entity.AppDesc;
-import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.entity.InstanceStats;
-import com.sohu.cache.entity.MachineInfo;
 import com.sohu.cache.machine.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.stats.app.ImportAppCenter;
@@ -241,7 +241,7 @@ public class ImportAppCenterImpl implements ImportAppCenter {
      * @return
      */
     private InstanceInfo saveInstance(long appId, String host, int port, int maxMemory, int type,
-            String cmd) {
+                                      String cmd) {
         InstanceInfo instanceInfo = new InstanceInfo();
         instanceInfo.setAppId(appId);
         MachineInfo machineInfo = machineCenter.getMachineInfoByIp(host);

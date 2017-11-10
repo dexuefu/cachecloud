@@ -3,12 +3,12 @@ package com.sohu.cache.web.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sohu.cache.entity.ServerInfo;
+import com.sohu.cache.entity.ServerStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sohu.cache.dao.ServerStatusDao;
-import com.sohu.cache.entity.ServerInfo;
-import com.sohu.cache.entity.ServerStatus;
 import com.sohu.cache.server.data.Server;
 import com.sohu.cache.web.service.ServerDataService;
 

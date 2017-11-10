@@ -1,5 +1,6 @@
 package com.sohu.cache.machine.impl;
 
+import com.sohu.cache.entity.MachineInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -7,7 +8,6 @@ import com.google.common.base.Strings;
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.dao.MachineStatsDao;
 import com.sohu.cache.dao.ServerStatusDao;
-import com.sohu.cache.entity.MachineInfo;
 import com.sohu.cache.machine.MachineCenter;
 import com.sohu.cache.machine.MachineDeployCenter;
 

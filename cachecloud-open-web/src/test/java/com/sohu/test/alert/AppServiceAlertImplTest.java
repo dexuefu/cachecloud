@@ -2,13 +2,11 @@ package com.sohu.test.alert;
 
 import javax.annotation.Resource;
 
-import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.web.service.AppService;
 import org.junit.Test;
 
 import com.sohu.cache.alert.AppAlertService;
 import com.sohu.test.BaseTest;
-import org.springframework.util.StopWatch;
 
 import java.util.List;
 
