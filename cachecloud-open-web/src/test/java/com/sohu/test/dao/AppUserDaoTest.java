@@ -1,6 +1,7 @@
 package com.sohu.test.dao;
 
 import com.sohu.cache.dao.AppUserDao;
+import com.sohu.cache.entity.AppUser;
 import com.sohu.test.BaseTest;
 
 import org.junit.Test;

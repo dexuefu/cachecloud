@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.AppClientVersion;
 import org.junit.Test;
 
 import com.sohu.cache.dao.AppClientVersionDao;

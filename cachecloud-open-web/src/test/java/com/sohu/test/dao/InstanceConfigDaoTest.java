@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.InstanceConfig;
 import org.junit.Test;
 
 import com.sohu.cache.dao.InstanceConfigDao;

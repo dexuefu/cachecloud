@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.InstanceReshardProcess;
 import org.junit.Test;
 
 import com.sohu.test.BaseTest;

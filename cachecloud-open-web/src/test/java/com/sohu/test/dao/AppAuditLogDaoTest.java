@@ -2,6 +2,7 @@ package com.sohu.test.dao;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.AppAuditLog;
 import org.junit.Test;
 
 import com.sohu.cache.constant.AppAuditLogTypeEnum;

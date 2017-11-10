@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.AppDataMigrateStatus;
 import org.junit.Test;
 
 import com.sohu.cache.constant.AppDataMigrateStatusEnum;

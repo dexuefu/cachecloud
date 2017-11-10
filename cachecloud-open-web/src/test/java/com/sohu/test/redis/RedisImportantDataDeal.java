@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.InstanceInfo;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.slf4j.Logger;

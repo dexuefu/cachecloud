@@ -1,6 +1,9 @@
 package com.sohu.test.dao;
 
 import com.sohu.cache.dao.AppStatsDao;
+import com.sohu.cache.entity.AppCommandStats;
+import com.sohu.cache.entity.AppStats;
+import com.sohu.cache.entity.TimeDimensionality;
 import com.sohu.test.BaseTest;
 import org.junit.Test;
 

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.MachineInfo;
 import org.junit.Test;
 
 import com.sohu.cache.dao.MachineDao;

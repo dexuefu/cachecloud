@@ -4,6 +4,7 @@ import java.util.Date;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.entity.AppClientDataSizeStat;
 import org.junit.Test;
 
 import com.sohu.cache.dao.AppClientReportDataSizeDao;

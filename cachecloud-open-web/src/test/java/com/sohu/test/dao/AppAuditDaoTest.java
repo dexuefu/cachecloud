@@ -5,6 +5,9 @@ import com.sohu.cache.constant.AppStatusEnum;
 import com.sohu.cache.dao.AppAuditDao;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.AppUserDao;
+import com.sohu.cache.entity.AppAudit;
+import com.sohu.cache.entity.AppDesc;
+import com.sohu.cache.entity.AppUser;
 import com.sohu.test.BaseTest;
 
 import org.junit.Test;

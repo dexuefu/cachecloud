@@ -1,5 +1,6 @@
 package com.sohu.test.util;
 
+import com.sohu.cache.entity.MachineStats;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;

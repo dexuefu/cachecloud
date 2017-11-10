@@ -1,5 +1,6 @@
 package com.sohu.cache.dao;
 
+import com.sohu.cache.entity.InstanceFault;
 import com.sohu.test.BaseTest;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
