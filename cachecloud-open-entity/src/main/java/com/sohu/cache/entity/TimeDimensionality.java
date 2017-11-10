@@ -1,6 +1,6 @@
 package com.sohu.cache.entity;
 
-import com.sohu.cache.dao.AppStatsDao;
+import com.sohu.cache.constant.BaseConstant;
 import com.sohu.cache.web.util.DateUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,13 +23,13 @@ public class TimeDimensionality {
         Date beginDate = DateUtil.getDateByFormat(String.valueOf(begin), format);
         Date endDate = DateUtil.getDateByFormat(String.valueOf(end), format);
         this.dimensionality = getSuitableDimensionality(beginDate, endDate);
-        if (dimensionality == AppStatsDao.MINUTE_DIMENSIONALITY) {
+        if (dimensionality == BaseConstant.MINUTE_DIMENSIONALITY) {
             this.begin = Long.parseLong(DateUtil.formatDate(beginDate, "yyyyMMddHHmm"));
         } else {
             this.begin = Long.parseLong(DateUtil.formatDate(beginDate, "yyyyMMddHH"));
         }
 
-        if (dimensionality == AppStatsDao.MINUTE_DIMENSIONALITY) {
+        if (dimensionality == BaseConstant.MINUTE_DIMENSIONALITY) {
             this.end = Long.parseLong(DateUtil.formatDate(endDate, "yyyyMMddHHmm"));
         } else {
             this.end = Long.parseLong(DateUtil.formatDate(endDate, "yyyyMMddHH"));
@@ -58,14 +58,14 @@ public class TimeDimensionality {
             long s2 = end.getTime();
             long hour = (s2 - s1) / 1000 / 60 / 60;
             if (hour >= 48) {
-                return AppStatsDao.HOUR_DIMENSIONALITY;
+                return BaseConstant.HOUR_DIMENSIONALITY;
             } else {
-                return AppStatsDao.MINUTE_DIMENSIONALITY;
+                return BaseConstant.MINUTE_DIMENSIONALITY;
             }
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
-        return AppStatsDao.MINUTE_DIMENSIONALITY;
+        return BaseConstant.MINUTE_DIMENSIONALITY;
     }
 
 

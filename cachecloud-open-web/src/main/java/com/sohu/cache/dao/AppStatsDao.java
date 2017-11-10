@@ -15,10 +15,6 @@ import java.util.Map;
  */
 public interface AppStatsDao {
 
-    public static final int MINUTE_DIMENSIONALITY = 0;
-
-    public static final int HOUR_DIMENSIONALITY = 1;
-
     /**
      * 插入或更新AppStats分钟统计
      */

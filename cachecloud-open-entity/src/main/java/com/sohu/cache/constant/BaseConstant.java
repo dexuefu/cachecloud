@@ -26,4 +26,8 @@ public class BaseConstant {
 
     public static final String SYSTEM_PROPERTY_CONFIG_FILE_PATH = "configFilePath";
 
+    public static final int MINUTE_DIMENSIONALITY = 0;
+
+    public static final int HOUR_DIMENSIONALITY = 1;
+
 }
