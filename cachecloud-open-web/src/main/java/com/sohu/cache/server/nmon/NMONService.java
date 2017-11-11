@@ -2,11 +2,11 @@ package com.sohu.cache.server.nmon;
 
 import java.io.File;
 
+import com.sohu.cache.server.data.OS;
+import com.sohu.cache.server.data.OSInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sohu.cache.server.data.OS;
-import com.sohu.cache.server.data.OSInfo;
 import com.sohu.cache.ssh.SSHTemplate.DefaultLineProcessor;
 import com.sohu.cache.ssh.SSHTemplate.Result;
 import com.sohu.cache.ssh.SSHTemplate.SSHSession;

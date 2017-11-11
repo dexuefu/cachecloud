@@ -4,6 +4,7 @@ import com.sohu.cache.server.data.OSInfo.DistributionType;
 import com.sohu.cache.server.data.OSInfo.DistributionVersion;
 import com.sohu.cache.server.data.OSInfo.OSType;
 import com.sohu.cache.server.data.OSInfo.ProcessorArchitecture;
+
 /**
  * 从OSInfo解析后的OS
  */

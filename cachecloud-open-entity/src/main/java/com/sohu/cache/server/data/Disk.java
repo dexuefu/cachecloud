@@ -1,12 +1,13 @@
 package com.sohu.cache.server.data;
 
+import org.apache.commons.lang.math.NumberUtils;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.commons.lang.math.NumberUtils;
 /**
  * io读写情况
  */
@@ -15,7 +16,7 @@ public class Disk implements LineParser{
 	public static final Pattern PATTERN = Pattern.compile("^BBBP,[0-9]+,/bin/df-m,");
 	public static final Pattern SUBPARTITION_PATTERN = Pattern.compile("[0-9]+$");
 	//包括总的状况及各个分区的状况
-	private Map<DiskUsageType, List<Usage>> diskMap = new HashMap<Disk.DiskUsageType, List<Usage>>();
+	private Map<DiskUsageType, List<Usage>> diskMap = new HashMap<DiskUsageType, List<Usage>>();
 	
 	/**
 	 * line format:

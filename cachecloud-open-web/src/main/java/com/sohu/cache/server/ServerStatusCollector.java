@@ -1,13 +1,13 @@
 package com.sohu.cache.server;
 
+import com.sohu.cache.server.data.OSInfo;
+import com.sohu.cache.server.data.Server;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sohu.cache.async.AsyncService;
 import com.sohu.cache.async.AsyncThreadPoolFactory;
 import com.sohu.cache.async.KeyCallable;
-import com.sohu.cache.server.data.OSInfo;
-import com.sohu.cache.server.data.Server;
 import com.sohu.cache.server.nmon.NMONService;
 import com.sohu.cache.ssh.SSHTemplate;
 import com.sohu.cache.ssh.SSHTemplate.DefaultLineProcessor;
@@ -105,7 +105,7 @@ public class ServerStatusCollector {
 	/**
 	 * 保存服务器dist信息
 	 * @param ip
-	 * @param OSInfo
+	 * @param osInfo
 	 */
 	private void saveServerStatus(String ip, OSInfo osInfo) {
 		if(osInfo == null) {

@@ -79,6 +79,12 @@
             <artifactId>cachecloud-open-common</artifactId>
             <version>${cachecloud-open-common.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.sohu.tv</groupId>
+            <artifactId>cachecloud-open-entity</artifactId>
+            <version>${cachecloud-open-common.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

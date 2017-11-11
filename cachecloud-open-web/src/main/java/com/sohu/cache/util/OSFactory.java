@@ -3,11 +3,11 @@ package com.sohu.cache.util;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.sohu.cache.server.data.OS;
+import com.sohu.cache.server.data.OSInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sohu.cache.server.data.OS;
-import com.sohu.cache.server.data.OSInfo;
 import com.sohu.cache.server.data.OSInfo.DistributionType;
 import com.sohu.cache.server.data.OSInfo.DistributionVersion;
 import com.sohu.cache.server.data.OSInfo.OSType;
