@@ -14,7 +14,7 @@ import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.enums.RedisInfoEnum;
 import com.sohu.cache.redis.enums.RedisReadOnlyCommandEnum;
 import com.sohu.cache.schedule.SchedulerCenter;
-import com.sohu.cache.stats.instance.InstanceStatsCenter;
+import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.util.*;
 import com.sohu.cache.web.util.DateUtil;
 import com.sohu.cache.web.vo.RedisSlowLog;

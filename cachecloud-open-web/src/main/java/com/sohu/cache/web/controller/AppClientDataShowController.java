@@ -30,8 +30,8 @@ import com.sohu.cache.client.service.AppInstanceClientRelationService;
 import com.sohu.cache.client.service.ClientReportCostDistriService;
 import com.sohu.cache.client.service.ClientReportExceptionService;
 import com.sohu.cache.client.service.ClientReportValueDistriService;
-import com.sohu.cache.stats.instance.InstanceStatsCenter;
-import com.sohu.cache.web.service.AppService;
+import com.sohu.cache.service.InstanceStatsCenter;
+import com.sohu.cache.service.AppService;
 import com.sohu.tv.jedis.stat.utils.NumberUtil;
 
 /**

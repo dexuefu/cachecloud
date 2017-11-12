@@ -6,11 +6,11 @@
                      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
        default-autowire="byName">
 
-    <bean id="appService" class="com.sohu.cache.web.service.impl.AppServiceImpl"/>
+    <bean id="appService" class="com.sohu.cache.service.impl.AppServiceImpl"/>
 
-    <bean id="memFaultService" class="com.sohu.cache.web.service.impl.MemFaultServiceImpl"/>
+    <bean id="memFaultService" class="com.sohu.cache.service.impl.MemFaultServiceImpl"/>
 
-    <bean id="userService" class="com.sohu.cache.web.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="com.sohu.cache.service.impl.UserServiceImpl"/>
 
 	<!-- 邮件报警 -->
     <bean id="emailComponent" class="com.sohu.cache.web.component.EmailComponentImpl"/>
@@ -19,13 +19,13 @@
 	<bean id="mobileAlertComponent" class="com.sohu.cache.web.component.MobileAlertComponentImpl"/>
 	
 	<!-- 应用相关审核变更通知 -->
-    <bean id="appEmailUtil" class="com.sohu.cache.web.util.AppEmailUtil"/>
+    <bean id="appEmailUtil" class="com.sohu.cache.util.AppEmailUtil"/>
     
     <!-- 登录状态相关cookie和session根据配置切换 -->
-    <bean id="userLoginStatusSessionService" class="com.sohu.cache.web.service.impl.UserLoginStatusSessionServiceImpl"/>
-    <bean id="userLoginStatusCookieService" class="com.sohu.cache.web.service.impl.UserLoginStatusCookieServiceImpl"/>
+    <bean id="userLoginStatusSessionService" class="com.sohu.cache.service.impl.UserLoginStatusSessionServiceImpl"/>
+    <bean id="userLoginStatusCookieService" class="com.sohu.cache.service.impl.UserLoginStatusCookieServiceImpl"/>
     
-    <util:map id="userloginTypeMap" key-type="com.sohu.cache.constant.UserLoginTypeEnum" value-type="com.sohu.cache.web.service.UserLoginStatusService">
+    <util:map id="userloginTypeMap" key-type="com.sohu.cache.constant.UserLoginTypeEnum" value-type="com.sohu.cache.service.UserLoginStatusService">
         <entry key="SESSION" value-ref="userLoginStatusSessionService"/>
         <entry key="COOKIE" value-ref="userLoginStatusCookieService"/>
     </util:map>
@@ -34,6 +34,6 @@
     </bean>
     <bean id="userLoginStatusService" factory-bean="userLoginStatusFactory" factory-method="getUserLoginStatusService"/>
 	
-	<bean id="appDailyDataCenter" class="com.sohu.cache.stats.app.impl.AppDailyDataCenterImpl"/>
+	<bean id="appDailyDataCenter" class="com.sohu.cache.service.impl.AppDailyDataCenterImpl"/>
 	
 </beans>

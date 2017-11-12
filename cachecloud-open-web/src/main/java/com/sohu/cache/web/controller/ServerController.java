@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.alibaba.fastjson.JSON;
-import com.sohu.cache.web.service.ServerDataService;
+import com.sohu.cache.service.ServerDataService;
 
 /**
  * 获取服务器状态

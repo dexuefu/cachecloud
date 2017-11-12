@@ -49,7 +49,7 @@ import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.schedule.SchedulerCenter;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.stats.instance.InstanceStatsCenter;
+import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.IdempotentConfirmer;
 import com.sohu.cache.util.ObjectConvert;

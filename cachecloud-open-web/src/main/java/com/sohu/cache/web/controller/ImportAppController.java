@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.ImportAppResult;
-import com.sohu.cache.stats.app.ImportAppCenter;
+import com.sohu.cache.service.ImportAppCenter;
 
 /**
  * 已经存在Redis导入

@@ -5,8 +5,7 @@ import org.quartz.SchedulerContext;
 import org.quartz.SchedulerException;
 import org.springframework.context.ApplicationContext;
 
-import com.sohu.cache.schedule.jobs.CacheBaseJob;
-import com.sohu.cache.web.service.ConfigService;
+import com.sohu.cache.service.ConfigService;
 
 /**
  * 刷新系统配置

@@ -5,8 +5,7 @@ import org.quartz.SchedulerContext;
 import org.quartz.SchedulerException;
 import org.springframework.context.ApplicationContext;
 
-import com.sohu.cache.schedule.jobs.CacheBaseJob;
-import com.sohu.cache.stats.app.AppDailyDataCenter;
+import com.sohu.cache.service.AppDailyDataCenter;
 
 /**
  * 发送日报

@@ -12,7 +12,7 @@ import org.junit.Test;
 import com.sohu.cache.constant.AppDataMigrateEnum;
 import com.sohu.cache.constant.AppDataMigrateResult;
 import com.sohu.cache.constant.RedisMigrateToolConstant;
-import com.sohu.cache.stats.app.impl.AppDataMigrateCenterImpl;
+import com.sohu.cache.service.impl.AppDataMigrateCenterImpl;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.test.BaseTest;
 

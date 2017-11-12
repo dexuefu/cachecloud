@@ -19,10 +19,10 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import com.sohu.cache.constant.AppUserTypeEnum;
-import com.sohu.cache.stats.instance.InstanceStatsCenter;
-import com.sohu.cache.web.service.AppService;
-import com.sohu.cache.web.service.UserLoginStatusService;
-import com.sohu.cache.web.service.UserService;
+import com.sohu.cache.service.InstanceStatsCenter;
+import com.sohu.cache.service.AppService;
+import com.sohu.cache.service.UserLoginStatusService;
+import com.sohu.cache.service.UserService;
 
 /**
  * 应用和实例权限验证

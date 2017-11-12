@@ -21,22 +21,22 @@
     <bean id="asyncService" class="com.sohu.cache.async.impl.AsyncServiceImpl" destroy-method="destory"/>
 
     <!--app service接口-->
-    <bean id="appStatsCenter" class="com.sohu.cache.stats.app.impl.AppStatsCenterImpl"/>
+    <bean id="appStatsCenter" class="com.sohu.cache.service.impl.AppStatsCenterImpl"/>
 
     <!--app deloy接口-->
-    <bean id="appDeployCenter" class="com.sohu.cache.stats.app.impl.AppDeployCenterImpl"/>
+    <bean id="appDeployCenter" class="com.sohu.cache.service.impl.AppDeployCenterImpl"/>
 
     <bean id="redisDeployCenter" class="com.sohu.cache.redis.impl.RedisDeployCenterImpl"/>
 
     <bean id="machineDeployCenter" class="com.sohu.cache.machine.impl.MachineDeployCenterImpl"/>
 
-    <bean id="instanceStatsCenter" class="com.sohu.cache.stats.instance.impl.InstanceStatsCenterImpl"/>
+    <bean id="instanceStatsCenter" class="com.sohu.cache.service.impl.InstanceStatsCenterImpl"/>
 
-    <bean id="instanceDeployCenter" class="com.sohu.cache.stats.instance.impl.InstanceDeployCenterImpl"/>
+    <bean id="instanceDeployCenter" class="com.sohu.cache.service.impl.InstanceDeployCenterImpl"/>
     
-    <bean id="importAppCenter" class="com.sohu.cache.stats.app.impl.ImportAppCenterImpl"/>
+    <bean id="importAppCenter" class="com.sohu.cache.service.impl.ImportAppCenterImpl"/>
     
-    <bean id="appDataMigrateCenter" class="com.sohu.cache.stats.app.impl.AppDataMigrateCenterImpl"/>
+    <bean id="appDataMigrateCenter" class="com.sohu.cache.service.impl.AppDataMigrateCenterImpl"/>
     
     <bean id="redisConfigTemplateService" class="com.sohu.cache.redis.impl.RedisConfigTemplateServiceImpl"/>
 
@@ -47,8 +47,8 @@
     
     <bean id="serverStatusCollector" class="com.sohu.cache.server.ServerStatusCollector" init-method="init"/>
     
-    <bean id="serverDataService" class="com.sohu.cache.web.service.impl.ServerDataServiceImpl"/>
+    <bean id="serverDataService" class="com.sohu.cache.service.impl.ServerDataServiceImpl"/>
     
-    <bean id="instanceAlertConfigService" class="com.sohu.cache.stats.instance.impl.InstanceAlertConfigServiceImpl"/>
+    <bean id="instanceAlertConfigService" class="com.sohu.cache.service.impl.InstanceAlertConfigServiceImpl"/>
 
 </beans>

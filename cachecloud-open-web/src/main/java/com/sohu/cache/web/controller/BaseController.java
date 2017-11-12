@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.*;
-import com.sohu.cache.web.service.AppService;
-import com.sohu.cache.web.service.UserLoginStatusService;
-import com.sohu.cache.web.service.UserService;
+import com.sohu.cache.service.AppService;
+import com.sohu.cache.service.UserLoginStatusService;
+import com.sohu.cache.service.UserService;
 
 import com.sohu.cache.web.util.DateUtil;
 import org.apache.commons.collections.CollectionUtils;

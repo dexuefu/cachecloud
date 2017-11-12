@@ -11,14 +11,14 @@ import com.sohu.cache.entity.*;
 import com.sohu.cache.machine.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
-import com.sohu.cache.stats.app.AppDailyDataCenter;
-import com.sohu.cache.stats.app.AppDeployCenter;
-import com.sohu.cache.stats.instance.InstanceDeployCenter;
+import com.sohu.cache.service.AppDailyDataCenter;
+import com.sohu.cache.service.AppDeployCenter;
+import com.sohu.cache.service.InstanceDeployCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
 import com.sohu.cache.web.enums.SuccessEnum;
 
-import com.sohu.cache.web.util.AppEmailUtil;
+import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.web.util.DateUtil;
 import net.sf.json.JSONArray;
 

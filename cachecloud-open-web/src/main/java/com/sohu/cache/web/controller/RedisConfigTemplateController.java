@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.InstanceConfig;
-import com.sohu.cache.web.util.AppEmailUtil;
+import com.sohu.cache.util.AppEmailUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;

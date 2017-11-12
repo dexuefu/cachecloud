@@ -17,7 +17,7 @@ import com.sohu.cache.redis.RedisClusterNode;
 import com.sohu.cache.redis.RedisConfigTemplateService;
 import com.sohu.cache.redis.RedisDeployCenter;
 import com.sohu.cache.redis.enums.RedisConfigEnum;
-import com.sohu.cache.stats.instance.InstanceDeployCenter;
+import com.sohu.cache.service.InstanceDeployCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.IdempotentConfirmer;
 import com.sohu.cache.util.TypeUtil;
