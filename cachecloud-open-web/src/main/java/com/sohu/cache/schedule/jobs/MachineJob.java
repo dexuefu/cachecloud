@@ -8,7 +8,7 @@ import org.quartz.SchedulerContext;
 import org.quartz.SchedulerException;
 import org.springframework.context.ApplicationContext;
 
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.ScheduleUtil;
 

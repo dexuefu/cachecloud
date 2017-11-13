@@ -1,6 +1,6 @@
 package com.sohu.cache.web.controller;
 
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 
 import org.slf4j.Logger;

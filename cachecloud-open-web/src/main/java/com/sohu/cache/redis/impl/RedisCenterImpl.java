@@ -8,7 +8,7 @@ import com.sohu.cache.async.KeyCallable;
 import com.sohu.cache.constant.*;
 import com.sohu.cache.dao.*;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.protocol.RedisProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.enums.RedisInfoEnum;

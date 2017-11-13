@@ -37,7 +37,7 @@ import com.sohu.cache.dao.AppAuditLogDao;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceReshardProcessDao;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisClusterNode;
 import com.sohu.cache.redis.RedisClusterReshard;

@@ -1,4 +1,4 @@
-package com.sohu.cache.machine;
+package com.sohu.cache.service;
 
 import java.util.List;
 import java.util.Map;

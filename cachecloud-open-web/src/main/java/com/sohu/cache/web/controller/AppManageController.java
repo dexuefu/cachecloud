@@ -8,7 +8,7 @@ import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.HorizontalResult;
 import com.sohu.cache.dao.InstanceReshardProcessDao;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
 import com.sohu.cache.service.AppDailyDataCenter;

@@ -9,7 +9,7 @@ import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.entity.InstanceSlotModel;
 import com.sohu.cache.entity.MachineInfo;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.protocol.RedisProtocol;
 import com.sohu.cache.redis.RedisCenter;

@@ -31,7 +31,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 
 import com.sohu.cache.constant.AppUserTypeEnum;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 
 /**

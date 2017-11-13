@@ -1,4 +1,4 @@
-package com.sohu.cache.machine.impl;
+package com.sohu.cache.service.impl;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
@@ -43,7 +43,7 @@ import com.sohu.cache.dao.InstanceStatsDao;
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.dao.MachineStatsDao;
 import com.sohu.cache.exception.SSHException;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.machine.PortGenerator;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;

@@ -6,7 +6,7 @@ import com.sohu.cache.dao.QuartzDao;
 import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.entity.MachineInfo;
 import com.sohu.cache.entity.TriggerInfo;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.schedule.TriggerCenter;
 import com.sohu.cache.util.ConstUtils;

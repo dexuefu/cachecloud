@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.constant.AppStatusEnum;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.machine.MachineCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.web.vo.AppDetailVO;
