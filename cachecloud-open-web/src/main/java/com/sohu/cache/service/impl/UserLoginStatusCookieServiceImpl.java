@@ -4,6 +4,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.service.UserLoginStatusService;
 import org.apache.commons.lang.math.NumberUtils;
 
 import com.sohu.cache.util.ConstUtils;

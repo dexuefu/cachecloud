@@ -4,6 +4,7 @@ import java.util.*;
 
 import com.sohu.cache.entity.AppToUser;
 import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

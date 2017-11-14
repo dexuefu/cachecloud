@@ -6,6 +6,7 @@ import java.util.List;
 import com.sohu.cache.entity.ServerInfo;
 import com.sohu.cache.entity.ServerStatus;
 import com.sohu.cache.server.data.Server;
+import com.sohu.cache.service.ServerDataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,6 +1,8 @@
 package com.sohu.cache.service.impl;
 
 import com.sohu.cache.entity.MachineInfo;
+import com.sohu.cache.service.MachineCenter;
+import com.sohu.cache.service.MachineDeployCenter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

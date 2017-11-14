@@ -18,6 +18,8 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import com.sohu.cache.entity.*;
+import com.sohu.cache.service.InstanceStatsCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.*;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;

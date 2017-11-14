@@ -9,6 +9,8 @@ import com.sohu.cache.protocol.RedisProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
 
+import com.sohu.cache.service.InstanceDeployCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
