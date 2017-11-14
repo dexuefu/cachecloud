@@ -9,9 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import com.sohu.cache.service.UserLoginStatusService;
-import com.sohu.cache.service.UserService;
-
 /**
  * 前台登陆验证
  *

@@ -3,8 +3,6 @@ package com.sohu.cache.web.controller;
 import com.sohu.cache.alert.InstanceAlertService;
 import com.sohu.cache.entity.*;
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.service.AppStatsCenter;
-import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.web.util.DateUtil;
 import com.sohu.cache.web.vo.RedisSlowLog;
 import com.sohu.cache.web.chart.key.ChartKeysUtil;

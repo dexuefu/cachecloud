@@ -10,12 +10,8 @@ import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.HorizontalResult;
 import com.sohu.cache.dao.InstanceReshardProcessDao;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
-import com.sohu.cache.service.AppDailyDataCenter;
-import com.sohu.cache.service.AppDeployCenter;
-import com.sohu.cache.service.InstanceDeployCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.enums.SuccessEnum;
 

@@ -19,6 +19,9 @@ import java.util.Map;
 import com.sohu.cache.entity.AppDataMigrateSearch;
 import com.sohu.cache.entity.AppDataMigrateStatus;
 import com.sohu.cache.entity.MachineInfo;
+import com.sohu.cache.service.AppDataMigrateCenter;
+import com.sohu.cache.service.AppService;
+import com.sohu.cache.service.MachineCenter;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
@@ -36,13 +39,10 @@ import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.RedisMigrateToolConstant;
 import com.sohu.cache.dao.AppDataMigrateStatusDao;
 import com.sohu.cache.exception.SSHException;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.service.AppDataMigrateCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.service.AppService;
 
 /**
  * 数据迁移(使用唯品会的开源工具redis-migrate-tool进行迁移)

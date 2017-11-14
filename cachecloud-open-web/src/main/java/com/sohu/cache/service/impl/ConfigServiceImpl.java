@@ -16,7 +16,6 @@ import com.sohu.cache.constant.UserLoginTypeEnum;
 import com.sohu.cache.dao.ConfigDao;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.enums.SuccessEnum;
-import com.sohu.cache.service.ConfigService;
 
 /**
  * @author leifu

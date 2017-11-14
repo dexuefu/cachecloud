@@ -14,7 +14,6 @@ import com.sohu.cache.ssh.SSHTemplate.DefaultLineProcessor;
 import com.sohu.cache.ssh.SSHTemplate.Result;
 import com.sohu.cache.ssh.SSHTemplate.SSHCallback;
 import com.sohu.cache.ssh.SSHTemplate.SSHSession;
-import com.sohu.cache.service.ServerDataService;
 
 /**
  * 服务器状态监控服务

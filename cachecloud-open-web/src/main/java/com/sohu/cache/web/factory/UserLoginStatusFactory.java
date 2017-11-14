@@ -4,7 +4,6 @@ import java.util.Map;
 
 import com.sohu.cache.constant.UserLoginTypeEnum;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.service.UserLoginStatusService;
 
 /**
  * 用户登录状态信息服务工厂

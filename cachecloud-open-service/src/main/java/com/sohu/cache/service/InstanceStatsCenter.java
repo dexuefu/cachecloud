@@ -52,7 +52,7 @@ public interface InstanceStatsCenter {
      * Map<Integer, Map<String, List<InstanceCommandStats>>> : Map<InstanceId,Map<CommandName,List<InstanceCommandStats>>>
      */
     Map<Integer, Map<String, List<InstanceCommandStats>>> getStandardStatsList(Long appId, long beginTime, long endTime,
-            List<String> commands);
+                                                                               List<String> commands);
 
     /**
      * 在实例上执行命令

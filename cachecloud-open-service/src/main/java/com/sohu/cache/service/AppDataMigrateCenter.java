@@ -1,14 +1,14 @@
 package com.sohu.cache.service;
 
-import java.util.List;
-import java.util.Map;
-
 import com.sohu.cache.constant.AppDataMigrateEnum;
 import com.sohu.cache.constant.AppDataMigrateResult;
 import com.sohu.cache.constant.CommandResult;
 import com.sohu.cache.constant.RedisMigrateToolConstant;
 import com.sohu.cache.entity.AppDataMigrateSearch;
 import com.sohu.cache.entity.AppDataMigrateStatus;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 数据迁移
@@ -32,7 +32,7 @@ public interface AppDataMigrateCenter {
      * @return 
      */
     AppDataMigrateResult check(String migrateMachineIp, AppDataMigrateEnum sourceRedisMigrateEnum, String sourceServers,
-            AppDataMigrateEnum targetRedisMigrateEnum, String targetServers, String redisSourcePass, String redisTargetPass);
+                               AppDataMigrateEnum targetRedisMigrateEnum, String targetServers, String redisSourcePass, String redisTargetPass);
 
     /**
      * 开始迁移
@@ -47,7 +47,7 @@ public interface AppDataMigrateCenter {
      * @return
      */
     boolean migrate(String migrateMachineIp, AppDataMigrateEnum sourceRedisMigrateEnum, String sourceServers,
-            AppDataMigrateEnum targetRedisMigrateEnum, String targetServers, long sourceAppId, long targetAppId, String redisSourcePass, String targetSourcePass, long userId);
+                    AppDataMigrateEnum targetRedisMigrateEnum, String targetServers, long sourceAppId, long targetAppId, String redisSourcePass, String targetSourcePass, long userId);
 
 
     /**

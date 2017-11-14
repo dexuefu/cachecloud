@@ -16,9 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.*;
-import com.sohu.cache.service.AppService;
-import com.sohu.cache.service.UserLoginStatusService;
-import com.sohu.cache.service.UserService;
 
 import com.sohu.cache.web.util.DateUtil;
 import org.apache.commons.collections.CollectionUtils;
@@ -31,7 +28,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 
 import com.sohu.cache.constant.AppUserTypeEnum;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 
 /**

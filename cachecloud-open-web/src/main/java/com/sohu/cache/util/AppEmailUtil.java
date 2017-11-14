@@ -4,10 +4,8 @@ import com.sohu.cache.constant.AppAuditType;
 import com.sohu.cache.constant.AppCheckEnum;
 import com.sohu.cache.constant.RedisConfigTemplateChangeEnum;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.web.component.EmailComponent;
 import com.sohu.cache.web.enums.SuccessEnum;
-import com.sohu.cache.service.UserService;
 import com.sohu.cache.web.vo.AppDetailVO;
 
 import org.apache.commons.collections.CollectionUtils;

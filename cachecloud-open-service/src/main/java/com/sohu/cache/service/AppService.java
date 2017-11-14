@@ -1,10 +1,10 @@
 package com.sohu.cache.service;
 
-import java.util.List;
-
 import com.sohu.cache.constant.AppAuditType;
 import com.sohu.cache.entity.*;
 import com.sohu.cache.web.enums.SuccessEnum;
+
+import java.util.List;
 
 /**
  * 应用相关操作
@@ -130,7 +130,7 @@ public interface AppService {
      * @param appConfigValue 配置值
      * @param modifyConfig 申请类型
      */
-    AppAudit saveAppChangeConfig(AppDesc appDesc, AppUser appUser, Long instanceId, String appConfigKey, String appConfigValue,String appConfigReason, AppAuditType modifyConfig);
+    AppAudit saveAppChangeConfig(AppDesc appDesc, AppUser appUser, Long instanceId, String appConfigKey, String appConfigValue, String appConfigReason, AppAuditType modifyConfig);
 
     /**
      * 保存实例配置申请

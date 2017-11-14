@@ -15,6 +15,9 @@ import java.util.TreeMap;
 import com.sohu.cache.entity.AppClientValueDistriSimple;
 import com.sohu.cache.entity.AppDailyData;
 import com.sohu.cache.entity.AppDesc;
+import com.sohu.cache.service.AppDailyDataCenter;
+import com.sohu.cache.service.AppService;
+import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.util.VelocityUtils;
 import com.sohu.cache.web.util.DateUtil;
 import org.apache.commons.collections.MapUtils;
@@ -30,11 +33,8 @@ import com.sohu.cache.dao.AppClientValueStatDao;
 import com.sohu.cache.dao.AppDailyDao;
 import com.sohu.cache.dao.AppStatsDao;
 import com.sohu.cache.dao.InstanceSlowLogDao;
-import com.sohu.cache.service.AppDailyDataCenter;
-import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.component.EmailComponent;
-import com.sohu.cache.service.AppService;
 import com.sohu.cache.web.vo.AppDetailVO;
 
 /**

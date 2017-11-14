@@ -91,7 +91,7 @@ public interface AppDeployCenter {
      * @return
      */
     public HorizontalResult checkHorizontal(long appId, long appAuditId, long sourceId, long targetId, int startSlot,
-            int endSlot, int migrateType);
+                                            int endSlot, int migrateType);
     
     
     /**
@@ -106,7 +106,7 @@ public interface AppDeployCenter {
      * @return
      */
     public HorizontalResult startHorizontal(long appId, long appAuditId, long sourceId, long targetId, int startSlot,
-            int endSlot, int migrateType);
+                                            int endSlot, int migrateType);
     
     /**
      * 重试水平扩容

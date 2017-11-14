@@ -16,7 +16,6 @@ import com.sohu.cache.constant.AppUserTypeEnum;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.enums.AdminEnum;
 import com.sohu.cache.web.enums.LoginEnum;
-import com.sohu.cache.service.UserLoginStatusService;
 import com.sohu.cache.web.util.LoginUtil;
 
 /**

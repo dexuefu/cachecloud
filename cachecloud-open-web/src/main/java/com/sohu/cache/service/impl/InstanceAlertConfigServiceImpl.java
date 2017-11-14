@@ -42,7 +42,6 @@ import com.sohu.cache.dao.InstanceAlertConfigDao;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceStatsDao;
 import com.sohu.cache.redis.enums.RedisAlertConfigEnum;
-import com.sohu.cache.service.InstanceAlertConfigService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.web.component.EmailComponent;
 

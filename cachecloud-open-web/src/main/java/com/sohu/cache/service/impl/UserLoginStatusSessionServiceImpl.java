@@ -6,8 +6,6 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.math.NumberUtils;
 
-import com.sohu.cache.service.UserLoginStatusService;
-
 
 /**
  * session保护登录状态

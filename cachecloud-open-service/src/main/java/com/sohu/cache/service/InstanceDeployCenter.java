@@ -41,6 +41,6 @@ public interface InstanceDeployCenter {
      * @return
      */
     boolean modifyInstanceConfig(long appId, Long appAuditId, String host, int port, String instanceConfigKey,
-            String instanceConfigValue);
+                                 String instanceConfigValue);
 
 }

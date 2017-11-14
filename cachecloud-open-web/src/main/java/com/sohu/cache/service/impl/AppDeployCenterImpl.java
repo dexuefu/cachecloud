@@ -13,6 +13,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import com.sohu.cache.entity.*;
+import com.sohu.cache.service.AppDeployCenter;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.CollectionUtils;
@@ -38,14 +40,11 @@ import com.sohu.cache.dao.AppAuditLogDao;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceReshardProcessDao;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisClusterNode;
 import com.sohu.cache.redis.RedisClusterReshard;
 import com.sohu.cache.redis.RedisDeployCenter;
-import com.sohu.cache.service.AppDeployCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.service.AppService;
 
 import redis.clients.jedis.HostAndPort;
 

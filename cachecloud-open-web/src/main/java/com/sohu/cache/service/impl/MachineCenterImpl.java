@@ -44,13 +44,11 @@ import com.sohu.cache.dao.InstanceStatsDao;
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.dao.MachineStatsDao;
 import com.sohu.cache.exception.SSHException;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.machine.PortGenerator;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.schedule.SchedulerCenter;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.web.component.EmailComponent;
 import com.sohu.cache.web.component.MobileAlertComponent;
 

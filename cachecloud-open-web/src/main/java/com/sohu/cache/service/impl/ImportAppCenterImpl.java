@@ -21,11 +21,8 @@ import com.sohu.cache.constant.ImportAppResult;
 import com.sohu.cache.constant.InstanceStatusEnum;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceStatsDao;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.service.ImportAppCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.service.AppService;
 
 /**
  * 导入应用

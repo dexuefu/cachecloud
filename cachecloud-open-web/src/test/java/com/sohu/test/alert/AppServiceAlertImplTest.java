@@ -3,7 +3,6 @@ package com.sohu.test.alert;
 import javax.annotation.Resource;
 
 import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.service.AppService;
 import org.junit.Test;
 
 import com.sohu.cache.alert.AppAlertService;

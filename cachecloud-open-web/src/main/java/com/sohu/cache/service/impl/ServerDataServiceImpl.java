@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sohu.cache.dao.ServerStatusDao;
-import com.sohu.cache.service.ServerDataService;
 
 public class ServerDataServiceImpl implements ServerDataService {
 	private static final Logger logger = LoggerFactory.getLogger(ServerDataServiceImpl.class);

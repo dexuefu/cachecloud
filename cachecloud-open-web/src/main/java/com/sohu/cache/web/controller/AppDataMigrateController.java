@@ -28,11 +28,8 @@ import com.sohu.cache.constant.MachineInfoEnum;
 import com.sohu.cache.constant.AppDataMigrateEnum;
 import com.sohu.cache.constant.AppDataMigrateResult;
 import com.sohu.cache.constant.RedisMigrateToolConstant;
-import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.service.AppDataMigrateCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.service.AppService;
 
 /**
  * 应用数据迁移入口

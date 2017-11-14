@@ -11,7 +11,6 @@ import org.junit.Test;
 
 import com.sohu.cache.inspect.InspectParamEnum;
 import com.sohu.cache.inspect.impl.AppClientConnInspector;
-import com.sohu.cache.service.AppService;
 import com.sohu.test.BaseTest;
 
 /**

@@ -8,8 +8,6 @@ import com.google.common.base.Strings;
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.dao.MachineStatsDao;
 import com.sohu.cache.dao.ServerStatusDao;
-import com.sohu.cache.service.MachineCenter;
-import com.sohu.cache.service.MachineDeployCenter;
 
 /**
  * 机器部署相关

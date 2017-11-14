@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.sohu.cache.dao.MemFaultDao;
 import com.sohu.cache.entity.InstanceFault;
-import com.sohu.cache.service.MemFaultService;
 
 /**
  * 故障服务

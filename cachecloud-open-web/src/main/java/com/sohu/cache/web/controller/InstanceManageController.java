@@ -21,8 +21,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.service.InstanceDeployCenter;
-import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.web.enums.SuccessEnum;
 
 /**

@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import com.sohu.cache.dao.AppToUserDao;
 import com.sohu.cache.dao.AppUserDao;
 import com.sohu.cache.web.enums.SuccessEnum;
-import com.sohu.cache.service.UserService;
 
 /**
  * 用户管理实现
