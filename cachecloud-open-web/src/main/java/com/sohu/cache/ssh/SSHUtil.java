@@ -11,6 +11,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.sohu.cache.entity.MachineStats;
+import com.sohu.cache.util.IntegerUtil;
+import com.sohu.cache.util.StringUtil;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.slf4j.Logger;
@@ -24,8 +26,6 @@ import com.sohu.cache.ssh.SSHTemplate.Result;
 import com.sohu.cache.ssh.SSHTemplate.SSHCallback;
 import com.sohu.cache.ssh.SSHTemplate.SSHSession;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.util.IntegerUtil;
-import com.sohu.cache.util.StringUtil;
 
 /**
  * Created by yijunzhang on 14-6-20.

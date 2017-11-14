@@ -2,8 +2,8 @@ package com.sohu.cache.schedule.jobs;
 
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.util.ScheduleUtil;
 
+import com.sohu.cache.util.ScheduleUtil;
 import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.SchedulerContext;

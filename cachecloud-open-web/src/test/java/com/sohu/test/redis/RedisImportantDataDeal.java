@@ -8,6 +8,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import com.sohu.cache.entity.InstanceInfo;
+import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -16,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import com.sohu.cache.constant.InstanceStatusEnum;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.util.TypeUtil;
 import com.sohu.test.BaseTest;
 
 import redis.clients.jedis.Jedis;

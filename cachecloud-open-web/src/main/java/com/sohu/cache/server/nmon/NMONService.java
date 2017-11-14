@@ -4,14 +4,15 @@ import java.io.File;
 
 import com.sohu.cache.server.data.OS;
 import com.sohu.cache.server.data.OSInfo;
+import com.sohu.cache.util.NMONFileFactory;
+import com.sohu.cache.util.OSFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.sohu.cache.ssh.SSHTemplate.DefaultLineProcessor;
 import com.sohu.cache.ssh.SSHTemplate.Result;
 import com.sohu.cache.ssh.SSHTemplate.SSHSession;
-import com.sohu.cache.util.NMONFileFactory;
-import com.sohu.cache.util.OSFactory;
+
 /**
  * 服务器监控脚本服务(nmon识别和监控)
  */

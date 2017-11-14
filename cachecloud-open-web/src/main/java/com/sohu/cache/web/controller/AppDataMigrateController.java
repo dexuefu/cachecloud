@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.*;
+import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
@@ -31,7 +32,6 @@ import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.service.AppDataMigrateCenter;
 import com.sohu.cache.util.ConstUtils;
-import com.sohu.cache.util.TypeUtil;
 import com.sohu.cache.service.AppService;
 
 /**
