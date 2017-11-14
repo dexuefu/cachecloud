@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.annotation.Resource;
 
 import com.sohu.cache.entity.InstanceInfo;
+import com.sohu.cache.service.AppService;
 import org.junit.Test;
 
 import com.sohu.cache.inspect.InspectParamEnum;

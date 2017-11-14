@@ -3,6 +3,7 @@ package com.sohu.test.stats.app;
 import com.sohu.cache.entity.AppCommandStats;
 import com.sohu.cache.entity.AppStats;
 import com.sohu.cache.constant.AppTopology;
+import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.util.ScheduleUtil;
 import com.sohu.test.BaseTest;
 

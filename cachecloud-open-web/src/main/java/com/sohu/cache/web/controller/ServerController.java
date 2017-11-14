@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.ServerInfo;
 import com.sohu.cache.entity.ServerStatus;
+import com.sohu.cache.service.ServerDataService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;

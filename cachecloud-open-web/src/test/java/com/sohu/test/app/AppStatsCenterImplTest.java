@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.sohu.cache.entity.AppCommandGroup;
 import com.sohu.cache.entity.AppCommandStats;
+import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.web.vo.AppDetailVO;
 import com.sohu.test.BaseTest;
 

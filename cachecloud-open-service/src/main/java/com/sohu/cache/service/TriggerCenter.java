@@ -1,4 +1,4 @@
-package com.sohu.cache.schedule;
+package com.sohu.cache.service;
 
 import com.sohu.cache.entity.TriggerInfo;
 import org.quartz.TriggerKey;

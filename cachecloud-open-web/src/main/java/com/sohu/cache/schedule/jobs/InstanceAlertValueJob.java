@@ -1,5 +1,6 @@
 package com.sohu.cache.schedule.jobs;
 
+import com.sohu.cache.service.InstanceAlertConfigService;
 import org.quartz.JobExecutionContext;
 import org.quartz.SchedulerContext;
 import org.quartz.SchedulerException;

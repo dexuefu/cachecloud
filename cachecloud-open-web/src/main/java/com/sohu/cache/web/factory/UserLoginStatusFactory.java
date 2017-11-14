@@ -3,6 +3,7 @@ package com.sohu.cache.web.factory;
 import java.util.Map;
 
 import com.sohu.cache.constant.UserLoginTypeEnum;
+import com.sohu.cache.service.UserLoginStatusService;
 import com.sohu.cache.util.ConstUtils;
 
 /**

@@ -1,7 +1,6 @@
 package com.sohu.test.schedule;
 
-import com.sohu.cache.schedule.SchedulerCenter;
-import com.sohu.cache.util.ConstUtils;
+import com.sohu.cache.service.SchedulerCenter;
 import com.sohu.test.BaseTest;
 
 import org.junit.Test;

@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.TriggerInfo;
-import com.sohu.cache.schedule.SchedulerCenter;
+import com.sohu.cache.service.SchedulerCenter;
 import org.apache.commons.lang.StringUtils;
 import org.quartz.TriggerKey;
 import org.springframework.stereotype.Controller;

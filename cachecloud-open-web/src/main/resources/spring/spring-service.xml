@@ -12,10 +12,10 @@
     <bean id="machineCenter" class="com.sohu.cache.service.impl.MachineCenterImpl" init-method="init"/>
 
     <!--quartz调度接口-->
-    <bean id="schedulerCenter" class="com.sohu.cache.schedule.impl.SchedulerCenterImpl" />
+    <bean id="schedulerCenter" class="com.sohu.cache.service.impl.SchedulerCenterImpl" />
 
     <!--trigger管理接口-->
-    <bean id="triggerCenter" class="com.sohu.cache.schedule.impl.TriggerCenterImpl"/>
+    <bean id="triggerCenter" class="com.sohu.cache.service.impl.TriggerCenterImpl"/>
 
     <!--异步接口-->
     <bean id="asyncService" class="com.sohu.cache.async.impl.AsyncServiceImpl" destroy-method="destory"/>

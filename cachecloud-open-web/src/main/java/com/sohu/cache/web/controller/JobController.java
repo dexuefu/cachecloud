@@ -2,6 +2,7 @@ package com.sohu.cache.web.controller;
 
 import com.sohu.cache.redis.RedisCenter;
 
+import com.sohu.cache.service.MachineCenter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

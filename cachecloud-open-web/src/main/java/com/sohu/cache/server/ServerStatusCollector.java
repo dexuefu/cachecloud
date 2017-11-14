@@ -2,6 +2,7 @@ package com.sohu.cache.server;
 
 import com.sohu.cache.server.data.OSInfo;
 import com.sohu.cache.server.data.Server;
+import com.sohu.cache.service.ServerDataService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

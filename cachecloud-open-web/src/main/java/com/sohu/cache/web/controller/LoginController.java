@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.LoginResult;
+import com.sohu.cache.service.UserLoginStatusService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.*;
+import com.sohu.cache.service.AppDataMigrateCenter;
+import com.sohu.cache.service.AppService;
+import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;

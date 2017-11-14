@@ -1,4 +1,4 @@
-package com.sohu.cache.schedule.impl;
+package com.sohu.cache.service.impl;
 
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.MachineDao;
@@ -7,7 +7,8 @@ import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.entity.MachineInfo;
 import com.sohu.cache.entity.TriggerInfo;
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.schedule.TriggerCenter;
+import com.sohu.cache.service.MachineCenter;
+import com.sohu.cache.service.TriggerCenter;
 import com.sohu.cache.util.ConstUtils;
 
 import org.quartz.Scheduler;

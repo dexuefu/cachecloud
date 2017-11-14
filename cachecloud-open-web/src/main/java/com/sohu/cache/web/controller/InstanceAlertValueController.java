@@ -11,6 +11,7 @@ import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.InstanceAlertConfig;
 import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.redis.enums.*;
+import com.sohu.cache.service.InstanceAlertConfigService;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;

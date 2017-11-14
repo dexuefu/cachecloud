@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.service.AppService;
 import com.sohu.cache.util.JsonUtil;
 import com.sohu.cache.web.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
