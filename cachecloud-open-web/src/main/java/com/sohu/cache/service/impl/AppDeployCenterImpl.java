@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.sohu.cache.entity.*;
 import com.sohu.cache.service.AppDeployCenter;
+import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.util.TypeUtil;
