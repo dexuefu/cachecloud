@@ -3,7 +3,7 @@ package com.sohu.cache.web.chart.key;
 /**
  * Created by hym on 14-7-27.
  */
-public class ChartKeysUtil {
+public interface ChartKeysUtil {
     public enum ChartKey {
         RENDER_TO("renderTo"), TYPE("type");
         private String key;
