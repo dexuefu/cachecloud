@@ -5,12 +5,12 @@
         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
         " default-autowire="byName">
 
-	<bean id="baseAlertService" class="com.sohu.cache.alert.impl.BaseAlertService"/>
+	<bean id="baseAlertService" class="com.sohu.cache.service.impl.BaseAlertService"/>
 
 	<!-- 应用报警 -->
-    <bean id="appAlertService" class="com.sohu.cache.alert.impl.AppAlertServiceImpl" parent="baseAlertService"/>
+    <bean id="appAlertService" class="com.sohu.cache.service.impl.AppAlertServiceImpl" parent="baseAlertService"/>
 
 	<!-- 实例报警 -->
-    <bean id="instanceAlertService" class="com.sohu.cache.alert.impl.InstanceAlertServiceImpl" parent="baseAlertService"/>
+    <bean id="instanceAlertService" class="com.sohu.cache.service.impl.InstanceAlertServiceImpl" parent="baseAlertService"/>
 
 </beans>

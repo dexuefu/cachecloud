@@ -1,4 +1,4 @@
-package com.sohu.cache.alert;
+package com.sohu.cache.service;
 
 import com.sohu.cache.entity.InstanceFault;
 

@@ -6,7 +6,6 @@ import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.service.AppService;
 import org.junit.Test;
 
-import com.sohu.cache.alert.AppAlertService;
 import com.sohu.test.BaseTest;
 
 import java.util.List;

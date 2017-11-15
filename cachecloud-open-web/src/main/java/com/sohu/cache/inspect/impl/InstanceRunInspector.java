@@ -1,6 +1,6 @@
 package com.sohu.cache.inspect.impl;
 
-import com.sohu.cache.alert.impl.BaseAlertService;
+import com.sohu.cache.service.impl.BaseAlertService;
 import com.sohu.cache.constant.InstanceStatusEnum;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceDao;

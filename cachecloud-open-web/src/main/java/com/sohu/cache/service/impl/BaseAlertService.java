@@ -1,4 +1,4 @@
-package com.sohu.cache.alert.impl;
+package com.sohu.cache.service.impl;
 
 import com.sohu.cache.web.component.EmailComponent;
 import com.sohu.cache.web.component.MobileAlertComponent;
