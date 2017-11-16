@@ -45,21 +45,16 @@ function changeCommandChart(value){
 			</div>
 		</div>
 		<div class="row">
-				<c:set var="needSelect" value="0"></c:set>
+				needSelect
 				&nbsp;&nbsp;Top5命令:
-				<c:forEach items="${allCommands}" var="item" varStatus="stat">
-					<c:choose>
-						<c:when test="${stat.index < 5}">
+				<#list allCommands as item>
+						<#if stat.index < 5>
 								<input type="radio" name="optionsRadios" value="${item.commandName}" 
 								<#if test="${firstCommand == item.commandName}">checked="checked"</#if>
 								 onchange="changeCommandChart(this.value)" />
 								${item.commandName}
-						</c:when>
-						<c:otherwise>
-							<c:set var="needSelect" value="1"></c:set>
-						</c:otherwise>
-					</c:choose>
-				</c:forEach>
+						</#if>
+				</#list>
 				<#if test="${needSelect == 1}">
 					&nbsp;&nbsp;&nbsp;其余命令:
 					<select name="optionsRadios" onchange="changeCommandChart(this.value)">
