@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.google.common.collect.Lists;
 import com.sohu.cache.client.service.ClientReportDataService;
 import com.sohu.cache.constant.ClientStatusEnum;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.model.ClientReportBean;
 

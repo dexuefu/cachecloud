@@ -8,7 +8,6 @@ import com.sohu.cache.inspect.InspectParamEnum;
 import com.sohu.cache.inspect.Inspector;
 import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
 import com.sohu.cache.web.vo.AppDetailVO;
 

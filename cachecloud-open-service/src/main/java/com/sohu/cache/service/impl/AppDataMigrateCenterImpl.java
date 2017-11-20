@@ -12,7 +12,6 @@ import com.sohu.cache.service.AppDataMigrateCenter;
 import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.util.ConstUtils;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;

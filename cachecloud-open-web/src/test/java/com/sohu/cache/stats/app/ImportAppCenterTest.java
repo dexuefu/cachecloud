@@ -9,7 +9,6 @@ import com.sohu.cache.service.ImportAppCenter;
 import org.junit.Test;
 
 import com.sohu.cache.constant.ImportAppResult;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.test.BaseTest;
 
 /**

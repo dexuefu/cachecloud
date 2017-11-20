@@ -9,20 +9,14 @@ import com.sohu.cache.service.UserService;
 import com.sohu.cache.web.component.EmailComponent;
 import com.sohu.cache.web.enums.SuccessEnum;
 import com.sohu.cache.web.vo.AppDetailVO;
-
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.apache.velocity.app.VelocityEngine;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 /**
  * 邮件通知应用的申请流程(方法内是具体的文案)

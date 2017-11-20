@@ -4,8 +4,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.sohu.cache.util.ConstUtils;
-
 /**
  * @author leifu
  * @Date 2016年11月23日

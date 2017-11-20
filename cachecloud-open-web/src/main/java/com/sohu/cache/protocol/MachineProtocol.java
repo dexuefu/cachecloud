@@ -1,7 +1,5 @@
 package com.sohu.cache.protocol;
 
-import com.sohu.cache.util.ConstUtils;
-
 /**
  * 机器相关的一些常量
  *

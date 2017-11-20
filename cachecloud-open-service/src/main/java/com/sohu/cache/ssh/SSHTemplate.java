@@ -5,7 +5,6 @@ import ch.ethz.ssh2.SCPClient;
 import ch.ethz.ssh2.Session;
 import ch.ethz.ssh2.StreamGobbler;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.sohu.cache.util.ConstUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,11 +29,11 @@ public class SSHTemplate {
 			200, 200, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>(1000), 
 			new ThreadFactoryBuilder().setNameFormat("SSH-%d").setDaemon(true).build());
 	
-	public Result execute(String ip, SSHCallback callback) throws SSHException{
-		return execute(ip,ConstUtils.DEFAULT_SSH_PORT_DEFAULT, ConstUtils.USERNAME, 
+	public Result execute(String ip, SSHCallback callback) throws SSHException {
+		return execute(ip,ConstUtils.DEFAULT_SSH_PORT_DEFAULT, ConstUtils.USERNAME,
 				ConstUtils.PASSWORD, callback);
 	}
-	
+
 	/**
 	 * 通过回调执行命令
 	 * @param ip
@@ -42,10 +41,10 @@ public class SSHTemplate {
 	 * @param username
 	 * @param password
 	 * @param callback 可以使用Session执行多个命令
-	 * @throws SSHException 
+	 * @throws SSHException
 	 */
-    public Result execute(String ip, int port, String username, String password, 
-    		SSHCallback callback) throws SSHException{
+    public Result execute(String ip, int port, String username, String password,
+    		SSHCallback callback) throws SSHException {
         Connection conn = null;
         try {
             conn = getConnection(ip, port, username, password);
@@ -56,7 +55,7 @@ public class SSHTemplate {
         	close(conn);
         }
     }
-    
+
     /**
      * 获取连接并校验
      * @param ip
@@ -66,18 +65,18 @@ public class SSHTemplate {
      * @return Connection
      * @throws Exception
      */
-    private Connection getConnection(String ip, int port, 
+    private Connection getConnection(String ip, int port,
     		String username, String password) throws Exception {
     	Connection conn = new Connection(ip, port);
         conn.connect(null, CONNCET_TIMEOUT, CONNCET_TIMEOUT);
         boolean isAuthenticated = conn.authenticateWithPassword(username, password);
         if (isAuthenticated == false) {
-            throw new Exception("SSH authentication failed with [ userName: " + 
+            throw new Exception("SSH authentication failed with [ userName: " +
             		username + ", password: " + password + "]");
         }
         return conn;
     }
-    
+
     /**
      * 获取调用命令后的返回结果
      * @param is 输入流
@@ -95,8 +94,8 @@ public class SSHTemplate {
     	};
     	processStream(is, lp);
     	return buffer.length() > 0 ? buffer.toString() : null;
-    } 
-    
+    }
+
     /**
      * 从流中获取内容
      * @param is
@@ -122,7 +121,7 @@ public class SSHTemplate {
         	close(reader);
         }
     }
-    
+
     private void close(BufferedReader read) {
     	if (read != null) {
             try {
@@ -132,7 +131,7 @@ public class SSHTemplate {
             }
         }
     }
-    
+
     private void close(Connection conn) {
     	if (conn != null) {
             try {
@@ -142,7 +141,7 @@ public class SSHTemplate {
             }
         }
     }
-    
+
     private static void close(Session session) {
     	if (session != null) {
             try {
@@ -152,7 +151,7 @@ public class SSHTemplate {
             }
         }
     }
-    
+
     /**
      * 可以调用多次executeCommand， 并返回结果
      */
@@ -173,15 +172,15 @@ public class SSHTemplate {
     	public Result executeCommand(String cmd) {
     		return executeCommand(cmd, OP_TIMEOUT);
     	}
-    	
+
     	public Result executeCommand(String cmd, int timoutMillis) {
     		return executeCommand(cmd, null, timoutMillis);
     	}
-    	
+
     	public Result executeCommand(String cmd, LineProcessor lineProcessor) {
     		return executeCommand(cmd, lineProcessor, OP_TIMEOUT);
     	}
-    	
+
     	/**
     	 * 执行命令并返回结果，可以执行多次
     	 * @param cmd
@@ -200,8 +199,8 @@ public class SSHTemplate {
 				close(session);
 			}
     	}
-    	
-    	public Result executeCommand(final Session session, final String cmd, 
+
+    	public Result executeCommand(final Session session, final String cmd,
     			final int timoutMillis, final LineProcessor lineProcessor) throws Exception{
     		Future<Result> future = taskPool.submit(new Callable<Result>() {
 				public Result call() throws Exception {

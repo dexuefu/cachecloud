@@ -4,8 +4,6 @@ import java.io.File;
 
 import com.sohu.cache.server.data.OS;
 import com.sohu.cache.server.data.OSInfo;
-import com.sohu.cache.util.NMONFileFactory;
-import com.sohu.cache.util.OSFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -13,6 +13,7 @@
         <cachecloud-open-client-basic>1.0-SNAPSHOT</cachecloud-open-client-basic>
         <cachecloud-jedis>1.0-SNAPSHOT</cachecloud-jedis>
         <cachecloud-open-common.version>1.0-SNAPSHOT</cachecloud-open-common.version>
+        <spring.version>4.2.4.RELEASE</spring.version>
     </properties>
   <dependencies>
 		<dependency>
@@ -48,5 +49,16 @@
           <groupId>com.google.guava</groupId>
           <artifactId>guava</artifactId>
       </dependency>
+      <!-- Spring Dependency Begin -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+          <version>${spring.version}</version>
+      </dependency>
+      <!--<dependency>-->
+          <!--<groupId>com.sohu.tv</groupId>-->
+          <!--<artifactId>cachecloud-open-entity</artifactId>-->
+          <!--<version>${cachecloud-open-common.version}</version>-->
+      <!--</dependency>-->
 	</dependencies>
 </project>

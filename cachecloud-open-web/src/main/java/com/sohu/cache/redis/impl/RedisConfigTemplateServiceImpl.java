@@ -17,7 +17,6 @@ import com.sohu.cache.redis.RedisConfigTemplateService;
 import com.sohu.cache.redis.enums.RedisClusterConfigEnum;
 import com.sohu.cache.redis.enums.RedisConfigEnum;
 import com.sohu.cache.redis.enums.RedisSentinelConfigEnum;
-import com.sohu.cache.util.ConstUtils;
 
 /**
  * redis配置模板服务

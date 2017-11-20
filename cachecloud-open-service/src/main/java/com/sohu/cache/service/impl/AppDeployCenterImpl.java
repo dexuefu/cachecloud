@@ -12,7 +12,6 @@ import com.sohu.cache.service.AppDeployCenter;
 import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.AppEmailUtil;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;

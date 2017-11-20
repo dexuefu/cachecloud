@@ -4,7 +4,6 @@ import com.sohu.cache.constant.EmptyObjectConstant;
 import com.sohu.cache.constant.SymbolConstant;
 import com.sohu.cache.ssh.SSHException;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.util.ConstUtils;
 import com.google.common.util.concurrent.AtomicLongMap;
 
 import org.apache.commons.lang.StringUtils;

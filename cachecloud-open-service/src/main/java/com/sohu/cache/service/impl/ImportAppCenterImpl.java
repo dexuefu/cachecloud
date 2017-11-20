@@ -12,7 +12,6 @@ import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.ImportAppCenter;
 import com.sohu.cache.service.MachineCenter;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.IdempotentConfirmer;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;

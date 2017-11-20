@@ -61,7 +61,7 @@ public class SSHUtil {
         port = IntegerUtil.defaultIfSmallerThan0(port, ConstUtils.SSH_PORT_DEFAULT);
         final MachineStats systemPerformanceEntity =  new MachineStats();
         systemPerformanceEntity.setIp(ip);
-        
+
         sshTemplate.execute(ip, port, userName, password, new SSHCallback() {
 			public Result call(SSHSession session) {
 				//解析top命令
@@ -88,10 +88,10 @@ public class SSHUtil {
 		                	// centos7:Cpu(s): 0.0% us
 		                    double cpuUs = getUsCpu(line);
 		                    systemPerformanceEntity.setCpuUsage(String.valueOf(cpuUs));
-		                } 
+		                }
 					}
 				});
-				
+
 				//解析memory
 				session.executeCommand(COMMAND_MEM, new LineProcessor() {
 					private String totalMem;
@@ -124,7 +124,7 @@ public class SSHUtil {
 						}
 					}
 				});
-				
+
 				// 统计磁盘使用状况
 				/**
 	             * 内容通常是这样： Filesystem 容量 已用 可用 已用% 挂载点 /dev/xvda2 5.8G 3.2G 2.4G
@@ -150,12 +150,12 @@ public class SSHUtil {
 						systemPerformanceEntity.setDiskUsageMap(diskUsageMap);
 					}
 				});
-				
+
 				return null;
 			}
 		});
 
-        // 统计当前网络流量 @TODO 
+        // 统计当前网络流量 @TODO
         Double traffic = 0.0;
         systemPerformanceEntity.setTraffic(traffic.toString());
 
@@ -170,14 +170,14 @@ public class SSHUtil {
      * @param password 密码
      * @param command  要执行的命令
      */
-    public static String execute(String ip, int port, String username, String password, 
+    public static String execute(String ip, int port, String username, String password,
     		final String command) throws SSHException {
 
         if (StringUtil.isBlank(command)) {
         	return EMPTY_STRING;
         }
         port = IntegerUtil.defaultIfSmallerThan0(port, ConstUtils.SSH_PORT_DEFAULT);
-        
+
         Result rst = sshTemplate.execute(ip, port, username, password, new SSHCallback() {
 			public Result call(SSHSession session) {
 				return session.executeCommand(command);
@@ -199,8 +199,8 @@ public class SSHUtil {
      * @return
      * @throws SSHException
      */
-    public static boolean scpFileToRemote(String ip, int port, String username, 
-    		String password, final String localPath, final String remoteDir) throws SSHException{
+    public static boolean scpFileToRemote(String ip, int port, String username,
+    		String password, final String localPath, final String remoteDir) throws SSHException {
     	Result rst = sshTemplate.execute(ip, port, username, password, new SSHCallback() {
 			public Result call(SSHSession session) {
 				return session.scpToDir(localPath, remoteDir, "0644");

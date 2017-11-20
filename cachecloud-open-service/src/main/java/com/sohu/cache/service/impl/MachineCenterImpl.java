@@ -17,7 +17,6 @@ import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.service.SchedulerCenter;
 import com.sohu.cache.ssh.SSHUtil;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.IdempotentConfirmer;
 import com.sohu.cache.util.ScheduleUtil;
 import com.sohu.cache.util.TypeUtil;

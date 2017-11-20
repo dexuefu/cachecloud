@@ -157,10 +157,10 @@
         </dependency>
 
         <!-- toolkit -->
-        <dependency>
-            <groupId>ch.ethz.ganymed</groupId>
-            <artifactId>ganymed-ssh2</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>ch.ethz.ganymed</groupId>-->
+            <!--<artifactId>ganymed-ssh2</artifactId>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.commons</groupId>

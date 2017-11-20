@@ -9,7 +9,6 @@ import com.sohu.cache.entity.InstanceConfig;
 import org.junit.Test;
 
 import com.sohu.cache.dao.InstanceConfigDao;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.test.BaseTest;
 
 /**

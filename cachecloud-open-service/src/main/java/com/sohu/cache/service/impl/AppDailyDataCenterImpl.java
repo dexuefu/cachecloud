@@ -7,7 +7,6 @@ import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.service.AppDailyDataCenter;
 import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.AppStatsCenter;
-import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.VelocityUtils;
 import com.sohu.cache.web.component.EmailComponent;
 import com.sohu.cache.web.util.DateUtil;
