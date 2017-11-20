@@ -5,7 +5,7 @@ import com.sohu.cache.dao.AppDataMigrateStatusDao;
 import com.sohu.cache.entity.AppDataMigrateSearch;
 import com.sohu.cache.entity.AppDataMigrateStatus;
 import com.sohu.cache.entity.MachineInfo;
-import com.sohu.cache.exception.SSHException;
+import com.sohu.cache.ssh.SSHException;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.service.AppDataMigrateCenter;

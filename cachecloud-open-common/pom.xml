@@ -39,5 +39,14 @@
           <groupId>com.fasterxml.jackson.core</groupId>
           <artifactId>jackson-databind</artifactId>
       </dependency>
+      <!-- toolkit -->
+      <dependency>
+          <groupId>ch.ethz.ganymed</groupId>
+          <artifactId>ganymed-ssh2</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+      </dependency>
 	</dependencies>
 </project>
