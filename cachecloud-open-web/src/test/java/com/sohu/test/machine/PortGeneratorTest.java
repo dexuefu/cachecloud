@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.ssh.SSHException;
-import com.sohu.cache.machine.PortGenerator;
 import com.sohu.cache.ssh.SSHUtil;
 import com.sohu.test.BaseTest;
 

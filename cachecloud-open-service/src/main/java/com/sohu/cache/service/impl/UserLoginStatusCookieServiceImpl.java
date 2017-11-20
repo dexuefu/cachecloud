@@ -1,6 +1,7 @@
 package com.sohu.cache.service.impl;
 
 import com.sohu.cache.service.UserLoginStatusService;
+import com.sohu.cache.util.ConstUtils;
 import org.apache.commons.lang.math.NumberUtils;
 
 import javax.servlet.http.Cookie;

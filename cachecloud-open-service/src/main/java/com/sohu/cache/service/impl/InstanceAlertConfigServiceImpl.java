@@ -1,7 +1,6 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.alert.bean.AlertConfigBaseData;
-import com.sohu.cache.alert.strategy.*;
+import com.sohu.cache.alert.*;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceAlertConfigDao;
 import com.sohu.cache.dao.InstanceDao;
@@ -10,6 +9,7 @@ import com.sohu.cache.entity.*;
 import com.sohu.cache.redis.enums.InstanceAlertTypeEnum;
 import com.sohu.cache.redis.enums.RedisAlertConfigEnum;
 import com.sohu.cache.service.InstanceAlertConfigService;
+import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.VelocityUtils;
 import com.sohu.cache.web.component.EmailComponent;
 import org.apache.commons.collections.CollectionUtils;
