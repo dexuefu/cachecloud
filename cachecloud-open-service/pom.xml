@@ -96,6 +96,11 @@
             <artifactId>cachecloud-open-entity</artifactId>
             <version>${cachecloud-open-common.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,6 +1,6 @@
 package com.sohu.cache.client.heartbeat;
 
-import com.sohu.cache.client.service.ClientVersionService;
+import com.sohu.cache.service.ClientVersionService;
 import com.sohu.cache.constant.ClientStatusEnum;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.dao.InstanceDao;
@@ -8,6 +8,8 @@ import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.InstanceInfo;
 import com.google.common.collect.Lists;
 
+import com.sohu.cache.util.ConstUtils;
+import com.sohu.cache.util.ObjectConvert;
 import com.sohu.cache.web.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

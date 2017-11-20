@@ -5,6 +5,7 @@ import ch.ethz.ssh2.SCPClient;
 import ch.ethz.ssh2.Session;
 import ch.ethz.ssh2.StreamGobbler;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
+import com.sohu.cache.util.ConstUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,7 +31,7 @@ public class SSHTemplate {
 			new ThreadFactoryBuilder().setNameFormat("SSH-%d").setDaemon(true).build());
 	
 	public Result execute(String ip, SSHCallback callback) throws SSHException {
-		return execute(ip,ConstUtils.DEFAULT_SSH_PORT_DEFAULT, ConstUtils.USERNAME,
+		return execute(ip, ConstUtils.DEFAULT_SSH_PORT_DEFAULT, ConstUtils.USERNAME,
 				ConstUtils.PASSWORD, callback);
 	}
 

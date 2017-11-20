@@ -1,7 +1,7 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.client.service.ClientReportExceptionService;
-import com.sohu.cache.client.service.ClientReportInstanceService;
+import com.sohu.cache.service.ClientReportExceptionService;
+import com.sohu.cache.service.ClientReportInstanceService;
 import com.sohu.cache.dao.AppClientExceptionStatDao;
 import com.sohu.cache.dao.AppClientVersionDao;
 import com.sohu.cache.entity.AppClientExceptionStat;

@@ -1,6 +1,6 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.client.service.AppInstanceClientRelationService;
+import com.sohu.cache.service.AppInstanceClientRelationService;
 import com.sohu.cache.dao.AppInstanceClientRelationDao;
 import com.sohu.cache.entity.AppClientCostTimeStat;
 import com.sohu.cache.entity.AppInstanceClientRelation;

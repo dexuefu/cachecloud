@@ -12,8 +12,10 @@ import com.sohu.cache.web.vo.AppDetailVO;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
+import org.slf4j.Logger;
 import org.apache.velocity.app.VelocityEngine;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -34,7 +36,7 @@ public class AppEmailUtil {
     
     private AppStatsCenter appStatsCenter;
     
-    private Logger logger = Logger.getLogger(AppEmailUtil.class);
+    private Logger logger = LoggerFactory.getLogger(AppEmailUtil.class);
 
     
     /**

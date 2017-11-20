@@ -7,6 +7,7 @@ import com.sohu.cache.inspect.Inspector;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.enums.RedisInfoEnum;
 
+import com.sohu.cache.service.impl.BaseAlertService;
 import com.sohu.cache.util.IdempotentConfirmer;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections.MapUtils;

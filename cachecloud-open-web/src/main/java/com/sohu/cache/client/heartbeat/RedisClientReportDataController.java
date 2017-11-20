@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.service.AppService;
+import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.JsonUtil;
 import com.sohu.cache.web.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.google.common.collect.Lists;
-import com.sohu.cache.client.service.ClientReportDataService;
+import com.sohu.cache.service.ClientReportDataService;
 import com.sohu.cache.constant.ClientStatusEnum;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.model.ClientReportBean;

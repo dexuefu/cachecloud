@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.SystemConfig;
 import com.sohu.cache.service.ConfigService;
+import com.sohu.cache.util.AppEmailUtil;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;

@@ -3,7 +3,7 @@ package com.sohu.cache.service.impl;
 import com.sohu.cache.async.AsyncService;
 import com.sohu.cache.async.AsyncThreadPoolFactory;
 import com.sohu.cache.async.KeyCallable;
-import com.sohu.cache.client.service.*;
+import com.sohu.cache.service.*;
 import com.sohu.tv.jedis.stat.model.ClientReportBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

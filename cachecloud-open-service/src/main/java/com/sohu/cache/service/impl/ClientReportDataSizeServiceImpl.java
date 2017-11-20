@@ -1,6 +1,6 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.client.service.ClientReportDataSizeService;
+import com.sohu.cache.service.ClientReportDataSizeService;
 import com.sohu.cache.dao.AppClientReportDataSizeDao;
 import com.sohu.cache.entity.AppClientDataSizeStat;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;

@@ -1,6 +1,6 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.client.service.ClientReportInstanceService;
+import com.sohu.cache.service.ClientReportInstanceService;
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.entity.InstanceInfo;
 import org.slf4j.Logger;

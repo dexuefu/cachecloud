@@ -1,6 +1,6 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.client.service.ClientVersionService;
+import com.sohu.cache.service.ClientVersionService;
 import com.sohu.cache.dao.AppClientVersionDao;
 import com.sohu.cache.entity.AppClientVersion;
 import org.apache.commons.collections.CollectionUtils;

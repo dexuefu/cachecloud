@@ -10,6 +10,7 @@ import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.inspect.InspectParamEnum;
 import com.sohu.cache.inspect.Inspector;
 import com.sohu.cache.redis.RedisCenter;
+import com.sohu.cache.service.impl.BaseAlertService;
 import com.sohu.cache.util.TypeUtil;
 import org.apache.commons.collections4.MapUtils;
 import org.slf4j.Logger;
