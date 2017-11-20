@@ -1,6 +1,5 @@
 package com.sohu.cache.inspect.impl;
 
-import com.sohu.cache.service.impl.BaseAlertService;
 import com.sohu.cache.dao.AppDao;
 import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.InstanceInfo;
