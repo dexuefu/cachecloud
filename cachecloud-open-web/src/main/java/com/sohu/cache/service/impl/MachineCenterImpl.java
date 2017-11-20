@@ -46,7 +46,7 @@ import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.dao.InstanceStatsDao;
 import com.sohu.cache.dao.MachineDao;
 import com.sohu.cache.dao.MachineStatsDao;
-import com.sohu.cache.exception.SSHException;
+import com.sohu.cache.ssh.SSHException;
 import com.sohu.cache.machine.PortGenerator;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;

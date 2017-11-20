@@ -1,4 +1,4 @@
-package com.sohu.cache.exception;
+package com.sohu.cache.ssh;
 
 /**
  * 参数异常

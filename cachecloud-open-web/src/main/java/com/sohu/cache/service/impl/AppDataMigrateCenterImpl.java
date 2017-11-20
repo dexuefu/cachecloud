@@ -38,7 +38,7 @@ import com.sohu.cache.constant.CommandResult;
 import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.RedisMigrateToolConstant;
 import com.sohu.cache.dao.AppDataMigrateStatusDao;
-import com.sohu.cache.exception.SSHException;
+import com.sohu.cache.ssh.SSHException;
 import com.sohu.cache.protocol.MachineProtocol;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.ssh.SSHUtil;
