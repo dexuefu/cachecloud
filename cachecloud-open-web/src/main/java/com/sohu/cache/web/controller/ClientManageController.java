@@ -22,8 +22,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sohu.cache.client.service.ClientReportExceptionService;
-import com.sohu.cache.client.service.ClientVersionService;
+import com.sohu.cache.service.ClientReportExceptionService;
+import com.sohu.cache.service.ClientVersionService;
 import com.sohu.cache.web.enums.SuccessEnum;
 
 /**

@@ -28,10 +28,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.alibaba.fastjson.JSONObject;
-import com.sohu.cache.client.service.AppInstanceClientRelationService;
-import com.sohu.cache.client.service.ClientReportCostDistriService;
-import com.sohu.cache.client.service.ClientReportExceptionService;
-import com.sohu.cache.client.service.ClientReportValueDistriService;
+import com.sohu.cache.service.AppInstanceClientRelationService;
+import com.sohu.cache.service.ClientReportCostDistriService;
+import com.sohu.cache.service.ClientReportExceptionService;
+import com.sohu.cache.service.ClientReportValueDistriService;
 import com.sohu.tv.jedis.stat.utils.NumberUtil;
 
 /**

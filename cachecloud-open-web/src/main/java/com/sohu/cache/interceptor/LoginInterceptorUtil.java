@@ -2,6 +2,7 @@ package com.sohu.cache.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.sohu.cache.util.ConstUtils;
 import org.apache.commons.lang.StringUtils;
 
 /**

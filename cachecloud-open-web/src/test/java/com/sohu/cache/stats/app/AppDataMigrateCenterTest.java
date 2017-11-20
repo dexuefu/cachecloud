@@ -7,6 +7,8 @@ import java.util.Map.Entry;
 
 import javax.annotation.Resource;
 
+import com.sohu.cache.service.impl.AppDataMigrateCenterImpl;
+import com.sohu.cache.util.ConstUtils;
 import org.junit.Test;
 
 import com.sohu.cache.constant.AppDataMigrateEnum;

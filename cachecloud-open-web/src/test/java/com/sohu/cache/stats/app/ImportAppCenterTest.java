@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.service.ImportAppCenter;
+import com.sohu.cache.util.ConstUtils;
 import org.junit.Test;
 
 import com.sohu.cache.constant.ImportAppResult;

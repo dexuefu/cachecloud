@@ -2,6 +2,7 @@ package com.sohu.test.util;
 
 import com.sohu.cache.dao.InstanceDao;
 import com.sohu.cache.entity.InstanceInfo;
+import com.sohu.cache.util.ObjectConvert;
 import com.sohu.test.BaseTest;
 
 import org.junit.Test;
