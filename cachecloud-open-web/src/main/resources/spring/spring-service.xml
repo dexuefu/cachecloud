@@ -18,7 +18,7 @@
     <bean id="triggerCenter" class="com.sohu.cache.service.impl.TriggerCenterImpl"/>
 
     <!--异步接口-->
-    <bean id="asyncService" class="com.sohu.cache.async.impl.AsyncServiceImpl" destroy-method="destory"/>
+    <bean id="asyncService" class="com.sohu.cache.async.AsyncServiceImpl" destroy-method="destory"/>
 
     <!--app service接口-->
     <bean id="appStatsCenter" class="com.sohu.cache.service.impl.AppStatsCenterImpl"/>
