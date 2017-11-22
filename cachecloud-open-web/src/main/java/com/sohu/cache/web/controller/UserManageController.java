@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.AppAudit;
 import com.sohu.cache.entity.AppUser;
+import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.util.AppEmailUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
