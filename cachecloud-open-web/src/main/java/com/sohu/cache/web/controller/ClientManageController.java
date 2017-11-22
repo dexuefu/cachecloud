@@ -15,6 +15,7 @@ import com.sohu.cache.entity.AppClientVersion;
 import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.ClientInstanceException;
+import com.sohu.cache.enums.SuccessEnum;
 import org.apache.commons.lang.math.NumberUtils;
 import org.apache.commons.lang.time.DateUtils;
 import org.springframework.stereotype.Controller;

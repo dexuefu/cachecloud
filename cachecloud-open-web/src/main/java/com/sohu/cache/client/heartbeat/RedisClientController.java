@@ -9,6 +9,7 @@ import com.sohu.cache.entity.InstanceInfo;
 import com.google.common.collect.Lists;
 
 import com.sohu.cache.util.ConstUtils;
+import com.sohu.cache.util.IpUtil;
 import com.sohu.cache.util.ObjectConvert;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
