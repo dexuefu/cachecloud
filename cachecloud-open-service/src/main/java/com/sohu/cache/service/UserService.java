@@ -1,7 +1,7 @@
 package com.sohu.cache.service;
 
 import com.sohu.cache.entity.AppUser;
-import com.sohu.cache.web.enums.SuccessEnum;
+import com.sohu.cache.enums.SuccessEnum;
 
 import java.util.List;
 

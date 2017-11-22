@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.AppAuditType;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 注册用户管理(页面没有权限限制)

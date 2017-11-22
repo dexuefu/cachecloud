@@ -2,7 +2,7 @@ package com.sohu.cache.service;
 
 import com.sohu.cache.constant.AppAuditType;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.web.enums.SuccessEnum;
+import com.sohu.cache.enums.SuccessEnum;
 
 import java.util.List;
 

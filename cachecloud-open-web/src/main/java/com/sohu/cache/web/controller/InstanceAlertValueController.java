@@ -22,7 +22,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.dao.InstanceDao;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 实例报警阀值

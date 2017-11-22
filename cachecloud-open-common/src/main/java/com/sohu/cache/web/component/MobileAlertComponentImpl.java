@@ -10,7 +10,7 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.sohu.cache.web.util.HttpRequestUtil;
+import com.sohu.cache.util.HttpRequestUtil;
 
 /**
  * 手机短信报警

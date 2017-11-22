@@ -1,4 +1,4 @@
-package com.sohu.cache.web.util;
+package com.sohu.cache.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

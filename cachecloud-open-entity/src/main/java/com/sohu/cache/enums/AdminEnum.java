@@ -1,4 +1,4 @@
-package com.sohu.cache.web.enums;
+package com.sohu.cache.enums;
 
 /**
  * 管理员

@@ -5,7 +5,7 @@ import java.util.Date;
 
 import com.sohu.cache.entity.AppCommandStats;
 import com.sohu.cache.entity.AppStats;
-import com.sohu.cache.web.util.DateUtil;
+import com.sohu.cache.util.DateUtil;
 import org.apache.commons.lang.time.DateUtils;
 
 /**

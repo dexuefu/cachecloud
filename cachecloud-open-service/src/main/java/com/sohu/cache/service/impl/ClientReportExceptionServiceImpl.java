@@ -8,7 +8,7 @@ import com.sohu.cache.entity.AppClientExceptionStat;
 import com.sohu.cache.entity.AppClientVersion;
 import com.sohu.cache.entity.ClientInstanceException;
 import com.sohu.cache.entity.InstanceInfo;
-import com.sohu.cache.web.util.Page;
+import com.sohu.cache.util.Page;
 import com.sohu.tv.jedis.stat.constant.ClientReportConstant;
 import com.sohu.tv.jedis.stat.enums.ClientCollectDataTypeEnum;
 import com.sohu.tv.jedis.stat.enums.ClientExceptionType;

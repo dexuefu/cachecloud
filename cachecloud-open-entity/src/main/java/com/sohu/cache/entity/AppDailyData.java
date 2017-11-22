@@ -1,7 +1,7 @@
 package com.sohu.cache.entity;
 
 import com.alibaba.fastjson.JSONObject;
-import com.sohu.cache.web.vo.AppDetailVO;
+import com.sohu.cache.vo.AppDetailVO;
 import org.apache.commons.collections.MapUtils;
 
 import java.util.Date;

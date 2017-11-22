@@ -5,7 +5,7 @@ import com.sohu.cache.dao.AppUserDao;
 import com.sohu.cache.entity.AppToUser;
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.service.UserService;
-import com.sohu.cache.web.enums.SuccessEnum;
+import com.sohu.cache.enums.SuccessEnum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

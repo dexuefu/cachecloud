@@ -1,7 +1,7 @@
 package com.sohu.cache.entity;
 
-import com.sohu.cache.web.enums.AdminEnum;
-import com.sohu.cache.web.enums.LoginEnum;
+import com.sohu.cache.enums.AdminEnum;
+import com.sohu.cache.enums.LoginEnum;
 
 /**
  * 登录结果

@@ -1,4 +1,4 @@
-package com.sohu.cache.web.util;
+package com.sohu.cache.util;
 
 /**
  * 分页对象

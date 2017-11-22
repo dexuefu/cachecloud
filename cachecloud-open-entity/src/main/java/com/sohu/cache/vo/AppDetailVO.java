@@ -1,4 +1,4 @@
-package com.sohu.cache.web.vo;
+package com.sohu.cache.vo;
 
 import com.sohu.cache.entity.AppDesc;
 import com.sohu.cache.entity.AppUser;

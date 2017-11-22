@@ -1,4 +1,4 @@
-package com.sohu.cache.web.util;
+package com.sohu.cache.util;
 
 import java.util.Hashtable;
 
@@ -8,8 +8,6 @@ import javax.naming.directory.InitialDirContext;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.sohu.cache.util.ConstUtils;
 
 /**
  * 域账户LDAP登陆简单工具

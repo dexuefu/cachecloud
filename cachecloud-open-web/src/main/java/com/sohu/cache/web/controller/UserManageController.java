@@ -16,7 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.constant.AppCheckEnum;
 import com.sohu.cache.constant.AppUserTypeEnum;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 用户信息管理

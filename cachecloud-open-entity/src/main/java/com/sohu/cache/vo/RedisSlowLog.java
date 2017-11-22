@@ -1,4 +1,4 @@
-package com.sohu.cache.web.vo;
+package com.sohu.cache.vo;
 
 import java.util.Date;
 

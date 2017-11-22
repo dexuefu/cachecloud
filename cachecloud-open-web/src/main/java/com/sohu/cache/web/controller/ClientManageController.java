@@ -24,7 +24,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.service.ClientReportExceptionService;
 import com.sohu.cache.service.ClientVersionService;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 客户端管理

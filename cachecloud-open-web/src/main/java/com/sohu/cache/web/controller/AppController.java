@@ -13,12 +13,11 @@ import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.DemoCodeUtil;
-import com.sohu.cache.web.util.DateUtil;
-import com.sohu.cache.web.util.Page;
-import com.sohu.cache.web.vo.AppDetailVO;
+import com.sohu.cache.util.DateUtil;
+import com.sohu.cache.util.Page;
+import com.sohu.cache.vo.AppDetailVO;
 import com.sohu.cache.web.chart.model.HighchartPoint;
 import com.sohu.cache.web.chart.model.SimpleChartData;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 import net.sf.json.JSONArray;
 

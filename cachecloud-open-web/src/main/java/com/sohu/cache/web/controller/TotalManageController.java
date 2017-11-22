@@ -12,14 +12,12 @@ import com.sohu.cache.entity.*;
 import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.service.MachineCenter;
-import com.sohu.cache.web.vo.AppDetailVO;
+import com.sohu.cache.vo.AppDetailVO;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 全局统计

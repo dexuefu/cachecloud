@@ -10,7 +10,7 @@ import com.google.common.collect.Lists;
 
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.ObjectConvert;
-import com.sohu.cache.web.util.IpUtil;
+import com.sohu.cache.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -12,7 +12,7 @@ import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.service.UserService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
-import com.sohu.cache.web.vo.AppDetailVO;
+import com.sohu.cache.vo.AppDetailVO;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

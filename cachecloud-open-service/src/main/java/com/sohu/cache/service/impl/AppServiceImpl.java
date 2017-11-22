@@ -8,7 +8,7 @@ import com.sohu.cache.service.AppService;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.AppKeyUtil;
 import com.sohu.cache.util.TypeUtil;
-import com.sohu.cache.web.enums.SuccessEnum;
+import com.sohu.cache.enums.SuccessEnum;
 import org.apache.commons.collections.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

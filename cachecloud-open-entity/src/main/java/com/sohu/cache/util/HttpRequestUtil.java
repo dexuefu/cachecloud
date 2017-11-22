@@ -1,4 +1,4 @@
-package com.sohu.cache.web.util;
+package com.sohu.cache.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;

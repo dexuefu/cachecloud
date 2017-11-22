@@ -21,7 +21,7 @@ import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.IdempotentConfirmer;
 import com.sohu.cache.util.TypeUtil;
-import com.sohu.cache.web.enums.RedisOperateEnum;
+import com.sohu.cache.enums.RedisOperateEnum;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

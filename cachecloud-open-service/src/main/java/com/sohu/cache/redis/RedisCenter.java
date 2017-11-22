@@ -2,7 +2,7 @@ package com.sohu.cache.redis;
 
 import com.sohu.cache.constant.RedisConstant;
 import com.sohu.cache.entity.*;
-import com.sohu.cache.web.vo.RedisSlowLog;
+import com.sohu.cache.vo.RedisSlowLog;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisSentinelPool;

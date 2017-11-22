@@ -6,7 +6,7 @@ import com.sohu.cache.entity.AppCommandGroup;
 import com.sohu.cache.entity.AppCommandStats;
 import com.sohu.cache.entity.AppStats;
 import com.sohu.cache.entity.InstanceSlowLog;
-import com.sohu.cache.web.vo.AppDetailVO;
+import com.sohu.cache.vo.AppDetailVO;
 
 import java.util.Date;
 import java.util.List;

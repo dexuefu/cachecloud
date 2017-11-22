@@ -23,7 +23,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sohu.cache.redis.RedisCenter;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * 应用后台管理

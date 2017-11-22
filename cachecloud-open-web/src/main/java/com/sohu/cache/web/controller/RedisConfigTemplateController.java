@@ -21,7 +21,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.sohu.cache.constant.ErrorMessageEnum;
 import com.sohu.cache.constant.RedisConfigTemplateChangeEnum;
 import com.sohu.cache.redis.RedisConfigTemplateService;
-import com.sohu.cache.web.enums.SuccessEnum;
 
 /**
  * Redis配置模板管理
