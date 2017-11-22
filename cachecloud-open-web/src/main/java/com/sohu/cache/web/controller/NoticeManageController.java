@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.util.ConstUtils;
 import org.apache.commons.lang.StringUtils;

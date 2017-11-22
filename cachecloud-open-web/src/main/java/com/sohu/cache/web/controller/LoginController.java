@@ -6,8 +6,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.entity.LoginResult;
+import com.sohu.cache.enums.AdminEnum;
+import com.sohu.cache.enums.LoginEnum;
 import com.sohu.cache.service.UserLoginStatusService;
 import com.sohu.cache.util.ConstUtils;
+import com.sohu.cache.util.LoginUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
