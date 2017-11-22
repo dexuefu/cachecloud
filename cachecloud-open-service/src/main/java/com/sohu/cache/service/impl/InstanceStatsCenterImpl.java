@@ -11,7 +11,6 @@ import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
-import com.sohu.cache.util.DateUtil;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang.BooleanUtils;
 import org.apache.commons.lang.StringUtils;

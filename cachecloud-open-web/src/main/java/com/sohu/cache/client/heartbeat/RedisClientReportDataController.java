@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.sohu.cache.service.AppService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.JsonUtil;
-import com.sohu.cache.util.IpUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -2,7 +2,6 @@ package com.sohu.cache.dao;
 
 import com.sohu.cache.entity.AppClientExceptionStat;
 import com.sohu.cache.entity.ClientInstanceException;
-import com.sohu.cache.util.Page;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

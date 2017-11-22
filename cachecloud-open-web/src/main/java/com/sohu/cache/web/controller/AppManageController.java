@@ -17,7 +17,6 @@ import com.sohu.cache.entity.*;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
 
-import com.sohu.cache.util.DateUtil;
 import net.sf.json.JSONArray;
 
 import org.apache.commons.lang.StringUtils;

@@ -1,7 +1,5 @@
 package com.sohu.cache.entity;
 
-import com.sohu.cache.util.Page;
-
 /**
  * 搜索实体
  * 
