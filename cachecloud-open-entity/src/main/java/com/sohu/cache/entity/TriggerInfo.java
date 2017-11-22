@@ -1,5 +1,7 @@
 package com.sohu.cache.entity;
 
+import com.sohu.cache.util.DateUtil;
+
 import java.util.Date;
 
 /**
