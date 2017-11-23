@@ -7,16 +7,16 @@ package com.sohu.cache.constant;
  */
 public class BaseConstant {
 
-    /** mill seconds of one day */
+    /** mill seconds of one day */ // 1秒钟
     public static long MILLISECONDS_OF_ONE_SECOND = 1000;
 
-    /** mill seconds of one day */
+    /** mill seconds of one day */ // 1分钟
     public static long MILLISECONDS_OF_ONE_MINUTE = 1000 * 60;
 
-    /** mill seconds of one day */
+    /** mill seconds of one day */ // 1天
     public static long MILLISECONDS_OF_ONE_DAY = 1000 * 60 * 60 * 24;
 
-    /** mill seconds of one hour */
+    /** mill seconds of one hour */ // 1小时
     public static long MILLISECONDS_OF_ONE_HOUR = 1000 * 60 * 60;
 
     /**
