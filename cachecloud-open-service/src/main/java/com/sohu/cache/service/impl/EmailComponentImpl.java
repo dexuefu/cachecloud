@@ -1,5 +1,6 @@
-package com.sohu.cache.web.component;
+package com.sohu.cache.service.impl;
 
+import com.sohu.cache.service.EmailComponent;
 import com.sohu.cache.util.ConstUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;

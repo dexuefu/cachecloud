@@ -8,8 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 
 import com.sohu.cache.jmx.ErrorLoggerWatcherMBean;
-import com.sohu.cache.schedule.jobs.CacheBaseJob;
-import com.sohu.cache.web.component.EmailComponent;
+import com.sohu.cache.service.EmailComponent;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

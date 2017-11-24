@@ -11,7 +11,7 @@ import com.sohu.cache.redis.enums.RedisAlertConfigEnum;
 import com.sohu.cache.service.InstanceAlertConfigService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.VelocityUtils;
-import com.sohu.cache.web.component.EmailComponent;
+import com.sohu.cache.service.EmailComponent;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.time.DateUtils;

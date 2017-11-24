@@ -13,10 +13,10 @@
     <bean id="userService" class="com.sohu.cache.service.impl.UserServiceImpl"/>
 
 	<!-- 邮件报警 -->
-    <bean id="emailComponent" class="com.sohu.cache.web.component.EmailComponentImpl"/>
+    <bean id="emailComponent" class="com.sohu.cache.service.impl.EmailComponentImpl"/>
 
 	<!-- 短信报警 -->
-	<bean id="mobileAlertComponent" class="com.sohu.cache.web.component.MobileAlertComponentImpl"/>
+	<bean id="mobileAlertComponent" class="com.sohu.cache.service.impl.MobileAlertComponentImpl"/>
 	
 	<!-- 应用相关审核变更通知 -->
     <bean id="appEmailUtil" class="com.sohu.cache.util.AppEmailUtil"/>

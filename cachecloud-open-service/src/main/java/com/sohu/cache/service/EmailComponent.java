@@ -1,4 +1,4 @@
-package com.sohu.cache.web.component;
+package com.sohu.cache.service;
 
 import java.util.List;
 

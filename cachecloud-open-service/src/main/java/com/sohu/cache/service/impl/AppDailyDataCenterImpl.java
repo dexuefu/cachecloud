@@ -10,7 +10,7 @@ import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.DateUtil;
 import com.sohu.cache.util.VelocityUtils;
-import com.sohu.cache.web.component.EmailComponent;
+import com.sohu.cache.service.EmailComponent;
 import com.sohu.cache.vo.AppDetailVO;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.math.NumberUtils;

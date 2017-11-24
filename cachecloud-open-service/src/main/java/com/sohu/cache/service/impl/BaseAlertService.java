@@ -1,7 +1,7 @@
 package com.sohu.cache.service.impl;
 
-import com.sohu.cache.web.component.EmailComponent;
-import com.sohu.cache.web.component.MobileAlertComponent;
+import com.sohu.cache.service.EmailComponent;
+import com.sohu.cache.service.MobileAlertComponent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
