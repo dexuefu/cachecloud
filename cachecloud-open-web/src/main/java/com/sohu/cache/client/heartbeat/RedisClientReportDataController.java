@@ -44,8 +44,7 @@ public class RedisClientReportDataController {
 
     /**
      * 上报客户端上传数据
-     * 
-     * @param appId
+     *
      * @param model
      */
     @RequestMapping(value = "/reportData.json" , method = RequestMethod.POST)

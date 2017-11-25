@@ -6,6 +6,7 @@ import java.util.Enumeration;
 import java.util.ResourceBundle;
 
 /**
+ * jvm配置
  * Created by zhangyijun on 15/11/2.
  */
 public class JvmConfiger {
