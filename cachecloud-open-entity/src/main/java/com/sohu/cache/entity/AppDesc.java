@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 应用的信息，包括分片、类型以及各分片的ip
+ * app应用描述 应用的信息，包括分片、类型以及各分片的ip
  * <p/>
  * User: lingguo
  * Date: 14-5-29

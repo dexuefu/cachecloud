@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- *
+ * 应用审核
  * Created by yijunzhang on 14-10-20.
  */
 public class AppAudit {
