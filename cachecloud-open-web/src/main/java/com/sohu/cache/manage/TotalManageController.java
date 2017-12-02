@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,7 @@ import com.sohu.cache.service.AppStatsCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
 import com.sohu.cache.service.MachineCenter;
 import com.sohu.cache.vo.AppDetailVO;
+import com.sohu.cache.web.controller.BaseController;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

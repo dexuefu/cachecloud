@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import java.util.List;
 
@@ -10,6 +10,7 @@ import com.sohu.cache.entity.AppAudit;
 import com.sohu.cache.entity.AppUser;
 import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.util.AppEmailUtil;
+import com.sohu.cache.web.controller.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +14,7 @@ import com.sohu.cache.entity.SystemConfig;
 import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.service.ConfigService;
 import com.sohu.cache.util.AppEmailUtil;
+import com.sohu.cache.web.controller.BaseController;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;

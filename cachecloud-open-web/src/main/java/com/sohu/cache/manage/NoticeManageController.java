@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.util.AppEmailUtil;
 import com.sohu.cache.util.ConstUtils;
+import com.sohu.cache.web.controller.BaseController;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

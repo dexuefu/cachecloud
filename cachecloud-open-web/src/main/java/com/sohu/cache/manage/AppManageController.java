@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import com.sohu.cache.enums.RedisOperateEnum;
 import com.sohu.cache.enums.SuccessEnum;
@@ -20,6 +20,7 @@ import com.sohu.cache.entity.*;
 import com.sohu.cache.redis.RedisCenter;
 import com.sohu.cache.redis.RedisDeployCenter;
 
+import com.sohu.cache.web.controller.BaseController;
 import net.sf.json.JSONArray;
 
 import org.apache.commons.lang.StringUtils;

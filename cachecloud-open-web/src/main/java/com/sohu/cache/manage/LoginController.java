@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +11,7 @@ import com.sohu.cache.enums.LoginEnum;
 import com.sohu.cache.service.UserLoginStatusService;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.LoginUtil;
+import com.sohu.cache.web.controller.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

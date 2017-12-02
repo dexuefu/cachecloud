@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,6 +14,7 @@ import com.sohu.cache.entity.InstanceInfo;
 import com.sohu.cache.enums.SuccessEnum;
 import com.sohu.cache.service.InstanceDeployCenter;
 import com.sohu.cache.service.InstanceStatsCenter;
+import com.sohu.cache.web.controller.BaseController;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.slf4j.Logger;

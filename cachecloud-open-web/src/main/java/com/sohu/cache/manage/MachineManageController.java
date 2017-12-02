@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.manage;
 
 import com.sohu.cache.constant.MachineInfoEnum;
 import com.sohu.cache.entity.*;
@@ -7,6 +7,7 @@ import com.sohu.cache.service.MachineDeployCenter;
 import com.sohu.cache.util.ConstUtils;
 import com.sohu.cache.util.TypeUtil;
 
+import com.sohu.cache.web.controller.BaseController;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
@@ -33,7 +34,7 @@ import java.util.Map;
  */
 @Controller
 @RequestMapping("manage/machine")
-public class MachineManageController extends BaseController{
+public class MachineManageController extends BaseController {
 
     @Resource
     private MachineDeployCenter machineDeployCenter;
