@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-/**
+/**应用审核表
  * Created by yijunzhang on 14-10-20.
  */
 public interface AppAuditDao {

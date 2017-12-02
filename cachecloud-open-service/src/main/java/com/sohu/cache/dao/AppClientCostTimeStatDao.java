@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 客户端耗时dao
- * 
+ * 客户端每分钟耗时上报数据统计
  * @author leifu
  * @Date 2015年1月20日
  * @Time 上午11:50:01

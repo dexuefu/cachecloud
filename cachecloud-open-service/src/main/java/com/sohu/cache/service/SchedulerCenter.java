@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 控制job、trigger和scheduler的基类
+ * 控制job、trigger和scheduler的基类 todo 任务 触发器 和 调度 的接口
  * User: lingguo
  * Date: 14-5-18
  * Time: 下午8:18
