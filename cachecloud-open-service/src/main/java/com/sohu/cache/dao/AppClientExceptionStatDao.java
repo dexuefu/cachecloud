@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 客户端异常dao
- * 
+ * 客户端每分钟异常上报数据统计
  * @author leifu
  * @Date 2015年1月20日
  * @Time 上午11:50:06
