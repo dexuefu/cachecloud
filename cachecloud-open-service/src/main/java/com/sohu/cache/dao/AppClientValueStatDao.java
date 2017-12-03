@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * 
+ * 客户端每分钟值分布上报数据统计
  * @author leifu
  * @Date 2016年5月9日
  * @Time 下午5:25:52

@@ -4,6 +4,7 @@ import com.sohu.cache.entity.AppClientDataSizeStat;
 
 /**
  * 客户端内收集数据map的尺寸查询
+ * 客户端每分钟耗时上报收集数据的map尺寸
  * @author leifu
  * @Date 2015年7月13日
  * @Time 下午3:26:48
