@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * 基于app的dao操作
+ * 基于app的dao操作 app应用描述 操作app_desc表 与 app_to_user 表
  * @author leifu
  * @Date 2014年5月15日
  * @Time 下午1:58:22

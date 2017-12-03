@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
+ * 客户端上报版本信息统计
  * 客户端版本dao
  * @author leifu
  * @Date 2015年2月2日
