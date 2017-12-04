@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
+ * todo server 与 server_stat 表
  * 服务器状态信息持久化
  */
 public interface ServerStatusDao {

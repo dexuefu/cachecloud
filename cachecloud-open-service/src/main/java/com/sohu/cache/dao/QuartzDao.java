@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * quartz相关的dao操作
- *
+ * todo QRTZ_TRIGGERS 表为主 QRTZ_CRON_TRIGGERS
  * @author: lingguo
  * @time: 2014/10/13 14:44
  */
