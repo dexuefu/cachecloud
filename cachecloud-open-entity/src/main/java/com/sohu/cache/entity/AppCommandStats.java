@@ -3,6 +3,7 @@ package com.sohu.cache.entity;
 import java.util.Date;
 
 /**
+ * todo 查询条件吧
  * Created by yijunzhang on 14-6-9.
  */
 public class AppCommandStats implements Comparable<AppCommandStats> {

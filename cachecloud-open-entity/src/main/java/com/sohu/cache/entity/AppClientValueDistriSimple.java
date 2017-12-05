@@ -4,7 +4,7 @@ import com.sohu.tv.jedis.stat.enums.ValueSizeDistriEnum;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
- * 
+ * 客户端每分钟值分布上报数据统计
  * @author leifu
  * @Date 2015-6-20
  * @Time 下午4:37:02
