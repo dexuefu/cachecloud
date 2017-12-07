@@ -1,4 +1,4 @@
-package com.sohu.cache.client.heartbeat;
+package com.sohu.cache.web.controller;
 
 import com.sohu.cache.service.ClientVersionService;
 import com.sohu.cache.constant.ClientStatusEnum;

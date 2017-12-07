@@ -1,4 +1,4 @@
-package com.sohu.cache.client.heartbeat;
+package com.sohu.cache.web.controller;
 
 import java.util.List;
 
