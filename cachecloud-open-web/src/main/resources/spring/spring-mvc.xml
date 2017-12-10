@@ -79,15 +79,15 @@
         </property>
     </bean>
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="order" value="2"/>
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/jsp/"/>
-        <property name="suffix" value=".ftl"/>
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="order" value="2"/>-->
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>-->
+        <!--<property name="prefix" value="/jsp/"/>-->
+        <!--<property name="suffix" value=".ftl"/>-->
 
-    </bean>
+    <!--</bean>-->
 
-    <context:component-scan base-package="com.sohu.cache.client.heartbeat,com.sohu.cache.web.controller"/>
+    <context:component-scan base-package="com.sohu.cache.manage,com.sohu.cache.web.controller"/>
 
 
 
