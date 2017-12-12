@@ -1,5 +1,8 @@
 package redis.clients.util;
 
+/**
+ *
+ */
 public class KeyMergeUtil {
   public static String[] merge(String destKey, String[] keys) {
     String[] mergedKeys = new String[keys.length + 1];
