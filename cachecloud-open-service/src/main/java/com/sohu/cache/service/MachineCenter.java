@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  * 基于host的操作
- * // todo 基于host的操作
+ * // todo 基于host的操作 觉得这是核心类
  * User: lingguo
  * Date: 14-6-12
  * Time: 上午10:32
