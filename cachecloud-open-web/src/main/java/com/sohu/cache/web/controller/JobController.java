@@ -26,9 +26,6 @@ public class JobController {
     @Resource
     private RedisCenter redisCenter;
     
-    @Resource
-    private MachineCenter machineCenter;
-
     @RequestMapping(value = "/add/{appId}/{type}/{host}/{port}")
     public void addJob(@PathVariable long appId, @PathVariable int type, @PathVariable String host, @PathVariable int port) {
         Assert.isTrue(appId > 0);
