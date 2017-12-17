@@ -62,6 +62,16 @@ public class SchedulerCenterImpl implements SchedulerCenter {
         return trigger;
     }
 
+/**
+ * 根据cron部署Job
+ *
+ * @param jobKey
+ * @param triggerKey
+ * @param dataMap
+ * @param cron
+ * @param replace
+ * @return
+ */
     @Override
     public boolean deployJobByCron(JobKey jobKey, TriggerKey triggerKey, Map<String, Object> dataMap, String cron, boolean replace) {
         Assert.isTrue(jobKey != null);
