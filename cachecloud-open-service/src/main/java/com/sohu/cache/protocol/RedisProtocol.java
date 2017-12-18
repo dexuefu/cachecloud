@@ -27,6 +27,14 @@ public class RedisProtocol {
         return String.format(SENTINEL_SHELL, MachineProtocol.CONF_DIR + getConfig(port, false), port, DateUtil.formatYYYYMMddHHMM(new Date()));
     }
 
+    /**
+     * 获取redis 命令，通过shell远程执行redis命令
+     * @param host
+     * @param port
+     * @param password
+     * @param command
+     * @return
+     */
     public static String getExecuteCommandShell(String host, int port, String password, String command) {
     		StringBuffer shell = new StringBuffer();
     		shell.append(String.format("redis-cli -h %s -p %s", host, port));

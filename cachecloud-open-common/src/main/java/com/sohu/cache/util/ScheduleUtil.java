@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Random;
 
 /**
- * 调度相关的工具类
+ * 调度相关的工具类 todo 好多都是写死的
  * <p/>
  * Created by yijunzhang on 14-6-10.
  */
