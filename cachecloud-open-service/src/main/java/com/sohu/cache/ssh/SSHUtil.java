@@ -231,7 +231,7 @@ public class SSHUtil {
 
     /**
      * 重载，使用默认端口、用户名和密码
-     *
+     * todo 可修改为通过配置文件来获取－配置到数据库等
      * @param ip
      * @param cmd
      * @return

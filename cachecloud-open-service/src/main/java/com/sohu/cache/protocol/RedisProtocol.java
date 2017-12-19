@@ -28,7 +28,7 @@ public class RedisProtocol {
     }
 
     /**
-     * 获取redis 命令，通过shell远程执行redis命令
+     * 获取redis 命令，通过shell远程执行redis命令 todo redis-cli -h host -p port -a password
      * @param host
      * @param port
      * @param password
