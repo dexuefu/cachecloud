@@ -21,6 +21,7 @@ import static com.sohu.cache.constant.EmptyObjectConstant.EMPTY_STRING;
 import static com.sohu.cache.constant.SymbolConstant.COMMA;
 
 /**
+ * SSH 操作帮助类 包括top命令 df命令 和 cat /proc/meminfo | grep -E -w 'MemTotal|MemFree|Buffers|Cached' 命令
  * Created by yijunzhang on 14-6-20.
  */
 public class SSHUtil {
