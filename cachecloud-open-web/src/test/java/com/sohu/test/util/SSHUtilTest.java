@@ -20,10 +20,10 @@ public class SSHUtilTest extends Assert{
 
     @Test
     public void testMachineStats() throws SSHException {
-        String ip = "127.0.0.1";
+        String ip = "10.7.29.151";
         int port = 22;
-        String userName = "cachecloud-open";
-        String password = "cachecloud-open";
+        String userName = "cachecloud";
+        String password = "cachecloud";
         MachineStats machineStats = SSHUtil.getMachineInfo(ip, port, userName, password);
         logger.info("ip {} machineStats: {}", machineStats);
     }
