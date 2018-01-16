@@ -36,7 +36,16 @@ public class SSHUtil {
     private final static String MEM_FREE = "MemFree";
     private final static String MEM_BUFFERS = "Buffers";
     private final static String MEM_CACHED = "Cached";
-    
+
+
+    private final static String MAC_COMMAND_TOP = "top -n 1 | head -5";
+    private final static String MAC_COMMAND_DF_LH = "df -lh";
+    private final static String MAC_LOAD_AVERAGE_STRING = "Load Avg: ";
+    private final static String MAC_COMMAND_MEM = "cat /proc/meminfo | grep -E -w 'MemTotal|MemFree|Buffers|Cached'";
+    private final static String MAC_MEM_TOTAL = "MemTotal";
+    private final static String MAC_MEM_FREE = "MemFree";
+    private final static String MAC_MEM_BUFFERS = "Buffers";
+    private final static String MAC_MEM_CACHED = "Cached";
     //使用 @SSHTemplate 重构SSHUtil
     private final static SSHTemplate sshTemplate = new SSHTemplate();
 
