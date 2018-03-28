@@ -1,6 +1,6 @@
 package com.sohu.cache.util;
 
-import com.sohu.cache.web.controller.AppController;
+import com.sohu.cache.web.admin.AppController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.web.admin;
 
 import com.sohu.cache.entity.*;
 import com.sohu.cache.redis.RedisCenter;

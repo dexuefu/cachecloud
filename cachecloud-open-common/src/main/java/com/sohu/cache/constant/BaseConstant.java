@@ -7,6 +7,8 @@ package com.sohu.cache.constant;
  */
 public class BaseConstant {
 
+
+
     /** mill seconds of one day */ // 1秒钟
     public static long MILLISECONDS_OF_ONE_SECOND = 1000;
 

@@ -1,4 +1,4 @@
-package com.sohu.cache.web.controller;
+package com.sohu.cache.web.admin;
 
 import com.alibaba.fastjson.JSONObject;
 import com.sohu.cache.constant.AppAuditType;
@@ -16,6 +16,7 @@ import com.sohu.cache.vo.AppDetailVO;
 import com.sohu.cache.web.chart.model.HighchartPoint;
 import com.sohu.cache.web.chart.model.SimpleChartData;
 
+import com.sohu.cache.web.controller.BaseController;
 import net.sf.json.JSONArray;
 
 import org.apache.commons.collections.CollectionUtils;
