@@ -24,10 +24,10 @@ public class JedisClusterTest extends Assert {
   private String localHost = "127.0.0.1";
 
   private HostAndPort nodeInfo1 = HostAndPortUtil.getClusterServers().get(0);
-  private HostAndPort nodeInfo2 = HostAndPortUtil.getClusterServers().get(1);
-  private HostAndPort nodeInfo3 = HostAndPortUtil.getClusterServers().get(2);
-  private HostAndPort nodeInfo4 = HostAndPortUtil.getClusterServers().get(3);
-  private HostAndPort nodeInfoSlave2 = HostAndPortUtil.getClusterServers().get(4);
+  private HostAndPort nodeInfo2 = HostAndPortUtil.getClusterServers().get(0);
+  private HostAndPort nodeInfo3 = HostAndPortUtil.getClusterServers().get(0);
+  private HostAndPort nodeInfo4 = HostAndPortUtil.getClusterServers().get(0);
+  private HostAndPort nodeInfoSlave2 = HostAndPortUtil.getClusterServers().get(0);
   protected Logger log = Logger.getLogger(getClass().getName());
 
   @Before
@@ -484,7 +484,7 @@ public class JedisClusterTest extends Assert {
   public void testJedisClusterRunsWithMultithreaded() throws InterruptedException,
       ExecutionException, IOException {
     Set<HostAndPort> jedisClusterNode = new HashSet<HostAndPort>();
-    jedisClusterNode.add(new HostAndPort("127.0.0.1", 7379));
+    jedisClusterNode.add(new HostAndPort("127.0.0.1", 6379));
     final JedisCluster jc = new JedisCluster(jedisClusterNode);
     jc.set("foo", "bar");
 
