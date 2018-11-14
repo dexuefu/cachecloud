@@ -155,7 +155,7 @@ public class ConstUtils {
     /**
      * 邮箱报警接口
      */
-    public static String DEFAULT_EMAIL_ALERT_INTERFACE = EMPTY;
+    public static String DEFAULT_EMAIL_ALERT_INTERFACE = "http://www.baidu.com";//EMPTY;
     public static String EMAIL_ALERT_INTERFACE = DEFAULT_EMAIL_ALERT_INTERFACE;
     
     /**

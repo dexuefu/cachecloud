@@ -39,6 +39,7 @@ public class EmailComponentImpl implements EmailComponent {
         String alertUrl = ConstUtils.EMAIL_ALERT_INTERFACE;
         if (StringUtils.isBlank(alertUrl)) {
             logger.error("emailAlertInterface url is empty!");
+            logger.error("报警邮箱地址没有初始化地址!");
             return false;
         }
     	try {
