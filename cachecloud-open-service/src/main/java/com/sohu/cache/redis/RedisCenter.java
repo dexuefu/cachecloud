@@ -13,6 +13,7 @@ import java.util.Map;
 
 /**
  * redis相关操作接口
+ * todo 核心接口
  * Created by yijunzhang on 14-6-10.
  */
 public interface RedisCenter {
