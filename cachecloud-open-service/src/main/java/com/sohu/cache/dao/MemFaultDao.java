@@ -5,7 +5,7 @@ import com.sohu.cache.entity.InstanceFault;
 import java.util.List;
 
 /**
- * 故障管理
+ * 故障管理－－ todo 还没实现
  * @author leifu
  * @Date 2015年3月2日
  * @Time 下午2:02:07
