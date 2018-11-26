@@ -9,6 +9,7 @@ import java.util.concurrent.Executors;
  */
 public class AsyncLoad {
 
+    // todo 需要优化
     protected ExecutorService executorService = Executors.newCachedThreadPool();
 
 
